@@ -127,8 +127,17 @@
               </tr>
               <tr>
                 <td width=20%>Skalarenmultiplikation</td>
-                <td width=42%>$$ 2 \begin{bmatrix}2 &1 \\ -1 &3 \end{bmatrix}  = \begin{bmatrix}4 &2\\ -2 &6 \end{bmatrix} $$</td>
+                <td width=42%>$$ 2 \cdot \begin{bmatrix}2 &1 \\ -1 &3 \end{bmatrix}  = \begin{bmatrix}4 &2\\ -2 &6 \end{bmatrix} $$</td>
                 <td>Ist <b>A</b> eine Matrix und <b>r</b> eine Zahl, dann ist das Produkt von <b>r</b> und <b>A</b> komponentenweise definiert.</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width=20%>Matrizenmultiplikation</td>
+                <td width=42%>$$ \small \begin{bmatrix}2 &3 \\ 5 &7 \end{bmatrix} \cdot \begin{bmatrix}4 &6 \\ 0 &8 \end{bmatrix} = \begin{bmatrix}2\cdot 4+3\cdot 10 &2\cdot 6+3\cdot 8 \\ 5\cdot 4+7\cdot 10 &5\cdot 6+7\cdot 8 \end{bmatrix} = \begin{bmatrix}38 &36 \\ 90 &86 \end{bmatrix} $$</td>
+                <td><img src="bilder/matrizen/multiplikation.jpeg"style="max-height:35%; max-width:100%"></td>
+              </tr>
+              <tr>
+                <td>$$ \small \begin{bmatrix}2 &3  &-1  &5 \end{bmatrix} \cdot \begin{bmatrix}7\\ 6\\ 0\\ 2\end{bmatrix} = 2\cdot 7+3\cdot 6+(-1)\cdot 0+5\cdot 2 = 42 $$</td>
+                <td>Das liefert eine 1x1-Matrix, was einfach eine Zahl ist.</td>
               </tr>
             </table>
           
