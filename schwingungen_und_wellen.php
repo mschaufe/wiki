@@ -91,16 +91,6 @@
           </tbody>
         </table>
 
-        <br><br><h5 id="lichtausbreitung">asdf</h5>
-        <table class="table">
-          <tr>
-            <td width=20%>Divergent</td>
-            <td width=42%><p>Strahlen, die von einem gemeinsamen Punkte radial ausstrahlen, sind divergent.</p></td>
-            <td><img src="bilder/schwingungen_und_wellen/harmonische_schwingung/harmonische_schwingung.jpeg"style="max-height:50%; max-width:100%"></td>
-          </tr>
-        </table>
-
-      
 
         </main>
       </div>
