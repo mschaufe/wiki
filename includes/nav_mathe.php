@@ -44,6 +44,11 @@
         Trigonometrie
       </a>
     </div>
+    <div class="bd-toc-item <?php if($_SERVER['PHP_SELF'] == "/vektoranalysis.php")echo " active";?>">
+      <a class="bd-toc-link" href="vektoranalysis.php">
+        Vektoranalysis
+      </a>
+    </div>
     <div class="bd-toc-item <?php if($_SERVER['PHP_SELF'] == "/vektoren.php")echo " active";?>">
       <a class="bd-toc-link" href="vektoren.php">
         Vektoren

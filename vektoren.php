@@ -218,7 +218,7 @@
                 </tr>
                 <tr>
                   <td width=20%>1.</td>
-                  <td width=42% >$$ U \neq \varnothing \longleftrightarrow \vec{0} \in U $$</td>
+                  <td width=42% >$$ U \neq  \varnothing \longleftrightarrow \vec{0} \in U $$</td>
                   <td>Objekt nichtleer?</td>
                 </tr>
                 <tr>
