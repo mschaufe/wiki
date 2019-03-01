@@ -4,14 +4,6 @@
     <?php include ('includes/top_head.php'); 
     $loc = "mathe";
     ?>
-    <style type="text/css">
-      .anchor{
-        display: block;
-        height: 115px; /*same height as header*/
-        margin-top: -115px; /*same height as header*/
-        visibility: hidden;
-      }
-    </style>
 </head>
   <body>
     <a id="skippy" class="sr-only sr-only-focusable" href="#content">
