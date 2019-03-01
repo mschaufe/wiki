@@ -28,7 +28,7 @@
             <ul class="section-nav">
             <li class="toc-entry toc-h2"><a href="#allgemien">Allgemein</a></li>
             <li class="toc-entry toc-h2"><a href="#operationen">Operationen</a></li>
-            
+            <li class="toc-entry toc-h2"><a href="#tools">Tools</a></li>
             
             </ul>
           </div>
@@ -53,8 +53,8 @@
                 <tbody>
                   <tr>
                     <td>Einträge</td>
-                    <td>$$ A_{(i),(j)} = A_{23} = 1  $$</td>
-                    <td>$$ A = \begin{bmatrix}7 &5  &0 \\ 2 &2  & 1 \end{bmatrix}  $$</td>
+                    <td>$$ A = \begin{bmatrix}7 &5  &0 \\ 2 &2  & 1 \end{bmatrix} \qquad A_{(i),(j)} = A_{23} = 1  $$</td>
+                    <td>Allgemein sprechen wir vom Eintrag mit Index ij einer Mtrix A und schreiben dafür A<sub>ij</sub></td>
                   </tr>
                   <tr>
                     <td>Typ</td>
@@ -63,22 +63,22 @@
                   </tr>
                   <tr>
                     <td>Untermatrizen</td>
-                    <td>$$ \hat{A}_{23} = \begin{bmatrix}1 &3   &1  &1  &0 \\ 3 &2    &3  &2 &1 \\ 1 &0    &1  &1 &0\end{bmatrix}  $$</td>
-                    <td>$$ A = \begin{bmatrix}1 &3 & \color{grey}2  &1  &1  &0 \\  \color{grey} 2& \color{grey}2  & \color{grey}0  & \color{grey}0  & \color{grey}0  & \color{grey}1 \\3 &2  & \color{grey}1  &3  &2 &1 \\ 1 &0  & \color{grey}0  &1  &1  &0 \end{bmatrix} $$</td>
+                    <td>$$ \footnotesize A = \begin{bmatrix}1 &3 & \color{grey}2  &1  &1  &0 \\  \color{grey} 2& \color{grey}2  & \color{grey}0  & \color{grey}0  & \color{grey}0  & \color{grey}1 \\3 &2  & \color{grey}1  &3  &2 &1 \\ 1 &0  & \color{grey}0  &1  &1  &0 \end{bmatrix} \; \: \hat{A}_{23} = \begin{bmatrix}1 &3   &1  &1  &0 \\ 3 &2    &3  &2 &1 \\ 1 &0    &1  &1 &0\end{bmatrix}  $$</td>
+                    <td>Lässt man in A die zweite Zeile und die dritte Spalte weg, so erhält man eine nue Matrix vom Typ 3x5.</td>
                   </tr>
                   <tr>
                     <td rowspan="2">Transposition</td>
-                    <td>$$ A=\begin{bmatrix}1 &2 \\ 3 &-1 \end{bmatrix} $$</td>
-                    <td>$$ A^t=\begin{bmatrix}1 &3 \\ 2 &-1 \end{bmatrix}$$</td>
+                    <td>$$  A=\begin{bmatrix}1 &2 \\ 3 &-1 \end{bmatrix} \: \; A^t=\begin{bmatrix}1 &3 \\ 2 &-1 \end{bmatrix}$$</td>
+                    <td>Die Einträge von A<sup>t</sup> sind dieselben wie diejenigen von A, aber sie werden anders angeordnet.</td>
                   </tr>
                   <tr>
-                    <td>$$ A =\begin{bmatrix}7 &5  &0 \\ 2 &2  &1 \end{bmatrix}$$</td>
-                    <td>$$ A^t =\begin{bmatrix}7 &2 \\ 5&2 \\ 0 &1 \end{bmatrix} $$</td>
+                    <td>$$  A =\begin{bmatrix}7 &5  &0 \\ 2 &2  &1 \end{bmatrix} \: \; A^t =\begin{bmatrix}7 &2 \\ 5&2 \\ 0 &1 \end{bmatrix} $$</td>
+                    <td>Es gilt:<br>$$ (A^t)_{ij}=A_{ji} \text{ und }(A^t)^t = A  $$</td>
                   </tr>
                   <tr>
                     <td>Nullmatrix</td>
-                    <td>$$ 0_{2,3}  $$</td>
-                    <td>$$ \begin{bmatrix}0 &0  &0 \\  0&0  &0 \end{bmatrix} = 0 $$</td>
+                    <td>$$ 0_{2,3} =\begin{bmatrix}0 &0  &0 \\  0&0  &0 \end{bmatrix} = 0 $$</td>
+                    <td>Die Matrix vom Typ (m,n), deren Einträge alle 0 sind, nennen wir die Nullmatrix vom Typ (m,n).</td>
                   </tr>
                   <tr>
                     <td>Standardmatrix</td>
@@ -115,6 +115,24 @@
                     <td>$$ \begin{bmatrix}0 &2  &3 \\  -2& 0 &6 \\ -3 &-6  &0 \end{bmatrix} $$</td>
                     <td>Falls A<sup>t</sup> = -A<br>Alle Diagonaleinträge einer schiefsymmetrischen Matrix sind gliech 0.</td>
                   </tr>
+                  <tr>
+                    <td>Einheitsmatrizen</td>
+                    <td>$$ \mathbb{1}_3 = \text{diag}(1,1,1) =\begin{bmatrix}1 &0  &0 \\ 0 &1  &0 \\ 0 &0  &1 \end{bmatrix} $$</td>
+                    <td>Eine Diagonalmatrix vom Typ n deren Diagonaleinträge alle 1 sind, nennen wir die Einheitsmatrix vom Typ n.</td>
+                  </tr>
+                  <tr>
+                    <td>Spur</td>
+                    <td>$$ \text{tr}(\begin{bmatrix}2 &3 \\ 5 &7 \end{bmatrix}) = 2+7 = 9 $$</td>
+                    <td>Die Spur einer quadratischen Matrix ist die Summe der Einträge auf der Diagonalen.</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Determinante</td>
+                    <td>$$ \text{det}(\begin{bmatrix}2 &3 \\ 5 &7 \end{bmatrix})=2\cdot 7 - 5\cdot 2 = -1 $$</td>
+                    <td rowspan="2">Die Determinante wird vor allem in der linearen Algebra in vielen Gebieten angewendet, wie beispielsweise zum Lösen von linearen Gleichungssystemen, dem Invertieren von Matrizen oder auch bei der Flächenberechnung. <br>Für nichtquadratische Matrizen ist die Determinante nicht definiert.</td>
+                  </tr>
+                  <tr>
+                    <td>$$ \scriptsize \text{det}(\begin{bmatrix}4 &6  &1 \\ 10 &8  &5 \\ 0 &0  &1 \end{bmatrix}) = 4\cdot \text{det}\begin{bmatrix}8 &5 \\ 0 &1 \end{bmatrix}-10\cdot \text{det}\begin{bmatrix}6 &1 \\ 0 &1 \end{bmatrix}+0\cdot \text{det}\begin{bmatrix}6 &1 \\ 8 &5 \end{bmatrix}  \\  =4(8-0)-10(6-0)+0(30-8)=32-60+0=-28 $$</td>
+                  </tr>
                 </tbody>
               </table>
 
@@ -131,17 +149,83 @@
                 <td>Ist <b>A</b> eine Matrix und <b>r</b> eine Zahl, dann ist das Produkt von <b>r</b> und <b>A</b> komponentenweise definiert.</td>
               </tr>
               <tr>
-                <td rowspan="2" width=20%>Matrizenmultiplikation</td>
-                <td width=42%>$$ \small \begin{bmatrix}2 &3 \\ 5 &7 \end{bmatrix} \cdot \begin{bmatrix}4 &6 \\ 0 &8 \end{bmatrix} = \begin{bmatrix}2\cdot 4+3\cdot 10 &2\cdot 6+3\cdot 8 \\ 5\cdot 4+7\cdot 10 &5\cdot 6+7\cdot 8 \end{bmatrix} = \begin{bmatrix}38 &36 \\ 90 &86 \end{bmatrix} $$</td>
+                <td rowspan="3" width=20%>Matrizenmultiplikation</td>
+                <td width=42%>$$ \small \begin{bmatrix}2 &3 \\ 5 &7 \end{bmatrix} \cdot \begin{bmatrix}4 &6 \\ 10 &8 \end{bmatrix} = \begin{bmatrix}2\cdot 4+3\cdot 10 &2\cdot 6+3\cdot 8 \\ 5\cdot 4+7\cdot 10 &5\cdot 6+7\cdot 8 \end{bmatrix} = \begin{bmatrix}38 &36 \\ 90 &86 \end{bmatrix} $$</td>
                 <td><img src="bilder/matrizen/multiplikation.jpeg"style="max-height:35%; max-width:100%"></td>
               </tr>
               <tr>
+                <td>$$ \scriptsize \begin{bmatrix}1 &2  &3 \\ 5 &1  &2 \\ 1 &0  &2 \end{bmatrix} \cdot\begin{bmatrix}3 &1  &1 \\ 0 &5  &1 \\ 2 &4 &1\end{bmatrix}=\begin{bmatrix}0+3+6 &1+10+12  &1+2+3 \\ 15+0+4 &5+5+8  &5+1+2 \\ 3+0+4 &1+0+2  &1+0+2 \end{bmatrix} $$</td>
+                <td><img src="bilder/matrizen/multiplikation_3x3.jpeg"style="max-height:30%; max-width:100%"></td>
+              </tr>
+              <tr>
                 <td>$$ \small \begin{bmatrix}2 &3  &-1  &5 \end{bmatrix} \cdot \begin{bmatrix}7\\ 6\\ 0\\ 2\end{bmatrix} = 2\cdot 7+3\cdot 6+(-1)\cdot 0+5\cdot 2 = 42 $$</td>
-                <td>Das liefert eine 1x1-Matrix, was einfach eine Zahl ist.</td>
+                <td>Liefert eine 1x1-Matrix, was einfach eine Zahl ist.</td>
               </tr>
             </table>
-          
 
+            <br><br><h5 id="tools">Tools</h5>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" width=20%>Befehl</th>
+                    <th scope="col" width=42%>Wolframalpha & Mathematica  </th>
+                    <th scope="col">Matlab</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Einträge</td>
+                    <td><samp>{{1, 0}, {0, 2}}<code>[[2, 2]]</code></samp></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Transponieren</td>
+                    <td><samp><code>Transpose</code>[{{a, b, c}, {x, y, z}}]</samp></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Nullmatrix</td>
+                    <td><samp><code>ConstantArray</code>[0, {2, 2}]</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Dimension</td>
+                    <td><samp><code>Dimensions</code>[{{a, b, c}, {d, e, f}}]</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Diagonalmatrizen</td>
+                    <td><samp><code>DiagonalMatrix</code>[{1, 2, 3}]</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Obere Dreiecksmatirx</td>
+                    <td><samp><code>LowerTriangularize</code>[{{8, 4}, {5, 5}}]</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Untere Dreiecksmatirx</td>
+                    <td><samp><code>UpperTriangularize</code>[{{8, 4}, {5, 5}}]</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Einheitsmatrizen</td>
+                    <td><samp><code>DiagonalMatrix</code>[{1, 1, 1}]</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Spur</td>
+                    <td><samp><code>Tr</code>[{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}]</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Determinante</td>
+                    <td><samp><code>Det</code>[{{8, 4}, {5, 5}}]</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+          
 
         </main>
       </div>
