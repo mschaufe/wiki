@@ -87,7 +87,7 @@
                   </tr>
                   <tr>
                     <td>Wirbelfeld</td>
-                    <td>$$ \vec{v} (-y;x) = \begin{bmatrix}-y\\x \end{bmatrix} $$</td>
+                    <td>$$ \vec{v} (x;y) = \begin{bmatrix}-y\\x \end{bmatrix} $$</td>
                     <td><img src="bilder/vektoranalysis/vektorfelder/wirbelfeld.jpeg"style="max-height:80%; max-width:80%"></td>
                   </tr>
 
