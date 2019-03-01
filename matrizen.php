@@ -54,17 +54,17 @@
                   <tr>
                     <td>Einträge</td>
                     <td>$$ A = \begin{bmatrix}7 &5  &0 \\ 2 &2  & 1 \end{bmatrix} \qquad A_{(i),(j)} = A_{23} = 1  $$</td>
-                    <td>Allgemein sprechen wir vom Eintrag mit Index ij einer Mtrix A und schreiben dafür A<sub>ij</sub></td>
+                    <td>Allgemein sprechen wir vom Eintrag mit Index ij einer Matrix A und schreiben dafür A<sub>ij</sub></td>
                   </tr>
                   <tr>
                     <td>Typ</td>
                     <td>$$ \text{Typ}(A) = (m,n)  $$</td>
-                    <td>Ist A eine Matrix mit <b>m</b> Zeilen und <b>n</b> Spalten, so ist es eine m-kreiz-n Matrix.</td>
+                    <td>Ist A eine Matrix mit <b>m</b> Zeilen und <b>n</b> Spalten, so ist es eine m-kreuz-n Matrix.</td>
                   </tr>
                   <tr>
                     <td>Untermatrizen</td>
                     <td>$$ \footnotesize A = \begin{bmatrix}1 &3 & \color{grey}2  &1  &1  &0 \\  \color{grey} 2& \color{grey}2  & \color{grey}0  & \color{grey}0  & \color{grey}0  & \color{grey}1 \\3 &2  & \color{grey}1  &3  &2 &1 \\ 1 &0  & \color{grey}0  &1  &1  &0 \end{bmatrix} \; \: \hat{A}_{23} = \begin{bmatrix}1 &3   &1  &1  &0 \\ 3 &2    &3  &2 &1 \\ 1 &0    &1  &1 &0\end{bmatrix}  $$</td>
-                    <td>Lässt man in A die zweite Zeile und die dritte Spalte weg, so erhält man eine nue Matrix vom Typ 3x5.</td>
+                    <td>Lässt man in A die zweite Zeile und die dritte Spalte weg, so erhält man eine neue Matrix vom Typ 3x5.</td>
                   </tr>
                   <tr>
                     <td rowspan="2">Transposition</td>
@@ -96,7 +96,7 @@
                     <td>Falls alle Einträge 0 sind abgesehen von der Diagonale.</td>
                   </tr>
                   <tr>
-                    <td>Obere Dreiecksmatirx</td>
+                    <td>Obere Dreiecksmatrix</td>
                     <td>$$ \begin{bmatrix}35 & 65 & 70 & 51 \\ 0 & 97 & 48 & 88 \\ 0 & 0 & 22 & 88 \\ 0 & 0 & 0 & 40 \\\end{bmatrix} $$</td>
                     <td>Falls alle Einträge oberhalb der Diagonale 0 sind, ist es eine obere Dreiecksmatrix.</td>
                   </tr>
@@ -113,7 +113,7 @@
                   <tr>
                     <td>Schiefsymmetrisch</td>
                     <td>$$ \begin{bmatrix}0 &2  &3 \\  -2& 0 &6 \\ -3 &-6  &0 \end{bmatrix} $$</td>
-                    <td>Falls A<sup>t</sup> = -A<br>Alle Diagonaleinträge einer schiefsymmetrischen Matrix sind gliech 0.</td>
+                    <td>Falls A<sup>t</sup> = -A<br>Alle Diagonaleinträge einer schiefsymmetrischen Matrix sind gleich 0.</td>
                   </tr>
                   <tr>
                     <td>Einheitsmatrizen</td>
@@ -128,7 +128,7 @@
                   <tr>
                     <td rowspan="2">Determinante</td>
                     <td>$$ \text{det}(\begin{bmatrix}2 &3 \\ 5 &7 \end{bmatrix})=2\cdot 7 - 5\cdot 2 = -1 $$</td>
-                    <td rowspan="2">Die Determinante wird vor allem in der linearen Algebra in vielen Gebieten angewendet, wie beispielsweise zum Lösen von linearen Gleichungssystemen, dem Invertieren von Matrizen oder auch bei der Flächenberechnung. <br>Für nichtquadratische Matrizen ist die Determinante nicht definiert.</td>
+                    <td rowspan="2">Die Determinante wird vor allem in der linearen Algebra in vielen Gebieten angewendet, wie beispielsweise zum Lösen von linearen Gleichungssystemen, dem Invertieren von Matrizen oder auch bei der Flächenberechnung. <br>Für nicht quadratische Matrizen ist die Determinante nicht definiert.</td>
                   </tr>
                   <tr>
                     <td>$$ \scriptsize \text{det}(\begin{bmatrix}4 &6  &1 \\ 10 &8  &5 \\ 0 &0  &1 \end{bmatrix}) = 4\cdot \text{det}\begin{bmatrix}8 &5 \\ 0 &1 \end{bmatrix}-10\cdot \text{det}\begin{bmatrix}6 &1 \\ 0 &1 \end{bmatrix}+0\cdot \text{det}\begin{bmatrix}6 &1 \\ 8 &5 \end{bmatrix}  \\  =4(8-0)-10(6-0)+0(30-8)=32-60+0=-28 $$</td>
@@ -199,12 +199,12 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Obere Dreiecksmatirx</td>
+                    <td>Obere Dreiecksmatrix</td>
                     <td><samp><code>LowerTriangularize</code>[{{8, 4}, {5, 5}}]</td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Untere Dreiecksmatirx</td>
+                    <td>Untere Dreiecksmatrix</td>
                     <td><samp><code>UpperTriangularize</code>[{{8, 4}, {5, 5}}]</td>
                     <td></td>
                   </tr>
