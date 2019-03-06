@@ -63,7 +63,7 @@
                   </tr>
                   <tr>
                     <td>Untermatrizen</td>
-                    <td>$$ \footnotesize A = \begin{bmatrix}1 &3 & \color{grey}2  &1  &1  &0 \\  \color{grey} 2& \color{grey}2  & \color{grey}0  & \color{grey}0  & \color{grey}0  & \color{grey}1 \\3 &2  & \color{grey}1  &3  &2 &1 \\ 1 &0  & \color{grey}0  &1  &1  &0 \end{bmatrix} \; \: \hat{A}_{23} = \begin{bmatrix}1 &3   &1  &1  &0 \\ 3 &2    &3  &2 &1 \\ 1 &0    &1  &1 &0\end{bmatrix}  $$</td>
+                    <td>$$A =  \footnotesize  \begin{bmatrix}1 &3 & \color{grey}2  &1  &1  &0 \\  \color{grey} 2& \color{grey}2  & \color{grey}0  & \color{grey}0  & \color{grey}0  & \color{grey}1 \\3 &2  & \color{grey}1  &3  &2 &1 \\ 1 &0  & \color{grey}0  &1  &1  &0 \end{bmatrix} \; \:\normalsize \hat{A}_{23} = \footnotesize  \begin{bmatrix}1 &3   &1  &1  &0 \\ 3 &2    &3  &2 &1 \\ 1 &0    &1  &1 &0\end{bmatrix}  $$</td>
                     <td>Lässt man in A die zweite Zeile und die dritte Spalte weg, so erhält man eine neue Matrix vom Typ 3x5.</td>
                   </tr>
                   <tr>

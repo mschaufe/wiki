@@ -156,11 +156,11 @@
                 </tr>
                 <tr>
                   <td rowspan="2">Elektrisches Feld<br>Elektrische Feldstärke<br>E-Feld</td>
-                  <td>$$ \vec{E}(t;x;y;z) := \frac{1}{Q} \cdot \vec{F}_E (t;x;y;z)$$</td>
+                  <td>$$ \vec{E}(t;x;y;z) := \frac{1}{q} \cdot \vec{F}_E (t;x;y;z)$$</td>
                   <td>
                     <b>E</b> = Elektrisches Feld [N/C]<br>
                     <b>F<sub>E</sub></b> = Elektrische Kraft [N]<br>
-                    <b>Q</b> = Ladung [C] = [A·s]<br>
+                    <b>q</b> = Probeladung [C] = [A·s]
                   </td>
                 </tr>
                 <tr>
@@ -169,10 +169,10 @@
                 </tr>
                 <tr>
                   <td rowspan="2">Magnetisches Feld<br>Magnetische Feldstärke<br>Magnetische Flussdichte<br>B-Feld</td>
-                  <td>$$ \vec{F}_B (t;x;y;z) = Q \cdot \vec{v} \times \vec{B}(t;x;y;z)$$</td>
+                  <td>$$ \vec{F}_B (t;x;y;z) = q \cdot \vec{v} \times \vec{B}(t;x;y;z)$$</td>
                   <td>
                     <b>F<sub>B</sub></b> = Magnetische Kraft [N]<br>
-                    <b>Q</b> = Ladung [C] = [A·s]<br>
+                    <b>q</b> = Probeladung [C] = [A·s]<br>
                     <b>v</b> = Geschwindigkeit [m/s]<br>
                     <b>B</b> = Magnetisches Feld (Tesla) [T] = [N/(A·m)]
                   </td>
@@ -185,7 +185,7 @@
                   <td rowspan="3">Lorenz-Gleichungen</td>
                   <td>$$ \vec{F}_{EB} = Q \cdot (\vec{E}+\vec{v}\times \vec{B})  $$</td>
                   <td>
-                     <b>F<sub>EB</sub></b> = Kraft des E-B_Feldes [N]<br>
+                     <b>F<sub>EB</sub></b> = Kraft des E-B-Feldes [N]<br>
                      <b>Q</b> = Ladung [C] = [A·s]<br>
                      <b>E</b> = Elektrisches Feld [N/C]<br>
                      <b>v</b> = Geschwindigkeit [m/s]<br>
@@ -195,7 +195,7 @@
                 <tr>
                   <td>$$ P_{EB} = Q \cdot \left \langle \vec{E},\vec{v} \right \rangle \\ \text{ } \\ P_{EB} = \left \langle \vec{F}_{EB},\vec{v} \right \rangle $$</td>
                   <td>
-                    <b>P<sub>EB</sub></b> = Leistung des E-B_Feldes [W]<br>
+                    <b>P<sub>EB</sub></b> = Leistung des E-B-Feldes [W]<br>
                     <b>Q</b> = Ladung [C] = [A·s]<br>
                     <b>E</b> = Elektrisches Feld [N/C]<br>
                     <b>v</b> = Geschwindigkeit [m/s]<br>
