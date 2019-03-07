@@ -108,7 +108,7 @@
                     <td>Der Kurvenparameter kann viele bedeutungen haben:<br>- Physikalische Zeit<br>- Winkel<br>- Länge<br>- Beliebige "Absteckung" des Weges</td>
                   </tr>
                   <tr>
-                    <td>Geschwindigkeitsektor</td>
+                    <td>Geschwindigkeitsvektor</td>
                     <td>$$ \vec{v}(\tau) := \dot{\vec{s}} $$</td>
                     <td>Vektor s(τ) muss nicht injektiv sein, aber er soll so gewählt werden, dass v(τ) > 0</td>
                   </tr>
@@ -169,7 +169,7 @@
                   <tr>
                     <td>Zirkulation</td>
                     <td>$$ \varUpsilon_{\vec{w}} = \oint_{s_0}^{s_E}\left \langle \vec{w},\hat{e} \right \rangle \text{d}s $$</td>
-                    <td>Das Linienintegral über einen geschlossenen Weg heisst Zirkulation des Vekotrfeldes entlang des Weges. </td>
+                    <td>Das Linienintegral über einen geschlossenen Weg heisst Zirkulation des Vektorfeldes entlang des Weges. </td>
                   </tr>
               </table>
 
