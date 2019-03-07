@@ -28,7 +28,8 @@
             <ul class="section-nav">
             <li class="toc-entry toc-h2"><a href="#ladung_und_strom">Ladung & Strom</a></li>
             <li class="toc-entry toc-h2"><a href="#elektromagnetische_felder">Elektromagnetische Felder</a></li>
-
+            <li class="toc-entry toc-h2"><a href="#eFeld_von_ruhenden_ladungen">E-Feld von ruhenden Ladungen</a></li>
+            <li class="toc-entry toc-h2"><a href="#spannung_und_potential">Spannungen & Potential</a></li>
             </ul>
           </div>
         
@@ -84,6 +85,7 @@
                     <td width=42%>$$ \vec{F}_E = \gamma_E \cdot \frac{Q_{1}\cdot Q_{2}}{r^{2}} \cdot \hat{r}
                       =  \frac{1}{4\pi\varepsilon_0 }\frac{Q_{1}\cdot Q_{2}}{r^{2}} \cdot \hat{r} $$</td>
                     <td rowspan="2">
+                      <b>Situation: </b> Zwei ruhende Punktladungen
                       <img src="bilder/elektrik/ladung_strom/coulomb_gesetz.png"style="max-height:40%; max-width:100%"><br>
                       <b>F<sub>E</sub></b> = Elektrische Kraft [N]<br>
                       <b>γ<sub>E</sub></b> = Coulomb Konstante [A·s/(V·m)] = [A<sup>2</sup>·s<sup>4</sup>/(kg·m<sup>3</sup>)]<br>
@@ -106,6 +108,7 @@
                     <td width=20% rowspan="2">Ampere-Gesetz</td>
                     <td width=42%>$$ \vec{F}_B = \gamma_B \cdot \frac{2l}{r}  \cdot I_1 \cdot I_2 \cdot \hat{r} = \mu_0 \frac{l}{2\pi r} \cdot I_1 \cdot I_2 \cdot \hat{r} $$</td>
                     <td rowspan="2">
+                      <b>Situation: </b> Zwei ruhende, zeitlich konstante, parallele, unendlich lange Ströme.
                       <img src="bilder/elektrik/ladung_strom/ampere_gesetz.png"style="max-height:40%; max-width:100%"><br>
                       <b>F<sub>B</sub></b> = Magnetische Kraft [N]<br>
                       <b>γ<sub>B</sub></b> = Ampere Konstante ≈ 10<sup>-7</sup> [N/A<sup>2</sup>]<br>
@@ -209,6 +212,82 @@
                 </tr>
               </table>
 
+              <br><br><h5 id="eFeld_von_ruhenden_ladungen">E-Feld von ruhenden Ladungen</h5>
+
+              <table>
+                <tr>
+                    <td width=20%>E-Felder einer Punktladung<br>(ruhend)</td>
+                    <td width=42%>$$ \vec{E} = \frac{1}{4\pi\varepsilon _0}\cdot \frac{Q}{r^2}\cdot \hat{r} = \frac{1}{4\pi \varepsilon _0} \cdot \frac{Q}{r^3}\cdot \vec{r} $$</td>
+                    <td>
+                      <b>Situation: </b>Das E-Feld im Abstand r von einer ruhenden Punktladung Q ist:
+                      <img src="bilder/elektrik/efeld_ruhende_ladungen/situation.png"style="max-height:40%; max-width:100%"><br><br>
+                      <b>E</b> = Elektrisches Feld [N/C]<br>
+                      <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante [A·s/(V·m)] = [F/m] <br>
+                      <b>Q</b> = Ladung [C] = [A·s]<br>
+                      <b>r</b> = Abstand der Massenmittelpunkte [m]<br>
+                      <b>r</b> = Richtungsvektor [-]
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>E-Feld von n Punktladungen</td>
+                    <td>$$ \vec{E} = \frac{1}{4\pi\varepsilon _0} \; \sum_{k=1}^{n} \;\frac{Q_k}{r_{k}^{3}} \cdot \vec{r}_k $$</td>
+                    <td><img src="bilder/elektrik/efeld_ruhende_ladungen/nPunktladungen.png"style="max-height:40%; max-width:80%"><br><br>P ist der Beobachtungspunkt</td>
+                  </tr>
+              </table>
+
+              <br><br><h5 id="spannung_und_potential">Spannungen & Potential</h5>
+
+              <table>
+                <tr>
+                    <td rowspan="2" width=20%>Elektrische Spannung<br>(entlang des Weges)</td>
+                    <td width=42%>$$ U := \frac{1}{q} \cdot \Delta W $$</td>
+                    <td><b>Situation: </b>Probeladung bewegt sich entlang eines Weges durch das E-Feld.<img src="bilder/elektrik/spannung_und_potential/elektrische_spannung.png"style="max-height:40%; max-width:100%">
+                      <b>U</b> = Spannung [N·m/C] = [V]<br>
+                      <b>q</b> = Probeladung [C] = [A·s]<br>
+                      <b>W</b> = Arbeit [N·m] = [J]<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>$$ U := \int_{s_0}^{s_E}\left \langle \vec{E},\hat{e} \right \rangle \text{d}s $$</td>
+                    <td>
+                      <b>U</b> = Spannung [N·m/C] = [V]<br>
+                      <b>E</b> = Elektrisches Feld [N/C]<br>
+                      <b>e</b> = Bahnvektor (Einheitsvektor) [-]<br>
+                      <b>s</b> = Strecke [m]<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Elektrisches Potential<br>(ruhende Ladungen)</td>
+                    <td>$$ \small \text{falls  }\; \normalsize \dot{\vec{B}} = 0 $$</td>
+                    <td>Dann hängt die elektrische Spannung jedes Weges nur von dessen Anfangs- und Endpunkt ab.</td>
+                  </tr>
+                  <tr>
+                    <td>$$ \oint \vec{E}\cdot \text{d}\vec{s} = 0 $$</td>
+                    <td>Für alle geschlossenen Wege.</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3">Konstruktion einer Potentialfunktion</td>
+                    <td>$$ P_0 = (x_0;x_0;z_0) $$</td>
+                    <td>Referenzpunkt</td>
+                  </tr>
+                  <tr>
+                    <td>$$ \phi \in \mathbb{R}\left [ V \right ] $$</td>
+                    <td>Referenzpotential</td>
+                  </tr>
+                  <tr>
+                    <td>$$ \phi :\mathbb{R}^3 \left [ m \right ] \rightarrow \left [ V \right ] \\ \text{} \\ (x;y;z) x \mapsto \phi (x;y;z) := \phi _0 + U $$</td><
+                    <td>U entlang eines Weges von P<sub>0</sub> nach (x;y;z) oder umgekehrt.</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Potential in der Praxis</td>
+                    <td>Elektrotechnik:$$ U_{12} = \pm  \Delta \phi = \pm (\phi _2-\phi _1) $$</td><
+                    <td><img src="bilder/elektrik/spannung_und_potential/beispiel.png"style="max-height:40%; max-width:100%"><br>Vorzeichen ja nach Variante beachten.</td>
+                  </tr>
+                  <tr>
+                    <td>Elektrostatik: $$  \phi (r) = \frac{1}{4\pi\varepsilon _0}\frac{Q}{r} $$</td>
+                    <td><img src="bilder/elektrik/spannung_und_potential/elektrostatik.png"style="max-height:40%; max-width:100%"><br>So viel beträgt das elektrische Potential einer Punktladung Q im abstand r > 0.</td>
+                  </tr>
+              </table>
          
         </main>
       </div>
