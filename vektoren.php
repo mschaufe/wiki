@@ -145,7 +145,7 @@
                   </tr>
                   <tr>
                     <td width=20%>Einheitsvektor</td>
-                    <td width=42%>$$ \hat{a} = \frac{\vec{a}}{\left | \vec{a} \right |} = \frac{\vec{a}}{\bar{a}} $$</td>
+                    <td width=42%>$$ \hat{a} = \frac{\vec{a}}{\left | \vec{a} \right |} = \frac{\vec{a}}{a} $$</td>
                     <td><p>Alle Vektoren mit der Länge 1 werden als Einheitsvektoren bezeichnet.</p></td>
                   </tr>
                 </tbody>
