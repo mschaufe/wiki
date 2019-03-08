@@ -155,7 +155,7 @@
               <table>
                 <tr>
                     <td rowspan="2" width=20%>Linienintegral<br>Kurvenintegral</td>
-                    <td width=42%>$$ I := \int_{\tau_0}^{\tau_E}\left \langle \vec{w},\vec{v} \right \rangle \text{d}t $$</td>
+                    <td width=42%>$$ I := \int_{\tau_0}^{\tau_E}\left \langle \vec{w},\vec{v} \right \rangle \text{d} \tau $$</td>
                     <td rowspan="2"><img src="bilder/vektoranalysis/parametrisierte_kurven/linienintegral.png"style="max-height:60%; max-width:100%"><br><br>Linienintegrale sind bis auf Vorzeichen unabhängig von der Wahl der Parametrisierung.</td>
                   </tr>
                   <tr>
