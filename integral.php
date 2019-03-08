@@ -90,7 +90,7 @@
               </tr>
               <tr>
                 <td width=20%>Beispiel 1</td>
-                <td width=42%>$$ \int_{-1}^{1}x^{3} \:dx = \frac{1}{4}x^{4} \mid _{-1}^{1} = \frac{1}{4}x^{4} -\frac{1}{4}(-1)^{4} = \frac{1}{4}-\frac{1}{4}= 0 $$</td>
+                <td width=42%>$$ \int_{-1}^{1}x^{3} \:dx = \frac{1}{4}x^{4} \mid _{-1}^{1} = \frac{1}{4}1^{4} -\frac{1}{4}(-1)^{4} = \frac{1}{4}-\frac{1}{4}= 0 $$</td>
                 <td><img src="bilder/integral/beispiel_1.png"style="max-height:35%; max-width:100%"></td>
               </tr>
               <tr>
