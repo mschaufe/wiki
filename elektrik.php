@@ -275,12 +275,12 @@
                     <td>Referenzpotential</td>
                   </tr>
                   <tr>
-                    <td>$$ \phi :\mathbb{R}^3 \left [ m \right ] \rightarrow \left [ V \right ] \\ \text{} \\ (x;y;z) x \mapsto \phi (x;y;z) := \phi _0 + U $$</td><
+                    <td>$$ \phi :\mathbb{R}^3 \left [ m \right ] \rightarrow \left [ V \right ] \\ \text{} \\ (x;y;z) x \mapsto \phi (x;y;z) := \phi _0 + U $$</td>
                     <td>U entlang eines Weges von P<sub>0</sub> nach (x;y;z) oder umgekehrt.</td>
                   </tr>
                   <tr>
                     <td rowspan="2">Potential in der Praxis</td>
-                    <td>Elektrotechnik:$$ U_{12} = \pm  \Delta \phi = \pm (\phi _2-\phi _1) $$</td><
+                    <td>Elektrotechnik:$$ U_{12} = \pm  \Delta \phi = \pm (\phi _2-\phi _1) $$</td>
                     <td><img src="bilder/elektrik/spannung_und_potential/beispiel.png"style="max-height:40%; max-width:100%"><br>Vorzeichen ja nach Variante beachten.</td>
                   </tr>
                   <tr>
