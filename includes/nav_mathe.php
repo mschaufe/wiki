@@ -29,6 +29,11 @@
         Komplexe Zahlen
       </a>
     </div>
+    <div class="bd-toc-item <?php if($_SERVER['PHP_SELF'] == "/lineare_abbildungen.php")echo " active";?>">
+      <a class="bd-toc-link" href="lineare_abbildungen.php">
+        Lineare Abbildungen
+      </a>
+    </div>
     <div class="bd-toc-item <?php if($_SERVER['PHP_SELF'] == "/matrizen.php")echo " active";?>">
       <a class="bd-toc-link" href="matrizen.php">
         Matrizen
