@@ -36,6 +36,7 @@
             <ul class="section-nav">
             <li class="toc-entry toc-h2"><a href="#vektorfelder">Vektorfelder</a></li>
             <li class="toc-entry toc-h2"><a href="#parametrisierte_kurven">Parametrisierte Kurven</a></li>
+            <li class="toc-entry toc-h2"><a href="#mehrfach-integration">Mehrfach-Integration</a></li>
             </ul>
           </div>
         
@@ -154,23 +155,80 @@
 
               <table>
                 <tr>
-                    <td rowspan="2" width=20%>Linienintegral<br>Kurvenintegral</td>
-                    <td width=42%>$$ I := \int_{\tau_0}^{\tau_E}\left \langle \vec{w},\vec{v} \right \rangle \text{d} \tau $$</td>
-                    <td rowspan="2"><img src="bilder/vektoranalysis/parametrisierte_kurven/linienintegral.png"style="max-height:60%; max-width:100%"><br><br>Linienintegrale sind bis auf Vorzeichen unabhängig von der Wahl der Parametrisierung.</td>
-                  </tr>
-                  <tr>
-                    <td>Masseinheit: $$ [I] = [\vec{w}]\cdot[\vec{s}]$$</td>
-                  </tr>
-                  <tr>
-                    <td>Geschlossene Kurven</td>
-                    <td>$$ \oint \small \text{ statt } \normalsize \int $$</td>
-                    <td><img src="bilder/vektoranalysis/parametrisierte_kurven/geschlossen.png"style="max-height:60%; max-width:60%"></td>
-                  </tr>
-                  <tr>
-                    <td>Zirkulation</td>
-                    <td>$$ \varUpsilon_{\vec{w}} = \oint_{s_0}^{s_E}\left \langle \vec{w},\hat{e} \right \rangle \text{d}s $$</td>
-                    <td>Das Linienintegral über einen geschlossenen Weg heisst Zirkulation des Vektorfeldes entlang des Weges. </td>
-                  </tr>
+                  <td rowspan="2" width=20%>Linienintegral<br>Kurvenintegral</td>
+                  <td width=42%>$$ I := \int_{\tau_0}^{\tau_E}\left \langle \vec{w},\vec{v} \right \rangle \text{d} \tau $$</td>
+                  <td rowspan="2"><img src="bilder/vektoranalysis/parametrisierte_kurven/linienintegral.png"style="max-height:60%; max-width:100%"><br><br>Linienintegrale sind bis auf Vorzeichen unabhängig von der Wahl der Parametrisierung.</td>
+                </tr>
+                <tr>
+                  <td>Masseinheit: $$ [I] = [\vec{w}]\cdot[\vec{s}]$$</td>
+                </tr>
+                <tr>
+                  <td>Geschlossene Kurven</td>
+                  <td>$$ \oint \small \text{ statt } \normalsize \int $$</td>
+                  <td><img src="bilder/vektoranalysis/parametrisierte_kurven/geschlossen.png"style="max-height:60%; max-width:60%"></td>
+                </tr>
+                <tr>
+                  <td>Zirkulation</td>
+                  <td>$$ \varUpsilon_{\vec{w}} = \oint_{s_0}^{s_E}\left \langle \vec{w},\hat{e} \right \rangle \text{d}s $$</td>
+                  <td>Das Linienintegral über einen geschlossenen Weg heisst Zirkulation des Vektorfeldes entlang des Weges. </td>
+                </tr>
+              </table>
+
+              <br><br><h5 id="mehrfach-integration">Mehrfach-Integration</h5>
+
+              <table>
+                <tr>
+                  <td rowspan="2" width=20%>Zweifachintegrale</td>
+                  <td width=42%>$$ \int_{G}\: f \; \text{d}A $$</td>
+                  <td rowspan="2"><img src="bilder/vektoranalysis/mehrfach_integration/zweifachintegrale.png"style="max-height:60%; max-width:100%"></td>
+                </tr>
+                <tr>
+                  <td>Das Integral von f über G ist das Volumen zwischen der x-y-Ebene und dem Graphen von f über dem Gebiet G</td>
+                </tr>
+                <tr>
+                  <td>Funktion f ist 1</td>
+                  <td>$$ \int_{G} \: 1 \; \text{d}A $$</td>
+                  <td>Schreibweisen:<br>- Flächeninhalt von G<br>- Mass von G<br>- µ(G)</td>
+                </tr>
+                <tr>
+                  <td>Integration einer Konstanten</td>
+                  <td>$$ \int_{G} \: C \; \text{d}A = C \cdot \int_{G} \:1  \; \text{d}A  = C \cdot \mu (G)$$</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Integration über Rechtecke</td>
+                  <td>$$ G = \left [ x_0,x_E \right ] \times \left [ y_0,y_E \right ] \\ \text{ } \\ f:G\rightarrow \mathbb{R}$$</td>
+                  <td><img src="bilder/vektoranalysis/mehrfach_integration/rechteck.png"style="max-height:60%; max-width:100%"></td>
+                </tr>
+                <tr>
+                  <td>Satz von Fubini</td>
+                  <td>$$ \int_{G}\: f \; \text{d}A = \int_{y_0}^{y_E}\int_{x_0}^{x_E}f(x;y)\; \text{d}x \: \text{d}y$$</td>
+                  <td><img src="bilder/vektoranalysis/mehrfach_integration/beispiel.png"style="max-height:60%; max-width:100%"></td>
+                </tr>
+                <tr>
+                  <td>Separationssatz</td>
+                  <td>$$ \int_{G}\: f \; \text{d}A = \int_{x_0}^{x_E}g(x)\; \text{d}x \cdot \int_{y_0}^{y_E}h(y)\; \text{d}y $$</td>
+                  <td>Falls f(x;y) = g(x) ⋅ h(y)</td>
+                </tr>
+                <tr>
+                  <td>In y-Richtung begrenzt</td>
+                  <td>$$ \int_{G}\: f \; \text{d}A = \int_{x_0}^{x_E}\int_{u(x)}^{v(x)}f(x;y)\; \text{d}y \: \text{d}x $$</td>
+                  <td><img src="bilder/vektoranalysis/mehrfach_integration/yRichtung.png"style="max-height:60%; max-width:100%"></td>
+                </tr>
+                <tr>
+                  <td>In x-Richtung begrenzt</td>
+                  <td>$$ \int_{G}\: f \; \text{d}A = \int_{y_0}^{y_E}\int_{u(y)}^{v(y)}f(x;y)\; \text{d}x \: \text{d}y $$</td>
+                  <td><img src="bilder/vektoranalysis/mehrfach_integration/xRichtung.png"style="max-height:60%; max-width:100%"></td>
+                </tr>
+                <tr>
+                  <td>3-Eck-artige Gebiete</td>
+                  <td>$$ \int_{G}\: f \; \text{d}A = \int_{x_0}^{x_E}\int_{y_0}^{g(x)}f(x;y)\; \text{d}y \: \text{d}x  
+
+                    \\ \text{ } \\ \small \text{ oder } \normalsize \\ \text{ } \\
+
+                    \int_{G}\: f \; \text{d}A = \int_{y_0}^{y_E}\int_{x_0}^{g^{-1}(x)}f(x;y)\; \text{d}x \: \text{d}y $$</td>
+                  <td><img src="bilder/vektoranalysis/mehrfach_integration/3eck.png"style="max-height:60%; max-width:100%"></td>
+                </tr>
               </table>
 
 
