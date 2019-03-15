@@ -30,6 +30,7 @@
             <li class="toc-entry toc-h2"><a href="#elektromagnetische_felder">Elektromagnetische Felder</a></li>
             <li class="toc-entry toc-h2"><a href="#eFeld_von_ruhenden_ladungen">E-Feld von ruhenden Ladungen</a></li>
             <li class="toc-entry toc-h2"><a href="#spannung_und_potential">Spannungen & Potential</a></li>
+            <li class="toc-entry toc-h2"><a href="#elementarladung">Elementarladung</a></li>
             </ul>
           </div>
         
@@ -288,6 +289,40 @@
                     <td><img src="bilder/elektrik/spannung_und_potential/elektrostatik.png"style="max-height:40%; max-width:100%"><br>So viel beträgt das elektrische Potential einer Punktladung Q im abstand r > 0.</td>
                   </tr>
               </table>
+
+              <br><br><h5 id="elementarladung">Elementarladung</h5>
+                <table>
+                  <tr>
+                    <td width=20%>Elementarladung</td>
+                    <td width=42%>$$ e = 1.602'176'634 \cdot 10^{-19} \;C $$</td>
+                    <td>Jede freie elektrische Ladung ist ein ganzzahliges Vielfaches der Elementarladung.</td>
+                  </tr>
+                  <tr>
+                    <td>Ladungszahl</td>
+                    <td>$$ Q = Z \cdot e $$</td>
+                    <td>Die Ladungszahl Z eines Teilchens mit Ladung Q ist so definiert.</td>
+                  </tr>
+                  <tr>
+                    <td>Faraday-Konstante</td>
+                    <td>$$ Q_A : = N_A \cdot e \approx  9.649 \cdot 10^4 \; \scriptsize \frac{\text{C}}{\text{mol}} $$</td>
+                    <td>Es beschreibt die Ladung eines Mols Protonen.</td>
+                  </tr>
+                  <tr>
+                    <td>Teilchenbschleunigung</td>
+                    <td>$$ E_{kin} = \Delta W = U \cdot q = U \cdot e $$</td>
+                    <td><img src="bilder/elektrik/elementarladungen/teilchenbeschleunigung.png"style="max-height:40%; max-width:100%"></td>
+                  </tr>
+                  <tr>
+                    <td>Elektronvolt</td>
+                    <td>$$1eV := e \cdot 1V \approx 1.602 \cdot 10^{-19} \; J $$</td>
+                    <td>eV ist eine Energie-Einheit. 1eV ist die kinetische Enerige eines Teilchen mit Ladung ±e nach Beschleunigung mit Spannung ±1V.</td>
+                  </tr>
+                  <tr>
+                    <td>Elektrolyse von Wasser</td>
+                    <td>$$ ... $$</td>
+                    <td><img src="bilder/elektrik/elementarladungen/elekrolyse.png"style="max-height:40%; max-width:100%"></td>
+                  </tr>
+                </table>
          
         </main>
       </div>
