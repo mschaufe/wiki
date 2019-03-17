@@ -31,6 +31,7 @@
             <li class="toc-entry toc-h2"><a href="#eFeld_von_ruhenden_ladungen">E-Feld von ruhenden Ladungen</a></li>
             <li class="toc-entry toc-h2"><a href="#spannung_und_potential">Spannungen & Potential</a></li>
             <li class="toc-entry toc-h2"><a href="#elementarladung">Elementarladung</a></li>
+            <li class="toc-entry toc-h2"><a href="#elementarteilchen">Elementarteilchen</a></li>
             </ul>
           </div>
         
@@ -54,7 +55,7 @@
                   
                   <tr>
                     <td>Elektrischer Strom</td>
-                    <td>$$ Q_e = -1.602176634 \cdot 10^{-19}$$</td>
+                    <td>$$ q_{e^-} = -1.602176634 \cdot 10^{-19}$$</td>
                     <td><b>Q</b> = Ladung [C] = [A⋅s]</td>
                   </tr>
                   <tr >
@@ -288,6 +289,23 @@
                     <td>Elektrostatik: $$  \phi (r) = \frac{1}{4\pi\varepsilon _0}\frac{Q}{r} $$</td>
                     <td><img src="bilder/elektrik/spannung_und_potential/elektrostatik.png"style="max-height:40%; max-width:100%"><br>So viel beträgt das elektrische Potential einer Punktladung Q im abstand r > 0.</td>
                   </tr>
+                  <tr>
+                    <td>Potentielle Energie</td>
+                    <td>$$ E_{pot} = q_{e^-} \cdot \phi(P) $$</td>
+                    <td> 
+                      <b>E<sub>pot</sub></b> = Potentielle Energie [Nm] = [J]<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mehrere Punktladungen</td>
+                    <td>$$ \phi(P) =  \frac{1}{4\pi\varepsilon _0} \sum_{k=1}^{n}  \frac{Q_k}{r_k}$$</td>
+                    <td> 
+                      <b>ϕ</b> = Referenzpotential am Punkt P [V] <br>
+                      <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante (Vakuum) [A·s/(V·m)] = [F/m] <br>
+                      <b>Q</b> = Ladung [C] = [A·s]<br>
+                      <b>r</b> = Abstand der Massenmittelpunkte [m]<br>
+                    </td>
+                  </tr>
               </table>
 
               <br><br><h5 id="elementarladung">Elementarladung</h5>
@@ -300,17 +318,33 @@
                   <tr>
                     <td>Ladungszahl</td>
                     <td>$$ Q = Z \cdot e $$</td>
-                    <td>Die Ladungszahl Z eines Teilchens mit Ladung Q ist so definiert.</td>
+                    <td>
+                      <b>Q</b> = Ladung [C] = [A·s]<br>
+                      <b>Z</b> = Ladungszahl [-]<br>
+                      <b>e</b> = Elementarladungen [C] = [A·s]<br>
+                    </td>
                   </tr>
                   <tr>
                     <td>Faraday-Konstante</td>
                     <td>$$ Q_A : = N_A \cdot e \approx  9.649 \cdot 10^4 \; \scriptsize \frac{\text{C}}{\text{mol}} $$</td>
-                    <td>Es beschreibt die Ladung eines Mols Protonen.</td>
+                    <td>Es beschreibt die Ladung eines Mols Protonen.<br>
+                      <b>Q<sub>A</sub></b> = Faraday-Konstante [C/mol]<br>
+                      <b>N<sub>A</sub></b> = Avogadro-Konstante [1/mol]<br>
+                      <b>e</b> = Elementarladungen [C] = [A·s]
+                    </td>
                   </tr>
                   <tr>
                     <td>Teilchenbschleunigung</td>
-                    <td>$$ E_{kin} = \Delta W = U \cdot q = U \cdot e $$</td>
-                    <td><img src="bilder/elektrik/elementarladungen/teilchenbeschleunigung.png"style="max-height:40%; max-width:100%"></td>
+                    <td>$$ E_{kin} = U \cdot q = U \cdot e $$</td>
+                    <td>
+                      
+                      <b>E<sub>kin</sub></b> = Beschleunigungsarbeit [Nm] = [J]<br>
+                      <b>U</b> = Spannung [N·m/C] = [V]<br>
+                      <b>q</b> = Probeladung [C] = [A·s]<br>
+                      <b>e</b> = Elementarladungen [C] = [A·s]<br><br>
+
+                      <img src="bilder/elektrik/elementarladungen/teilchenbeschleunigung.png"style="max-height:40%; max-width:100%">
+                  </td>
                   </tr>
                   <tr>
                     <td>Elektronvolt</td>
@@ -323,6 +357,36 @@
                     <td><img src="bilder/elektrik/elementarladungen/elekrolyse.png"style="max-height:40%; max-width:100%"></td>
                   </tr>
                 </table>
+
+
+            <br><br><h5 id="elementarteilchen">Elementarteilchen</h5>
+              <table>
+                <tr>
+                  <td width=20%>Elektron: <b>e<sup>-</sup></b></td>
+                  <td width=42%>$$ Z_{e^-} = -1 $$</td>
+                  <td>$$q_{e^-} = -e $$</td>
+                </tr>
+                <tr>
+                  <td>Positron: <b>e<sup>+</sup></b></td>
+                  <td>$$ Z_{e^+} = + 1$$</td>
+                  <td>$$q_{e^+} = +e $$</td>
+                </tr>
+                <tr>
+                  <td>Photon: <b>γ</b></td>
+                  <td>$$ Z_{\gamma } = 0$$</td>
+                  <td>$$q_{\gamma } = 0 $$</td>
+                </tr>
+                <tr>
+                  <td>Proton: <b>p<sup>+</sup></b></td>
+                  <td>$$ Z_{p^+ } = 1$$</td>
+                  <td>$$q_{p^+ } = +e $$</td>
+                </tr>
+                <tr>
+                  <td>Neutron: <b>n</b></td>
+                  <td>$$ Z_{n} = 0 $$</td>
+                  <td>$$q_{n} = 0 $$</td>
+                </tr>
+              </table>
          
         </main>
       </div>

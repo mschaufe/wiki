@@ -27,7 +27,7 @@
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
             <li class="toc-entry toc-h2"><a href="#allgemien">Allgemein</a></li>
-            
+            <li class="toc-entry toc-h2"><a href="#lineare_abbildunge_und_matrizen">Lineare Abbildungen und Matrizen</a></li>
             </ul>
           </div>
         
@@ -100,10 +100,19 @@
                   <tr>
                     <td>Rang</td>
                     <td>$$ \text{rg}(f) := \text{dim}(\text{Im}(f)) $$</td>
-                    <td>Ist der Untervektorraum endlichdimensional, so nennen wir seine Dimension den Rang von f.</td>
+                    <td>Durch elementare Zeilenumformungen erhält man aus einer Matrize eine in Treppenform. Die anzahl von 0 verschiedener Zeilen nennt man den Rang.</td>
                   </tr>
             </tbody>
           </table>
+
+          <br><br><h5 id="allgemien">Lineare Abbildungen und Matrizen</h5>
+          <table>
+                  <tr>
+                    <td width=20%>Elementarladung</td>
+                    <td width=42%>$$  $$</td>
+                    <td></td>
+                  </tr>
+                </table>
 
         </main>
       </div>
