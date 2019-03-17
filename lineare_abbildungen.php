@@ -37,8 +37,6 @@
 
           <p class="bd-lead">Eine lineare Abbildung ist in der linearen Algebra ein wichtiger Typ von Abbildung zwischen zwei Vektorräumen über demselben Körper.</p>
 
-          
-
           <br><br><h5 id="allgemien">Allgemein</h5>
               <table class="table">
                 <thead>
