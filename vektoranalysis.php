@@ -37,6 +37,8 @@
             <li class="toc-entry toc-h2"><a href="#vektorfelder">Vektorfelder</a></li>
             <li class="toc-entry toc-h2"><a href="#parametrisierte_kurven">Parametrisierte Kurven</a></li>
             <li class="toc-entry toc-h2"><a href="#mehrfach-integration">Mehrfach-Integration</a></li>
+            <li class="toc-entry toc-h2"><a href="#parametrisierte_flaechen">Parametrisierte Flächen</a></li>
+            <li class="toc-entry toc-h2"><a href="#flussintegrale">Flussintegrale</a></li>
             </ul>
           </div>
         
@@ -231,7 +233,81 @@
                 </tr>
               </table>
 
+              <br><br><h5 id="parametrisierte_flaechen">Parametrisierte Flächen</h5>
+                <table>
+                  <tr>
+                    <td width=20%>Parametrisierung des Flächenstücks</td>
+                    <td width=42%>$$ \vec{P} (u;v) \rightarrow  \mathbb{R}^3\\ \text{ } \\(u;v) x \mapsto \vec{P}(u;v) = \begin{bmatrix}x(u;v)\\ x(u;v)\\ z(u;v)\end{bmatrix} $$</td>
+                    <td><img src="bilder/vektoranalysis/parametrisierte_flaechen/bsp.png"style="max-height:60%; max-width:100%"></td>
+                  </tr>
+                  <tr>
+                    <td>Koordinatenbasis-Vektorfelder</td>
+                    <td>$$ \vec{e}_1 := \vec{e}_u := \vec{P},u \equiv \vec{P}(u,v) \small \text{ abgeleitet nach u.} \normalsize
+                        \\ \vec{e}_2 := \vec{e}_v := \vec{P},v \equiv \vec{P}(u,v) \small \text{ abgeleitet nach v.} $$</td>
+                    <td><img src="bilder/vektoranalysis/parametrisierte_flaechen/koordinatenbasis-vektorfelder.png"style="max-height:60%; max-width:50%"><br>
+                      Vektor e<sub>1</sub> und e<sub>2</sub> zeigen Tangential zu M, d.h sie spannen die Tangentialebene auf.</td>
+                  </tr>
+                  <tr>
+                    <td>Metrik / Gram-Matrix</td>
+                    <td>$$ \left [ g_{\mu v} \right ] :=\begin{bmatrix}g_{11} & g_{12} \\ g_{21} & g_{22} \end{bmatrix} :=\begin{bmatrix}\left \langle\vec{e}_1,\vec{e}_1 \right \rangle &\left \langle \vec{e}_1,\vec{e}_2 \right \rangle  \\ \left \langle \vec{e}_2,\vec{e}_1 \right \rangle & \left \langle \vec{e}_2,\vec{e}_2 \right \rangle\end{bmatrix} $$</td>
+                    <td>- [g<sub>μv</sub>] ist symmetrisch: [g<sub>μv</sub>]<sup>t</sup> = [g<sub>μv</sub>]<br>
+                      - In vielen Anwendungen ist Vektor e<sub>u</sub> rechtwinklig zu e<sub>v</sub>, dann ist [g<sub>μv</sub>] eine diagonal Matrize</td>
+                  </tr>
+                  <tr>
+                    <td>Gram-Determinante</td>
+                    <td>$$ g := \text{det}([g_{\mu v}]) = g_{11} \cdot g_{22} - g_{21}\cdot g_{12} \\ \text{ } \\  \sqrt{g} \equiv \small \text{ Massfunktion } $$</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Normalenvektoren</td>
+                    <td>$$ \vec{n} := \pm \; \vec{e}_1 \times \vec{e}_2 \\ \text{ } \\ \left | \vec{n} \right | = \sqrt{g}$$</td>
+                    <td>so dass Vektor n nach "aussen" zeigt, wenn möglich.</td>
+                  </tr>
+                  <tr>
+                    <td>Einheitsnormalenvektor</td>
+                    <td>$$ \hat{n} := \frac{1}{\left | \vec{n} \right |} \cdot \vec{n} = \frac{1}{\sqrt{g}}\cdot \vec{n} $$</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Flächenintegration</td>
+                    <td>$$ A =\int_M 1 \text{ d}A = \int_U \sqrt{g} \text{ d}U  $$</td>
+                    <td>Der Flächeninhalt von M ist:</td>
+                  </tr>
+                </table>
 
+              <br><br><h5 id="flussintegrale">Flussintegrale</h5>
+                <table>
+                  <tr>
+                    <td width=20%>Fluss (Flux)</td>
+                    <td width=42%>$$ \Phi _{\vec{v}} := \int_M \left \langle \vec{v},\hat{n} \right \rangle \text{d}A $$</td>
+                    <td><img src="bilder/vektoranalysis/flussintegrale/situation.png"style="max-height:60%; max-width:100%"><br>Der Fluss durch die parametrisierte Fläche M im Bereich eines Vekotrfeldes v.</td>
+                  </tr>
+                  <tr>
+                    <td>S1: Fläche parametrisieren</td>
+                    <td>$$ \hat{n}(u,v) = \begin{bmatrix}n_x(u;v)\\ n_y(u;v)\\ n_x(u;v) \end{bmatrix} \\ \text{ } \\ \sqrt{g} = \sqrt{g(u;v)} $$</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>S2: v entlang M berechnen</td>
+                    <td>$$\vec{v} = \begin{bmatrix}v_x\begin{pmatrix}x(u;v)\\ y(u;v)\\ z(u;v)\end{pmatrix} \\ v_v\begin{pmatrix}x(u;v)\\ y(u;v)\\ z(u;v)\end{pmatrix}\\ v_z\begin{pmatrix}x(u;v)\\ y(u;v)\\ z(u;v)\end{pmatrix}\end{bmatrix} $$</td>
+                    <td>Die geschwindigkeit in jede Richtung, an jedem Ort.</td>
+                  </tr>
+                  <tr>
+                    <td>S3: Integration</td>
+                    <td>$$ \Phi _{\vec{v}} := \int_M \left \langle \vec{v},\hat{n} \right \rangle \text{d}A = \int_{..}^{..}\int_{..}^{..}\left \langle \vec{v},\hat{n} \right \rangle \sqrt{g} \text{ d}u\text{ d}v $$</td>
+                    <td>Werte von S1 und S2 in die Formel einfügen.</td>
+                  </tr>
+                  <tr>
+                    <td>Geschlossene Flächen</td>
+                    <td>$$ \oint _M \left \langle \vec{v},\hat{n} \right \rangle \text{d}A = 0 $$</td>
+                    <td> Für homogene Vektorfelder ist das geschlossene Integral über die Fläche M 0.</td>
+                  </tr>
+                  <tr>
+                    <td>Volumendurchfluss</td>
+                    <td>$$ \Phi _{\vec{v}} \equiv \small \frac{\text{durchflossenes Volumen}}{\text{benötigte Zeit}} $$</td>
+                    <td> Volumendurchfluss des Mediums durch die Fläche M.</td>
+                  </tr>
+                </table>
         </main>
       </div>
     </div>
