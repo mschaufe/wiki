@@ -83,7 +83,7 @@
                   <tr>
                     <td>Kern</td>
                     <td>$$ \text{Ker}(f) := f^{-1}(0) = \left \{  x\in V \mid f(x)=0 \right \} $$</td>
-                    <td>Die Menge aller Elemente von V, welche nach 0 abgebildet werden. heisst der Kern von f.</td>
+                    <td>Die Menge aller Elemente von V, welche nach 0 abgebildet werden. heisst der Kern von f.<br>Also alle Werte, die nach erstellen der Treppenform nicht 0 sind.</td>
                   </tr>
                   <tr>
                     <td>Bild</td>
@@ -105,12 +105,25 @@
 
           <br><br><h5 id="allgemien">Lineare Abbildungen und Matrizen</h5>
           <table>
-                  <tr>
-                    <td width=20%>Elementarladung</td>
-                    <td width=42%>$$  $$</td>
-                    <td></td>
-                  </tr>
-                </table>
+            <tr>
+              <td width=20%>Schreibweise</td>
+              <td width=42%>$$ M_{f}^{ED} := (r_{ij})_{1\leq i\leq n,1\leq j\leq m } \in \mathbb{M}(n,m) $$</td>
+              <td>Die Matrix von f bezüglich der Basen D und E.</td>
+            </tr>
+            <tr>
+              <td width=20%>Invertieren</td>
+              <td width=42%>$$ M^{DF} = (M^{FD})^{-1} = \frac{1}{\text{det}(M^{FD})}\cdot \tilde{M} $$</td>
+              <td><p>
+                M raute ist die zu M komplementäre Matrix.<br><br>
+                <b>CASIO</b> MatA + <kbd><kbd>x<sup>-1</sup></kbd>
+              </p></td>
+            </tr>
+            <tr>
+              <td>Multiplikation</td>
+              <td>$$ M_{f}^{DE} = M^{DF}\cdot M_{f}^{FE} $$</td>
+              <td>Vereinfachung</td>
+            </tr>
+          </table>
 
         </main>
       </div>

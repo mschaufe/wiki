@@ -133,6 +133,11 @@
                   <tr>
                     <td>$$ \scriptsize \text{det}(\begin{bmatrix}4 &6  &1 \\ 10 &8  &5 \\ 0 &0  &1 \end{bmatrix}) = 4\cdot \text{det}\begin{bmatrix}8 &5 \\ 0 &1 \end{bmatrix}-10\cdot \text{det}\begin{bmatrix}6 &1 \\ 0 &1 \end{bmatrix}+0\cdot \text{det}\begin{bmatrix}6 &1 \\ 8 &5 \end{bmatrix}  \\  =4(8-0)-10(6-0)+0(30-8)=32-60+0=-28 $$</td>
                   </tr>
+                  <tr>
+                    <td>Komplementär</td>
+                    <td>$$\tilde{ \begin{bmatrix}3 &4 \\ -1 &2 \end{bmatrix} }= \begin{bmatrix}2 &-4 \\ 1 &3 \end{bmatrix} $$</td>
+                    <td>Matrix muss quadratisch sein.</td>
+                  </tr>
                 </tbody>
               </table>
 
@@ -154,7 +159,7 @@
                 <td><img src="bilder/matrizen/multiplikation.jpeg"style="max-height:35%; max-width:100%"></td>
               </tr>
               <tr>
-                <td>$$ \scriptsize \begin{bmatrix}1 &2  &3 \\ 5 &1  &2 \\ 1 &0  &2 \end{bmatrix} \cdot\begin{bmatrix}3 &1  &1 \\ 0 &5  &1 \\ 2 &4 &1\end{bmatrix}=\begin{bmatrix}0+3+6 &1+10+12  &1+2+3 \\ 15+0+4 &5+5+8  &5+1+2 \\ 3+0+4 &1+0+2  &1+0+2 \end{bmatrix} $$</td>
+                <td>$$ \scriptsize \begin{bmatrix}1 &2  &3 \\ 5 &1  &2 \\ 1 &0  &2 \end{bmatrix} \cdot\begin{bmatrix}3 &1  &1 \\ 0 &5  &1 \\ 2 &4 &1\end{bmatrix}=\begin{bmatrix}3+0+6 &1+10+12  &1+2+3 \\ 15+0+4 &5+5+8  &5+1+2 \\ 3+0+4 &1+0+2  &1+0+2 \end{bmatrix} $$</td>
                 <td><img src="bilder/matrizen/multiplikation_3x3.jpeg"style="max-height:30%; max-width:100%"></td>
               </tr>
               <tr>

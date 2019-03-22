@@ -452,7 +452,11 @@
                 <td>Wellenlängen der einzelnen Farbbereiche</td>
                 <td><p>Jede Farbe umfasst einen Wellenlängenbereich, siehe Übersicht!</p></td>
                 <td><img src="bilder/optik/zerlegung_des_lichts/wellenlaengen.jpeg"style="max-height:100%; max-width:100%"></td>
-
+              </tr>
+              <tr>
+                <td>Dispersion</td>
+                <td>Unter Dispersion versteht man in der Optik die von der Frequenz des Lichts abhängende Ausbreitungsgeschwindigkeit in Medien. Dies hat zur Folge, dass Sonnenlicht an den Flächen eines Prismas unterschiedlich stark gebrochen wird. Auf der anderen Seite des Prismas zeigt sich deshalb ein farbiges Spektrum.</td>
+                <td></td>
               </tr>
             </table>
 

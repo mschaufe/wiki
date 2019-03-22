@@ -26,6 +26,7 @@
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
             <li class="toc-entry toc-h2"><a href="#schwingungen">Schwingungen</a></li>
+            <li class="toc-entry toc-h2"><a href="#wellen">Wellen</a></li>
             </ul>
           </div>
 
@@ -74,7 +75,7 @@
               <td>$$ \varphi = ωt  = 2\pi f t  $$</td>
               <td>
                 <b><img src="bilder/schwingungen_und_wellen/harmonische_schwingung/phi.png" style="max-height:14px; max-width:14px"></b> = Phasenwinkel [rad]<br>
-                <b>ω</b> = 2πf Kreisfrequenz [1/s]<br>
+                <b>ω</b> = Kreisfrequenz [1/s]<br>
                 <b>f</b> = Frequenz [1/s]<br>
                 <b>t</b> = Zeit [s]
               </td>
@@ -88,9 +89,89 @@
                 <img src="bilder/schwingungen_und_wellen/harmonische_schwingung/phi.png" style="max-height:14px; max-width:14px"> = Phasenwinkel [rad]
               </td>
             </tr>
+            <tr>
+              <td>Schwingungsgleichung</td>
+              <td>$$ F_E + F_R + F_D = ma = m\ddot{y} 
+                \\ \text{ } \\
+              \hat{F}_E \cos(\omega t) -Dy - \beta \dot{y} = m\ddot{y} $$</td>
+              <td>
+                <b>F<sub>E</sub></b> = Erregerkraft (F<sub>E</sub> cos(ωt)) [N]<br>
+                <b>F<sub>R</sub></b> = Rückstellkraft (-Dy) [N]<br>
+                <b>F<sub>D</sub></b> = Dämpfungskraft (-βv) [N]<br>
+                <b>m</b> = Masse des Schwingers [kg]<br>
+                <b>a</b> = Beschleunigung [m/s<sup>2</sup>]<br>
+                <b>y</b> = Auslenkung [m]<br>
+                <b>β</b> = Dämpfungskonstante [kg/s]<br>
+                <b>D</b> = Richtgrösse F/y<br>
+                <b>ω</b> = Erregerkreisfrequenz [1/s]<br>
+              </td>
+            </tr>
           </tbody>
         </table>
 
+         <br><br><h5 id="wellen">Wellen</h5>
+         <table>
+            <tr>
+              <td rowspan="3" width=20%>Wellenarten</td>
+              <td width=42%><b>Querwellen</b> oder <b>transversale Wellen</b> sind Wellen, bei denen die Richtung der Teilchengeschwindikgeit zur Richtung der Phasengeschwindigkeit senkrecht ist.</td>
+              <td> <img src="bilder/schwingungen_und_wellen/wellen/Querwellen.jpeg" style="max-height:100%; max-width:40%">
+                <img src="bilder/schwingungen_und_wellen/wellen/tal_berg.jpeg" style="max-height:100%; max-width:50%"></td>
+            </tr>
+            <tr>
+              <td width=42%><b>Längswellen</b> oder <b>longitudinale Wellen</b> haben bei der Schwing- und Phasengeschwindigkeit die gleiche Richtung. <br>In ihnen wechseln Verdichtung und Verdünnungen.</td>
+              <td> <img src="bilder/schwingungen_und_wellen/wellen/laengswellen.jpeg" style="max-height:100%; max-width:40%">
+                <img src="bilder/schwingungen_und_wellen/wellen/verdichtung.jpeg" style="max-height:100%; max-width:50%"></td>
+            </tr>
+            <tr>
+              <td width=42%>Die <b>Ausbreitungsmöglichkeiten</b> unterscheidet die Wellen in drei Typen auf. 
+                </td>
+              <td>
+                1-dim <b>linearen Wellen</b>
+                <br>2-dim <b>Flächenwellen</b>
+                <br>3-dim <b>Raumwellen</b> </td>
+            </tr>
+            <tr>
+              <td>Auslenkung (Elongation)</td>
+              <td>$$ y(x,t) = \hat{y}\cdot \sin\left [ 2 \pi \Big(  \frac{x}{\lambda }-\frac{t}{T} \Big) \right ] $$</td>
+              <td>
+                <b>y</b> = Auslenkung eines Teilchens am Ort x zur Zeit t [m]<br>
+                <img src="bilder/schwingungen_und_wellen/harmonische_schwingung/y.png" style="max-height:17px; max-width:17px"> = Auslenkungsmaximum [m]<br>
+                <b>t</b> = Zeit [s]<br>
+                <b>T</b> = Periodendauer [s]<br>
+                <b>x</b> = Abstand vom Wellenzentrum [m]<br>
+                <b>λ</b> = Wellenlänge [m]<br><br>
+                <img src="bilder/schwingungen_und_wellen/wellen/elongation.jpeg" style="max-height:100%; max-width:65%">
+              </td>
+            </tr>
+            <tr>
+              <td>Kreisfrequenz</td>
+              <td>$$ \omega = \frac{2\pi}{T} = 2\pi f $$</td>
+              <td> 
+                <b>ω</b> = Kreisfrequenz [1/s]<br>
+                <b>T</b> = Schwingungsdauer einer Periode [s]<br>
+                <br><b>f</b> = Frequenz [1/s]<br>
+              </td>
+            </tr>
+            <tr>
+              <td>Wellenzahl</td>
+              <td>$$ k = \frac{2\pi}{\lambda } $$</td>
+              <td>
+                <b>k</b> = Wellenzahl [1/m]<br>
+                <b>λ</b> = Periodenlänge [m]
+              </td>
+            </tr>
+            <tr>
+              <td>Wellengleichung</td>
+              <td>$$ \frac{\delta^2y}{\delta x^2}-\frac{1}{c^2}\frac{\delta^2 y}{\delta t^2} = 0 $$</td>
+              <td>
+                <b>y</b> = Auslenkung [m]<br>
+                <b>x</b> = Abstand vom Wellenzentrum [m]<br>
+                <b>c</b> = Phasengeschwindigkeit [m/s]<br>
+                <b>t</b> = Zeit [s]<br>
+              </td>
+            </tr>
+
+         </table>
 
         </main>
       </div>
