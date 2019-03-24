@@ -237,7 +237,7 @@
                 <table>
                   <tr>
                     <td width=20%>Parametrisierung des Flächenstücks</td>
-                    <td width=42%>$$ \vec{P} (u;v) \rightarrow  \mathbb{R}^3\\ \text{ } \\(u;v) x \mapsto \vec{P}(u;v) = \begin{bmatrix}x(u;v)\\ x(u;v)\\ z(u;v)\end{bmatrix} $$</td>
+                    <td width=42%>$$ \vec{P} (u;v) \rightarrow  \mathbb{R}^3\\ \text{ } \\(u;v) x \mapsto \vec{P}(u;v) = \begin{bmatrix}x(u;v)\\ y(u;v)\\ z(u;v)\end{bmatrix} $$</td>
                     <td><img src="bilder/vektoranalysis/parametrisierte_flaechen/bsp.png"style="max-height:60%; max-width:100%"></td>
                   </tr>
                   <tr>
@@ -284,7 +284,7 @@
                   </tr>
                   <tr>
                     <td>S1: Fläche parametrisieren</td>
-                    <td>$$ \hat{n}(u,v) = \begin{bmatrix}n_x(u;v)\\ n_y(u;v)\\ n_x(u;v) \end{bmatrix} \\ \text{ } \\ \sqrt{g} = \sqrt{g(u;v)} $$</td>
+                    <td>$$ \hat{n}(u,v) = \begin{bmatrix}n_x(u;v)\\ n_y(u;v)\\ n_z(u;v) \end{bmatrix} \\ \text{ } \\ \sqrt{g} = \sqrt{g(u;v)} $$</td>
                     <td></td>
                   </tr>
                   <tr>

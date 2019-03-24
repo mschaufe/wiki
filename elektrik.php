@@ -32,6 +32,7 @@
             <li class="toc-entry toc-h2"><a href="#spannung_und_potential">Spannungen & Potential</a></li>
             <li class="toc-entry toc-h2"><a href="#elementarladung">Elementarladung</a></li>
             <li class="toc-entry toc-h2"><a href="#elementarteilchen">Elementarteilchen</a></li>
+            <li class="toc-entry toc-h2"><a href="#elektorstatik">Elektrostatik</a></li>
             </ul>
           </div>
         
@@ -351,11 +352,6 @@
                     <td>$$1eV := e \cdot 1V \approx 1.602 \cdot 10^{-19} \; J $$</td>
                     <td>eV ist eine Energie-Einheit. 1eV ist die kinetische Enerige eines Teilchen mit Ladung ±e nach Beschleunigung mit Spannung ±1V.</td>
                   </tr>
-                  <tr>
-                    <td>Elektrolyse von Wasser</td>
-                    <td>$$ ... $$</td>
-                    <td><img src="bilder/elektrik/elementarladungen/elekrolyse.png"style="max-height:40%; max-width:100%"></td>
-                  </tr>
                 </table>
 
 
@@ -385,6 +381,36 @@
                   <td>Neutron: <b>n</b></td>
                   <td>$$ Z_{n} = 0 $$</td>
                   <td>$$q_{n} = 0 $$</td>
+                </tr>
+              </table>
+
+             <br><br><h5 id="elektrostatik">Elektrostatik</h5>
+
+             <table>
+                <tr>
+                  <td rowspan="2" width=20%>E-Feld aus ACR-Prozess</td>
+                  <td width=42%>S1 Lokal:$$ \delta \vec{E} \approx \frac{1}{4 \pi \varepsilon _0}\cdot  \frac{\delta Q}{r^2} \cdot \hat{r} = \frac{1}{4 \pi \varepsilon _0}\cdot  \frac{\delta Q}{r^3} \cdot \vec{r} $$</td>
+                  <td rowspan="2"><img src="bilder/elektrik/elektrostatik/acr-prozess.png"style="max-height:40%; max-width:100%"><br>
+                      <b>E</b> = Elektrisches Feld [N/C]<br>
+                      <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante [A·s/(V·m)] = [F/m] <br>
+                      <b>Q</b> = Ladung [C] = [A·s]<br>
+                      <b>r</b> = Abstand der Massenmittelpunkte [m]<br>
+                      <b>r</b> = Richtungsvektor [-]
+                  </td>
+                </tr>
+                <tr>
+                  <td>S2 Global: $$ \vec{E} = \int _G \frac{1}{4 \pi \varepsilon _0} \cdots \text{ d}G =  $$</td>
+                </tr>
+                <tr>
+                  <td>Satz von Gauss</td>
+                  <td>$$ \Phi _{\vec{E}} = \oint _M \left \langle \vec{E},\hat{n} \right \rangle \text{ d}A = \frac{1}{\varepsilon _0}\cdot Q_{eg} $$</td>
+                  <td>Ladungen im Bereich einer geschlossenen Fläche.<img src="bilder/elektrik/elektrostatik/gauss.png"style="max-height:40%; max-width:80%"><br><br>
+                    <b>Φ<sub>E</sub></b> = Fluss des Vektorfeldes [V·m]<br>
+                    <b>E</b> = Elektrisches Feld [N/C]<br>
+                    <b>n</b> = Einheitsnormalenvektor []<br>
+                    <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante [A·s/(V·m)] = [F/m] <br>
+                    <b>Q</b> = Totale eingeschlossene Ladung [C] = [A·s]<br>
+                  </td>
                 </tr>
               </table>
          

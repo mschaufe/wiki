@@ -111,10 +111,20 @@
               <td>Die Matrix von f bezüglich der Basen D und E.</td>
             </tr>
             <tr>
+              <td>Basiswechselmatirzen</td>
+              <td>$$ \small A = \left \{ (1,0),(0,1) \right \}; \; C = \left \{ (1,0),(1,1) \right \} \\ \text{ } \\
+                    u = (6,2); \; \: v=(-4,8) \\ \text{ } \\
+                    (1,0) = x\cdot (1,0)+y \cdot (1,1) \\ (0,1) = x\cdot (1,0)+y \cdot (1,1)\\ \text{ } \\
+                  \underline{M^{CA}} = \begin{bmatrix}1 &-1 \\ 0&1 \end{bmatrix} \\ \text{ } \\ 
+                  u^C = \begin{bmatrix}1 &-1 \\ 0&1 \end{bmatrix} \cdot \begin{bmatrix}6\\2 \end{bmatrix} = \begin{bmatrix}4\\2 \end{bmatrix}; \\ \text{ } \\ 
+                  v^C = \begin{bmatrix}1 &-1 \\ 0&1 \end{bmatrix} \cdot \begin{bmatrix}-4\\8 \end{bmatrix} = \begin{bmatrix}-12\\8 \end{bmatrix}; $$</td>
+              <td>Der Basiswechsel kann durch eine Matrix beschrieben werden, die Basiswechselmatrix genannt wird. Mit dieser lassen sich auch die Koordinaten bezüglich der neuen Basis ausrechnen. Stellt man die Basisvektoren der alten Basis <b>(A)</b> als Linearkombinationen der Vektoren der neuen Basis <b>(C)</b> dar, so bilden die Koeffizienten dieser Linearkombinationen die Einträge der Basiswechselmatrix <b>(M<sup>CA</sup>)</b>.</td>
+            </tr>
+            <tr>
               <td width=20%>Invertieren</td>
               <td width=42%>$$ M^{DF} = (M^{FD})^{-1} = \frac{1}{\text{det}(M^{FD})}\cdot \tilde{M} $$</td>
               <td><p>
-                M raute ist die zu M komplementäre Matrix.<br><br>
+                M raute ist die zu M eine komplementäre Matrix.<br><br>
                 <b>CASIO</b> MatA + <kbd><kbd>x<sup>-1</sup></kbd>
               </p></td>
             </tr>
