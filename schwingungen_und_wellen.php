@@ -85,7 +85,7 @@
               <td>$$ y = \hat{y}\cdot \sin(\varphi ) $$</td>
               <td>
                 <b>y</b> = Auslenkung nach Ablauf der Zeit t [m]<br>
-                <img src="bilder/schwingungen_und_wellen/harmonische_schwingung/y.png" style="max-height:17px; max-width:17px"> = Auslenkungsmaximum [m]<br>
+                <img src="bilder/schwingungen_und_wellen/harmonische_schwingung/y.png" style="max-height:17px; max-width:17px"> = Amplitude (Auslenkungsmaximum) [m]<br>
                 <img src="bilder/schwingungen_und_wellen/harmonische_schwingung/phi.png" style="max-height:14px; max-width:14px"> = Phasenwinkel [rad]
               </td>
             </tr>
@@ -135,7 +135,7 @@
               <td>$$ y(x,t) = \hat{y}\cdot \sin\left [ 2 \pi \Big(  \frac{x}{\lambda }-\frac{t}{T} \Big) \right ] $$</td>
               <td>
                 <b>y</b> = Auslenkung eines Teilchens am Ort x zur Zeit t [m]<br>
-                <img src="bilder/schwingungen_und_wellen/harmonische_schwingung/y.png" style="max-height:17px; max-width:17px"> = Auslenkungsmaximum [m]<br>
+                <img src="bilder/schwingungen_und_wellen/harmonische_schwingung/y.png" style="max-height:17px; max-width:17px"> = Amplitude (Auslenkungsmaximum) [m]<br>
                 <b>t</b> = Zeit [s]<br>
                 <b>T</b> = Periodendauer [s]<br>
                 <b>x</b> = Abstand vom Wellenzentrum [m]<br>
@@ -169,6 +169,31 @@
                 <b>c</b> = Phasengeschwindigkeit [m/s]<br>
                 <b>t</b> = Zeit [s]<br>
               </td>
+            </tr>
+            <tr>
+              <td>Konstruktive Interverenz</td>
+              <td>$$ \Delta s = n \cdot \lambda $$</td>
+              <td><img src="bilder/schwingungen_und_wellen/wellen/kon.png" style="max-height:100%; max-width:40%"><br><br>
+                <b>s</b> = Strecke [m]<br>
+                <b>n</b> = ganze Zahl [-]<br>
+                <b>λ</b> = Wellenlänge beider Wellen [m]</td>
+            </tr>
+            <tr>
+              <td>Destruktive Interverenz</td>
+              <td>$$ \Delta s = \frac{\lambda}{2} +n \cdot \lambda $$</td>
+              <td><img src="bilder/schwingungen_und_wellen/wellen/des.png" style="max-height:100%; max-width:40%"><br><br>
+                <b>s</b> = Strecke [m]<br>
+                <b>n</b> = ganze Zahl [-]<br>
+                <b>λ</b> = Wellenlänge beider Wellen [m]
+              </td>
+              <tr>
+              <td rowspan="2">Wellenknoten Wellenbauch</td>
+              <td>Stellen, deren Amplitude immer <b>Null</b> ist, heissen Wellenknoten</td>
+              <td rowspan="2"><img src="bilder/schwingungen_und_wellen/wellen/knoten_bauch.jpeg" style="max-height:100%; max-width:80%"></td>
+            </tr>
+            <tr>
+              <td>Stellen, deren Amplitude immer <b>2</b><img src="bilder/schwingungen_und_wellen/harmonische_schwingung/y.png" style="max-height:17px; max-width:17px"> ist, heissen Wellenbäuche.</td>
+            </tr>
             </tr>
 
          </table>
