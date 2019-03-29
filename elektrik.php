@@ -338,13 +338,13 @@
                     <td>Teilchenbschleunigung</td>
                     <td>$$ E_{kin} = U \cdot q = U \cdot e $$</td>
                     <td>
-                      
+                      <img src="bilder/elektrik/elementarladungen/teilchenbeschleunigung.png"style="max-height:40%; max-width:100%"><br><br>
                       <b>E<sub>kin</sub></b> = Beschleunigungsarbeit [Nm] = [J]<br>
                       <b>U</b> = Spannung [N·m/C] = [V]<br>
                       <b>q</b> = Probeladung [C] = [A·s]<br>
-                      <b>e</b> = Elementarladungen [C] = [A·s]<br><br>
+                      <b>e</b> = Elementarladungen [C] = [A·s]
 
-                      <img src="bilder/elektrik/elementarladungen/teilchenbeschleunigung.png"style="max-height:40%; max-width:100%">
+                      
                   </td>
                   </tr>
                   <tr>
@@ -411,6 +411,53 @@
                     <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante [A·s/(V·m)] = [F/m] <br>
                     <b>Q</b> = Totale eingeschlossene Ladung [C] = [A·s]<br>
                   </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Kapazitäten</td>
+                  <td>$$ C := \frac{Q}{U} = \small \frac{\text{verschobene Ladung}}{\text{angelegte Spannung}} $$</td>
+                  <td rowspan="2">Kondensator:<br><img src="bilder/elektrik/elektrostatik/kapazitaet.png"style="max-height:40%; max-width:70%"><br><br>
+                    <b>C</b> = Kapazität (Farad) [C/V] = [F]<br>
+                    <b>Q</b> = Totale eingeschlossene Ladung [C] = [A·s]<br>
+                    <b>U</b> = Spannung [N·m/C] = [V]<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Die Kapazität C hängt nich von U bzw. Q sonder nur von der Bauweise des Kondensators ab. C ist eine Geräte kennzahl.</td>
+                </tr>
+                <tr>
+                  <td>Kinetische Energie (Kondensator)</td>
+                  <td>$$ W_C = \frac{1}{2} \cdot C \cdot U^2 = \frac{1}{2 \cdot C}\cdot Q^2 $$</td>
+                  <td>Die Energie W<sub>C</sub> steckt im E-Feld im Innern des Kondensa</td>
+                </tr>
+                <tr>
+                  <td>Energie-Dichte</td>
+                  <td>$$ W_E = \frac{1}{2} \cdot \varepsilon_0 \cdot E^2 $$</td>
+                  <td>Die Energie-Dichte des E-Feldes ist</td>
+                </tr>
+                <tr>
+                  <td rowspan="5">Plattenkondensator</td>
+                  <td>Zwischen den Platten bildet sich ein nahezu homogenes E-Feld: $$ \vec{E} = E \cdot \hat{e}$$</td>
+                  <td rowspan="2"><img src="bilder/elektrik/elektrostatik/plattenkondensator.png"style="max-height:40%; max-width:80%"><br>
+                    <b>E</b> = Elektrisches Feld [N/C]<br>
+                    <b>d</b> = Abstand der Platten [m]<br>
+                    <b>A</b> = Fläche der Kondensatorplatte [m<sup>2</sup>]<br>
+                    <b>U</b> = Spannung [N·m/C] = [V]<br>
+                    <b>Q</b> = Totale eingeschlossene Ladung [C] = [A·s]<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Ausserhalb der Platten gilt: $$ \vec{E} \approx 0 $$</td>
+                </tr>
+                <tr>
+                  <td>$$ E = \frac{1}{\varepsilon_0} \cdot \frac{Q}{A} $$</td>
+                  <td rowspan="3">Folgende drei Gleichungen gelten in guter Näherung für: $$ d^2 \ll A $$</td>
+                </tr>
+                <tr>
+                  <td>$$ U = E \cdot U $$</td>
+                  
+                </tr>
+                <tr>
+                  <td>$$ C = \varepsilon_0 \cdot \frac{A}{d} $$</td>
                 </tr>
               </table>
          
