@@ -133,11 +133,6 @@
                   <tr>
                     <td>$$ \scriptsize \text{det}(\begin{bmatrix}4 &6  &1 \\ 10 &8  &5 \\ 0 &0  &1 \end{bmatrix}) = 4\cdot \text{det}\begin{bmatrix}8 &5 \\ 0 &1 \end{bmatrix}-10\cdot \text{det}\begin{bmatrix}6 &1 \\ 0 &1 \end{bmatrix}+0\cdot \text{det}\begin{bmatrix}6 &1 \\ 8 &5 \end{bmatrix}  \\  =4(8-0)-10(6-0)+0(30-8)=32-60+0=-28 $$</td>
                   </tr>
-                  <tr>
-                    <td>Komplementär</td>
-                    <td>$$\tilde{ \begin{bmatrix}3 &4 \\ -1 &2 \end{bmatrix} }= \begin{bmatrix}2 &-4 \\ 1 &3 \end{bmatrix} $$</td>
-                    <td>Matrix muss quadratisch sein.</td>
-                  </tr>
                 </tbody>
               </table>
 

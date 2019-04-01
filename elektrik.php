@@ -76,7 +76,7 @@
                     <td>$$I = \frac{\Delta Q}{\Delta t} = \frac{\text{geflossene Ladung}}{\text{benötigte Zeit}}$$</td>
                     <td>
                       <b>I</b> = Strom [A]<br>
-                      <b>Q</b> = Ladung [C] = [A·s]<br>
+                      <b>Q</b> = Ladung [A·s] = [C]<br>
                       <b>t</b> = Zeit [s]
                     </td>
                   </tr>
@@ -92,8 +92,8 @@
                       <img src="bilder/elektrik/ladung_strom/coulomb_gesetz.png"style="max-height:40%; max-width:100%"><br>
                       <b>F<sub>E</sub></b> = Elektrische Kraft [N]<br>
                       <b>γ<sub>E</sub></b> = Coulomb Konstante [A·s/(V·m)] = [A<sup>2</sup>·s<sup>4</sup>/(kg·m<sup>3</sup>)]<br>
-                      <b>Q<sub>1</sub></b> = Ladung 1 [C] = [A·s]<br>
-                      <b>Q<sub>2</sub></b> = Ladung 2 [C] = [A·s]<br>
+                      <b>Q<sub>1</sub></b> = Ladung 1 [A·s] = [C]<br>
+                      <b>Q<sub>2</sub></b> = Ladung 2 [A·s] = [C]<br>
                       <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante (Vakuum) [A·s/(V·m)] = [F/m] <br>
                       <b>r</b> = Abstand der Massenmittelpunkte [m]<br> 
                       <b>r</b> = Richtungsvektor [-]<br>
@@ -166,7 +166,7 @@
                   <td>
                     <b>E</b> = Elektrisches Feld [N/C]<br>
                     <b>F<sub>E</sub></b> = Elektrische Kraft [N]<br>
-                    <b>q</b> = Probeladung [C] = [A·s]
+                    <b>q</b> = Probeladung [A·s] = [C]
                   </td>
                 </tr>
                 <tr>
@@ -178,7 +178,7 @@
                   <td>$$ \vec{F}_B (t;x;y;z) = q \cdot \vec{v} \times \vec{B}(t;x;y;z)$$</td>
                   <td>
                     <b>F<sub>B</sub></b> = Magnetische Kraft [N]<br>
-                    <b>q</b> = Probeladung [C] = [A·s]<br>
+                    <b>q</b> = Probeladung [A·s] = [C]<br>
                     <b>v</b> = Geschwindigkeit [m/s]<br>
                     <b>B</b> = Magnetisches Feld (Tesla) [T] = [N/(A·m)]
                   </td>
@@ -192,7 +192,7 @@
                   <td>$$ \vec{F}_{EB} = Q \cdot (\vec{E}+\vec{v}\times \vec{B})  $$</td>
                   <td>
                      <b>F<sub>EB</sub></b> = Kraft des E-B-Feldes [N]<br>
-                     <b>Q</b> = Ladung [C] = [A·s]<br>
+                     <b>Q</b> = Ladung [A·s] = [C]<br>
                      <b>E</b> = Elektrisches Feld [N/C]<br>
                      <b>v</b> = Geschwindigkeit [m/s]<br>
                      <b>B</b> = Magnetisches Feld (Tesla) [T] = [N/(A·m)]
@@ -202,7 +202,7 @@
                   <td>$$ P_{EB} = Q \cdot \left \langle \vec{E},\vec{v} \right \rangle \\ \text{ } \\ P_{EB} = \left \langle \vec{F}_{EB},\vec{v} \right \rangle $$</td>
                   <td>
                     <b>P<sub>EB</sub></b> = Leistung des E-B-Feldes [W]<br>
-                    <b>Q</b> = Ladung [C] = [A·s]<br>
+                    <b>Q</b> = Ladung [A·s] = [C]<br>
                     <b>E</b> = Elektrisches Feld [N/C]<br>
                     <b>v</b> = Geschwindigkeit [m/s]<br>
                     <b>F<sub>EB</sub></b> = Kraft des E-B_Feldes [N]<br>
@@ -226,7 +226,7 @@
                       <img src="bilder/elektrik/efeld_ruhende_ladungen/situation.png"style="max-height:40%; max-width:100%"><br><br>
                       <b>E</b> = Elektrisches Feld [N/C]<br>
                       <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante [A·s/(V·m)] = [F/m] <br>
-                      <b>Q</b> = Ladung [C] = [A·s]<br>
+                      <b>Q</b> = Ladung [A·s] = [C]<br>
                       <b>r</b> = Abstand der Massenmittelpunkte [m]<br>
                       <b>r</b> = Richtungsvektor [-]
                     </td>
@@ -246,7 +246,7 @@
                     <td width=42%>$$ U := \frac{1}{q} \cdot \Delta W $$</td>
                     <td><b>Situation: </b>Probeladung bewegt sich entlang eines Weges durch das E-Feld.<img src="bilder/elektrik/spannung_und_potential/elektrische_spannung.png"style="max-height:40%; max-width:100%">
                       <b>U</b> = Spannung [N·m/C] = [V]<br>
-                      <b>q</b> = Probeladung [C] = [A·s]<br>
+                      <b>q</b> = Probeladung [A·s] = [C]<br>
                       <b>W</b> = Arbeit [N·m] = [J]<br>
                     </td>
                   </tr>
@@ -303,7 +303,7 @@
                     <td> 
                       <b>ϕ</b> = Referenzpotential am Punkt P [V] <br>
                       <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante (Vakuum) [A·s/(V·m)] = [F/m] <br>
-                      <b>Q</b> = Ladung [C] = [A·s]<br>
+                      <b>Q</b> = Ladung [A·s] = [C]<br>
                       <b>r</b> = Abstand der Massenmittelpunkte [m]<br>
                     </td>
                   </tr>
@@ -320,9 +320,9 @@
                     <td>Ladungszahl</td>
                     <td>$$ Q = Z \cdot e $$</td>
                     <td>
-                      <b>Q</b> = Ladung [C] = [A·s]<br>
+                      <b>Q</b> = Ladung [A·s] = [C]<br>
                       <b>Z</b> = Ladungszahl [-]<br>
-                      <b>e</b> = Elementarladungen [C] = [A·s]<br>
+                      <b>e</b> = Elementarladungen [A·s] = [C]<br>
                     </td>
                   </tr>
                   <tr>
@@ -331,7 +331,7 @@
                     <td>Es beschreibt die Ladung eines Mols Protonen.<br>
                       <b>Q<sub>A</sub></b> = Faraday-Konstante [C/mol]<br>
                       <b>N<sub>A</sub></b> = Avogadro-Konstante [1/mol]<br>
-                      <b>e</b> = Elementarladungen [C] = [A·s]
+                      <b>e</b> = Elementarladungen [A·s] = [C]
                     </td>
                   </tr>
                   <tr>
@@ -341,8 +341,8 @@
                       <img src="bilder/elektrik/elementarladungen/teilchenbeschleunigung.png"style="max-height:40%; max-width:100%"><br><br>
                       <b>E<sub>kin</sub></b> = Beschleunigungsarbeit [Nm] = [J]<br>
                       <b>U</b> = Spannung [N·m/C] = [V]<br>
-                      <b>q</b> = Probeladung [C] = [A·s]<br>
-                      <b>e</b> = Elementarladungen [C] = [A·s]
+                      <b>q</b> = Probeladung [A·s] = [C]<br>
+                      <b>e</b> = Elementarladungen [A·s] = [C]
 
                       
                   </td>
@@ -393,7 +393,7 @@
                   <td rowspan="2"><img src="bilder/elektrik/elektrostatik/acr-prozess.png"style="max-height:40%; max-width:100%"><br>
                       <b>E</b> = Elektrisches Feld [N/C]<br>
                       <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante [A·s/(V·m)] = [F/m] <br>
-                      <b>Q</b> = Ladung [C] = [A·s]<br>
+                      <b>Q</b> = Ladung [A·s] = [C]<br>
                       <b>r</b> = Abstand der Massenmittelpunkte [m]<br>
                       <b>r</b> = Richtungsvektor [-]
                   </td>
@@ -409,7 +409,7 @@
                     <b>E</b> = Elektrisches Feld [N/C]<br>
                     <b>n</b> = Einheitsnormalenvektor []<br>
                     <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante [A·s/(V·m)] = [F/m] <br>
-                    <b>Q</b> = Totale eingeschlossene Ladung [C] = [A·s]<br>
+                    <b>Q</b> = Totale eingeschlossene Ladung [A·s] = [C]<br>
                   </td>
                 </tr>
                 <tr>
@@ -417,7 +417,7 @@
                   <td>$$ C := \frac{Q}{U} = \small \frac{\text{verschobene Ladung}}{\text{angelegte Spannung}} $$</td>
                   <td rowspan="2">Kondensator:<br><img src="bilder/elektrik/elektrostatik/kapazitaet.png"style="max-height:40%; max-width:70%"><br><br>
                     <b>C</b> = Kapazität (Farad) [C/V] = [F]<br>
-                    <b>Q</b> = Totale eingeschlossene Ladung [C] = [A·s]<br>
+                    <b>Q</b> = Totale eingeschlossene Ladung [A·s] = [C]<br>
                     <b>U</b> = Spannung [N·m/C] = [V]<br>
                   </td>
                 </tr>
@@ -427,12 +427,21 @@
                 <tr>
                   <td>Kinetische Energie (Kondensator)</td>
                   <td>$$ W_C = \frac{1}{2} \cdot C \cdot U^2 = \frac{1}{2 \cdot C}\cdot Q^2 $$</td>
-                  <td>Die Energie W<sub>C</sub> steckt im E-Feld im Innern des Kondensa</td>
+                  <td>
+                    <b>W<sub>C</sub></b> = Kinetische Energie im Kondensator [N·m] =[J]<br>
+                    <b>C</b> = Kapazität (Farad) [C/V] = [F]<br>
+                    <b>U</b> = Spannung [N·m/C] = [V]<br>
+                    <b>Q</b> = Totale eingeschlossene Ladung [A·s] = [C]
+                  </td>
                 </tr>
                 <tr>
                   <td>Energie-Dichte</td>
                   <td>$$ W_E = \frac{1}{2} \cdot \varepsilon_0 \cdot E^2 $$</td>
-                  <td>Die Energie-Dichte des E-Feldes ist</td>
+                  <td>
+                    <b>W<sub>E</sub></b> = Energie-Dichte [N·m] =[J]<br>
+                    <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante [A·s/(V·m)] = [F/m] <br>
+                    <b>E</b> = Elektrisches Feld [N/C]
+                  </td>
                 </tr>
                 <tr>
                   <td rowspan="5">Plattenkondensator</td>
@@ -442,7 +451,7 @@
                     <b>d</b> = Abstand der Platten [m]<br>
                     <b>A</b> = Fläche der Kondensatorplatte [m<sup>2</sup>]<br>
                     <b>U</b> = Spannung [N·m/C] = [V]<br>
-                    <b>Q</b> = Totale eingeschlossene Ladung [C] = [A·s]<br>
+                    <b>Q</b> = Totale eingeschlossene Ladung [A·s] = [C]<br>
                   </td>
                 </tr>
                 <tr>

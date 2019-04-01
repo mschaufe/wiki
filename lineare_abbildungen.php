@@ -26,8 +26,10 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-            <li class="toc-entry toc-h2"><a href="#allgemien">Allgemein</a></li>
-            <li class="toc-entry toc-h2"><a href="#lineare_abbildunge_und_matrizen">Lineare Abbildungen und Matrizen</a></li>
+              <li class="toc-entry toc-h2"><a href="#allgemien">Grundbegriffe</a></li>
+              <li class="toc-entry toc-h2"><a href="#lineare_abbildunge_und_matrizen">Lineare Abbildungen und Matrizen</a></li>
+              <li class="toc-entry toc-h2"><a href="#morphismen">Morphismen</a></li>
+              <li class="toc-entry toc-h2"><a href="#eigenwerte">Eigenwerte</a></li>
             </ul>
           </div>
         
@@ -49,7 +51,7 @@
                 <tbody>
                   <tr>
                     <td>Identität</td>
-                    <td>$$ E\rightarrow E, \;x \mapsto x^2 x  $$</td>
+                    <td>$$ E\rightarrow E, \;x \mapsto x  $$</td>
                     <td>Die Abbildung, die jedes Element von E auf sich abbildet, heisst die Identität von E oder identische Abbildung von E und wird mit Id<sub>E</sub> bezeichnet.</td>
                   </tr>
                   <tr>
@@ -103,7 +105,7 @@
             </tbody>
           </table>
 
-          <br><br><h5 id="allgemien">Lineare Abbildungen und Matrizen</h5>
+        <br><br><h5 id="allgemien">Lineare Abbildungen und Matrizen</h5>
           <table>
             <tr>
               <td width=20%>Schreibweise</td>
@@ -129,11 +131,101 @@
               </p></td>
             </tr>
             <tr>
+              <td rowspan="2">Komplementär</td>
+              <td>$$\tilde{a}_{ij} := (-1)^{i+j} \text{ det}(\hat{A}_{ji}) $$</td>
+              <td rowspan="2">Matrix muss quadratisch sein.</td>
+            </tr>
+            <tr>
+              <td>$$\tilde{M} =\begin{bmatrix}3 &4 \\ -1 &2 \end{bmatrix} ; \; M = \begin{bmatrix}2 &-4 \\ 1 &3 \end{bmatrix} $$</td>
+            </tr>
+            <tr>
               <td>Multiplikation</td>
               <td>$$ M_{f}^{DE} = M^{DF}\cdot M_{f}^{FE} $$</td>
               <td>Vereinfachung</td>
             </tr>
           </table>
+        <br><br><h5 id="eigenwerte">Morphismen</h5>
+          <table>
+            <tr>
+                <td width=20%>Homomorphismus</td>
+                <td width=42%>lineare Abbildung zwischen 2 Vektorräumen</td>
+                <td rowspan="6"><img src="bilder/lineare_abbildungen/morphismen/homomorphismus.png" style="max-height:50%; max-width:100%"></td>
+              </tr>
+              <tr>
+                <td>Endomorphismus</td>
+                <td>Definitionsmenge = Zielmenge  ℝ → ℝ</td>
+              </tr>
+              <tr>
+                <td>Monomorphismus</td>
+                <td>wenn lineare Abbildung injektiv</td>
+              </tr>
+              <tr>
+                <td>Epimorphismus</td>
+                <td>wenn lineare Abbildung surjektiv</td>
+              </tr>
+              <tr>
+                <td>Isomorphismus</td>
+                <td>wenn lineare Abbildung bijektiv</td>
+              </tr>
+              <tr>
+                <td>Automorphismus</td>
+                <td>Definitionsmenge = Zielmenge + bijektiv</td>
+              </tr>
+            </table>
+
+        <br><br><h5 id="eigenwerte">Eigenwerte</h5>
+          <table>
+            <tr>
+                <td width=20%>Eigenraum</td>
+                <td width=42%>$$ \text{Eig}(f,\lambda ) := \left \{ v \in V \mid  f(v) = \lambda v \right \}  $$</td>
+                <td>Der Eigenraum ist ein Untervektorraum. Er beschreibt alle Vektoren in V, welche bei der Anwendung von f mit dem Faktor λ gestreckt werden.<br>Man spricht: <b>Eigenraum von f zu λ</b>.</td>
+              </tr>
+              <tr>
+                <td>Eigenwert</td>
+                <td>$$ \underline{\lambda } \; \small \text{ bei } \; \normalsize \text{Eig}(f,λ) \neq 0 $$</td>
+                <td>Der Faktor <b>λ</b> ist ein Eigenwert von f</td>
+              </tr>
+              <tr>
+                <td>Eigenvektor</td>
+                <td>$$ \underline{v} \in \text{Eig}(f,\lambda) \; \small \text{ mit } \; \normalsize v \neq 0$$</td>
+                <td>Der Vektor <b>v</b> ist ein Eigenvekotr von f.</td>
+              </tr>
+              <tr>
+                <td>Spektrum</td>
+                <td>$$ \text{Spec}(f) := \left \{ \lambda_1, \lambda_2, ... , \lambda_n \right \}$$</td>
+                <td>Alle Eigenwerte bilden ein Spektrum</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Charakteristisches Polynom</td>
+                <td>$$ \chi _f(x) = \text{det}(x \cdot \Bbb{1}_n - M^{EE}_{f}) $$</td>
+                <td>Die Eigenwerte von f sind genau die Nullstellen von χ<sub>f</sub>(x).</td>
+              </tr>
+              <tr>
+                <td>$$ M = \begin{bmatrix}1 &2 \\ 1 &3 \end{bmatrix}
+                    \\ \text{ } \\ x \cdot 1_2 -M = \begin{bmatrix}x-1 &-2 \\ -1 &x-3 \end{bmatrix} 
+                    \\ \text{ } \\ \chi _f(x) = \text{det}(\begin{bmatrix}x-1 &-2 \\ -1 &x-3 \end{bmatrix} )
+                    \\ \text{ } \\ (x-1)(x-3)-(-1)(-2) = x^2 -4x + 1
+                $$</td>
+                <td>Beispiel:</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>$$  $$</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>$$  $$</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>$$  $$</td>
+                <td></td>
+              </tr>
+          </table>
+
+
 
         </main>
       </div>
