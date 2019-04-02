@@ -4,14 +4,6 @@
     <?php include ('includes/top_head.php'); 
     $loc = "mathe";
     ?>
-    <style type="text/css">
-      .anchor{
-        display: block;
-        height: 115px; /*same height as header*/
-        margin-top: -115px; /*same height as header*/
-        visibility: hidden;
-      }
-    </style>
 </head>
   <body>
     <a id="skippy" class="sr-only sr-only-focusable" href="#content">
@@ -40,6 +32,7 @@
             <li class="toc-entry toc-h2"><a href="#parametrisierte_flaechen">Parametrisierte Flächen</a></li>
             <li class="toc-entry toc-h2"><a href="#flussintegrale">Flussintegrale</a></li>
             <li class="toc-entry toc-h2"><a href="#partielle_ableitung">Partielle Ableitung</a></li>
+            <li class="toc-entry toc-h2"><a href="#hauptsaetze">Hauptsätze der Vektoranalysis</a></li>
             </ul>
           </div>
         
@@ -407,6 +400,82 @@
               <tr>
                 <td>$$ \text{rot}(\text{rot}(\vec{v})) = \vec{\nabla}\text{div}(\vec{v})-\Delta \vec{v} $$</td>
                 <td>3D</td>
+              </tr>
+            </table>
+            <br><br><h5 id="hauptsaetze">Hauptsätze der Vektoranalysis</h5>
+            <table>
+              <tr>
+                <td rowspan="4" width=20%>Richtungsableitung</td>
+                <td width=42%>$$ \vec{\nabla}_{\hat{e}f} = m = \left \langle \hat{e}, \vec{\nabla}f \right \rangle $$</td>
+                <td rowspan="4">Die Steigung eines Weges auf dem Funktionsgraphen in horizontaler Richtung e am Punkt (x<sub>0</sub>;y<sub>0</sub>) beträgt:<br>
+                  <img src="bilder/vektoranalysis/hauptsaetze/richtungsableitung.png"style="max-height:60%; max-width:100%"><br>
+                  <b>m</b> = Steigung <br>
+                  <img src="bilder/vektoranalysis/hauptsaetze/e.png" height="17"> = Richtungsvekotr<br>
+                  <img src="bilder/vektoranalysis/hauptsaetze/grad.png" height="22"> = Gradient von x und y
+                </td>
+                <tr>
+                  <td>1. Vektor bestimmen: $$ \hat{e} = \frac{1}{v}\cdot \vec{v}  $$</td>
+                </tr>
+                <tr>
+                  <td>2. Gradient berechnen: $$ \vec{\nabla}f =  \begin{bmatrix}f_{,x}\\ f_{,y}\end{bmatrix} = \begin{bmatrix}x+8y, \;x\\ x+8y, \;y\end{bmatrix} = \begin{bmatrix}1\\ 8\end{bmatrix} $$</td>
+                </tr>
+                <tr>
+                  <td>3. Skalarprodukt rechnen: $$ \left \langle \hat{e}, \vec{\nabla}f \right \rangle  $$</td>
+                </tr>
+              </tr>
+              <tr>
+                <td>Gauss-Integralsatz</td>
+                <td>$$ \oint_{\partial K} \left \langle \vec{v},\hat{n} \right \rangle \text{ d}A = \Phi _{\vec{v}} = \int_K \text{div}(\vec{v}) \text{ d}V $$</td>
+                <td>
+                  <img src="bilder/vektoranalysis/hauptsaetze/gauss_integralsatz.png"style="max-height:60%; max-width:100%"><br>
+                  <b>K</b> = Körper [m<sup>3</sup>]<br>
+                  <b>∂K</b> = Oberfläche [m<sup>2</sup>]<br>
+                  <b><img src="bilder/vektoranalysis/hauptsaetze/n.png" height="15"></b> = Äussere Einheitsnormale<br>
+                  <b>v</b> = Vektorfeld im Raum
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="2">Stokes-Integralsatz</td>
+                <td>$$ \oint_{\partial G} \left \langle \vec{v},\hat{e}_s \right \rangle \text{ d}s = \Upsilon  _{\vec{v}} = \Phi _{\text{rot}(\vec{v})} = \int_G \left \langle \text{rot}(\vec{v},\hat{n} \right \rangle \text{ d}A $$</td>
+                <td rowspan="2">
+                  <img src="bilder/vektoranalysis/hauptsaetze/stokes_integralsatz.png"style="max-height:60%; max-width:100%"><br>
+                  <b>G</b> = Gebiet (Fläche) [m<sup>2</sup>]<br>
+                  <b>∂G</b> = Randkurve von g [m]<br>
+                  <b><img src="bilder/vektoranalysis/hauptsaetze/n.png" height="15"></b> = Einheitsnormale (rechtsumlaufen)<br>
+                  <b>v</b> = Vektorfeld im Raum
+                </td>
+              </tr>
+              <tr>
+                <td>Für jede geschlossene Kurve gilt:
+                  $$ \Upsilon _{\vec{E} } = 0 \rightarrow \small \text{ Maschensatz} $$
+                  $$ \Upsilon _{\vec{B} } = \mu_0 \cdot I_{eg} $$
+              </td>
+              </tr>
+              <tr>
+                <td>Skalar-Potentialsatz</td>
+                <td>$$ \vec{v} = \vec{\nabla} \phi  $$</td>
+                <td>Sei v ein Vekotrfeld mit rot(v) = 0. Dann gibt es eine skalare Funktion ϕ (heisst: Potential von v) mit:<br><br>
+                  Jedes wirbelfreie Vektorfeld ist eine Gradientenfeld.
+                </td>
+              </tr>
+              <tr>
+                <td>Vektor-Potentialsatz</td>
+                <td>$$ \vec{v} = \text{rot}(\vec{A}) $$</td>
+                <td>
+                  Sei v ein Vekotrfeld mit div(v) = 0. Dann gibt es eine Vektorfeld A (heisst: Vektorpotential von v) mit:<br><br>
+                  Jedes quellenfreie Vektorfeld ist eine Rotation.
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="2">Zerlegungssatz</td>
+                <td>$$ \vec{v} = \vec{w}+\vec{q}+\vec{h} $$</td>
+                <td>
+                  Jedes Vektorfeld v lässt sich schreiben mit div(W) = 0, rot(q) = 0 und h konst.
+                </td>
+              </tr>
+              <tr>
+                <td>$$ \vec{v} = \text{rot}(\vec{A})+\vec{\nabla}\phi+\vec{h} $$</td>
+                <td>Jedes Vektorfeld lässt sich in ein quellenfreies, wirbelfreies und homogenes Vektorfeld zerlegen.</td>
               </tr>
             </table>
 
