@@ -33,6 +33,7 @@
             <li class="toc-entry toc-h2"><a href="#elementarladung">Elementarladung</a></li>
             <li class="toc-entry toc-h2"><a href="#elementarteilchen">Elementarteilchen</a></li>
             <li class="toc-entry toc-h2"><a href="#elektorstatik">Elektrostatik</a></li>
+            <li class="toc-entry toc-h2"><a href="#magnetostatik">Magnetostatik</a></li>
             </ul>
           </div>
         
@@ -469,7 +470,66 @@
                   <td>$$ C = \varepsilon_0 \cdot \frac{A}{d} $$</td>
                 </tr>
               </table>
-         
+          <br><br><h5 id="magnetostatik">Magnetostatik</h5>
+          <table>
+            <tr>
+              <td rowspan="3" width=20%>Ampère-Durchflutungsgesetz <br>(konstantes E-Feld)</td>
+              <td width=42%>$$ \Upsilon _{\vec{B}} = \oint _\gamma \left \langle \vec{B},\hat{e} \right \rangle \text{d}s = \mu _0 \cdot I_{eg} $$</td>
+              <td>
+                <img src="bilder/elektrik/magnetostatik/ampere.png"style="max-height:40%; max-width:80%"><br>
+                <b><img src="bilder/elektrik/magnetostatik/durchflutung.png" height="20"></b> = Zirkulation [N/A]<br>
+                <b>B</b> = Magnetisches Feld (Tesla) [T] = [N/(A·m)]<br>
+                <img src="bilder/vektoranalysis/hauptsaetze/e.png" height="17"> = Richtungsvekotr<br>
+                <b>μ<sub>0</sub></b> = Magnetische Feldkonstante = 4·π·10<sup>-7</sup> [N/A<sup>2</sup>]<br>
+                <b>I<sub>eg</sub></b> = Total eingeschlossener Strom [A]
+              </td>
+            </tr>
+            <tr>
+              <td>Anwendung 1: Langer gerader Strom $$ \text{ } \\ B(r) = \frac{\mu_0}{2 \pi} \cdot \frac{I}{r} $$</td>
+              <td>
+                Situation: Strom kommt rechtwinklich aus Zeichenebene.
+                <img src="bilder/elektrik/magnetostatik/kreis.png"style="max-height:40%; max-width:70%"><br>
+                <b>B</b> = Magnetisches Feld (Tesla) [T] = [N/(A·m)]<br>
+                <b>μ<sub>0</sub></b> = Magnetische Feldkonstante = 4·π·10<sup>-7</sup> [N/A<sup>2</sup>]<br>
+                <b>I</b> = Strom [A]<br>
+                <b>r</b> = Radius [m]
+              </td>
+            </tr>
+            <tr>
+              <td>Anwendung 2: Lange dünne Spule $$ \text{ } \\ B \approx  \mu_0 \cdot N \cdot \frac{I}{l} $$</td>
+              <td>
+                <img src="bilder/elektrik/magnetostatik/spule.png"style="max-height:40%; max-width:70%"><br>
+                <b>B</b> = Magnetisches Feld (Tesla) [T] = [N/(A·m)]<br>
+                <b>μ<sub>0</sub></b> = Magnetische Feldkonstante = 4·π·10<sup>-7</sup> [N/A<sup>2</sup>]<br>
+                <b>N</b> = Wicklungen [-]<br>
+                <b>I</b> = Strom [A]<br>
+                <b>l</b> = Länge [m]
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="2">Biot-Savart-Gesetz</td>
+              <td>
+                $$ \delta \vec{B} = \frac{\mu_0}{4 \pi} \cdot I \cdot \frac{1}{r^2}\cdot \hat{e}_s \times \hat{r} \cdot \delta s$$
+                $$ \delta \vec{B} = \frac{\mu_0}{4 \pi} \cdot I \cdot \frac{1}{r^2}\cdot \vec{v} \times \hat{r} \cdot \delta \tau $$
+                $$ \delta \vec{B} = \frac{\mu_0}{4 \pi} \cdot I \cdot \frac{1}{r^3}\cdot \hat{e}_s \times \vec{r} \cdot \delta s $$
+                $$ \delta \vec{B} = \frac{\mu_0}{4 \pi} \cdot I \cdot \frac{1}{r^3}\cdot \vec{v} \times \vec{r} \cdot \delta \tau $$
+              </td>
+              <td>Der Beitrag des kleinen Stücks des Stroms mit Länge δs zum B-Feld am Punkt P ist:<img src="bilder/elektrik/magnetostatik/savart.png"style="max-height:40%; max-width:100%"><br>
+                <b>B</b> = Magnetisches Feld (Tesla) [T] = [N/(A·m)]<br>
+                <b>μ<sub>0</sub></b> = Magnetische Feldkonstante = 4·π·10<sup>-7</sup> [N/A<sup>2</sup>]<br>
+                <b>I</b> = Strom [A]<br>
+                <b>r</b> = Radius [m]<br>
+                <img src="bilder/vektoranalysis/hauptsaetze/e.png" height="17"> = Richtungsvekotr<br>
+                <img src="bilder/elektrik/magnetostatik/r_hat.png" height="17"> = Einheitsvekotr zum Punkt P<br>
+                <img src="bilder/elektrik/magnetostatik/r_vec.png" height="17"> = Vekotr zum Punkt P<br>
+                <img src="bilder/elektrik/magnetostatik/v_vec.png" height="17"> = Vekotr<br>
+              </td>
+              <tr>
+                <td>Die Richtung des B-Feldes kann mit der Rechten-Hand-Regel bestimmt werden.</td>
+                <td><b>Daumen</b> Stromrichtung<br><b>andere Finger</b> B-Feld-Richtung</td>
+              </tr>
+            </tr>
+          </table>
         </main>
       </div>
     </div>

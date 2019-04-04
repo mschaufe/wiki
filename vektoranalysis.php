@@ -369,7 +369,7 @@
                 <td>Die Rotation wird für ein <b>Vektorfeld v</b> berechnet, und ist in 2D ein Skalar.<br><br>Betrachtet man ein infinitesimales Volumen im Vektorfeld, so gibt der Rotationsvektor an wie stark und um welche Drehachse sich das Volumen dreht. Ist die <b>Rotation 0</b>, dann ist das Vektorfeld <b>wirbelfrei</b>.</td>
               </tr>
               <tr>
-                <td>$$\text{rot}(\vec{v}) := \begin{bmatrix}{V^3}_{,2}-{V^2}_{,3}\\ {V^1}_{,3}-{V^3}_{,1}\\ {V^2}_{,1}-{V^1}_{,2}\end{bmatrix} \\ \text{ } \\ \vec{v}(x^1;x^2;x^3) = \begin{bmatrix}V^1 (x^1;x^2;x^3)\\ V^2 (x^1;x^2;x^3)\\ V^3 (x^1;x^2;x^3)\end{bmatrix} $$</td>
+                <td>$$\text{rot}(\vec{v}) := \begin{bmatrix}{V^3}_{,2}-{V^2}_{,3}\\ {V^1}_{,3}-{V^3}_{,1}\\ {V^2}_{,1}-{V^1}_{,2}\end{bmatrix} = \hat{n} \cdot z \text{-anteil} \\ \text{ } \\ \vec{v}(x^1;x^2;x^3) = \begin{bmatrix}V^1 (x^1;x^2;x^3)\\ V^2 (x^1;x^2;x^3)\\ V^3 (x^1;x^2;x^3)\end{bmatrix} $$</td>
                 <td>In 3D ist rot(v) ein Vektor. Dieser steht senkrecht auf der "Wirbel-Ebene" von Vektor v (Analog zum Drehimpuls).</td>
               </tr>
               <tr>
@@ -427,22 +427,26 @@
                 <td>Gauss-Integralsatz</td>
                 <td>$$ \oint_{\partial K} \left \langle \vec{v},\hat{n} \right \rangle \text{ d}A = \Phi _{\vec{v}} = \int_K \text{div}(\vec{v}) \text{ d}V $$</td>
                 <td>
+                  Gilt für alle Dimensionen.
                   <img src="bilder/vektoranalysis/hauptsaetze/gauss_integralsatz.png"style="max-height:60%; max-width:100%"><br>
                   <b>K</b> = Körper [m<sup>3</sup>]<br>
                   <b>∂K</b> = Oberfläche [m<sup>2</sup>]<br>
                   <b><img src="bilder/vektoranalysis/hauptsaetze/n.png" height="15"></b> = Äussere Einheitsnormale<br>
-                  <b>v</b> = Vektorfeld im Raum
+                  <b>v</b> = Vektorfeld im Raum<br>
+                  <b>Φ</b> = Volumendurchfluss
                 </td>
               </tr>
               <tr>
                 <td rowspan="2">Stokes-Integralsatz</td>
-                <td>$$ \oint_{\partial G} \left \langle \vec{v},\hat{e}_s \right \rangle \text{ d}s = \Upsilon  _{\vec{v}} = \Phi _{\text{rot}(\vec{v})} = \int_G \left \langle \text{rot}(\vec{v},\hat{n} \right \rangle \text{ d}A $$</td>
+                <td>$$ \oint_{\partial G} \left \langle \vec{v},\hat{e}_s \right \rangle \text{ d}s = \Upsilon  _{\vec{v}} = \Phi _{\text{rot}(\vec{v})} = \int_G \left \langle \text{rot}(\vec{v}),\hat{n} \right \rangle \text{ d}A $$</td>
                 <td rowspan="2">
+                  Gilt nur für ebene geschlossene Kurven.
                   <img src="bilder/vektoranalysis/hauptsaetze/stokes_integralsatz.png"style="max-height:60%; max-width:100%"><br>
                   <b>G</b> = Gebiet (Fläche) [m<sup>2</sup>]<br>
                   <b>∂G</b> = Randkurve von g [m]<br>
                   <b><img src="bilder/vektoranalysis/hauptsaetze/n.png" height="15"></b> = Einheitsnormale (rechtsumlaufen)<br>
-                  <b>v</b> = Vektorfeld im Raum
+                  <b>v</b> = Vektorfeld im Raum<br>
+                  <img src="bilder/vektoranalysis/hauptsaetze/zirkulation.png" height="15"> = Zirkulation
                 </td>
               </tr>
               <tr>

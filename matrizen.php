@@ -128,7 +128,7 @@
                   <tr>
                     <td rowspan="2">Determinante</td>
                     <td>$$ \text{det}(\begin{bmatrix}2 &3 \\ 5 &7 \end{bmatrix})=2\cdot 7 - 5\cdot 2 = -1 $$</td>
-                    <td rowspan="2">Die Determinante wird vor allem in der linearen Algebra in vielen Gebieten angewendet, wie beispielsweise zum Lösen von linearen Gleichungssystemen, dem Invertieren von Matrizen oder auch bei der Flächenberechnung. <br>Für nicht quadratische Matrizen ist die Determinante nicht definiert.</td>
+                    <td rowspan="2">Die Determinante wird vor allem in der linearen Algebra in vielen Gebieten angewendet, wie beispielsweise zum Lösen von linearen Gleichungssystemen, dem Invertieren von Matrizen oder auch bei der Flächenberechnung.<br>- Sie gibt den <b>Streckungsfaktor</b> an.<br>- Wenn die Determinante <b>negativ</b> ist, wird die Ebene/Fläche zuerst umgedreht und dann gestreckt. <br>- Wenn die Determinante <b>0</b> ist, dann wird die Ebene oder Fläche so auf etwas gestreckt, das kein Volumen, Fläche oder Länge mehr hat.<br>- Für nicht quadratische Matrizen ist die Determinante nicht definiert.</td>
                   </tr>
                   <tr>
                     <td>$$ \scriptsize \text{det}(\begin{bmatrix}4 &6  &1 \\ 10 &8  &5 \\ 0 &0  &1 \end{bmatrix}) = 4\cdot \text{det}\begin{bmatrix}8 &5 \\ 0 &1 \end{bmatrix}-10\cdot \text{det}\begin{bmatrix}6 &1 \\ 0 &1 \end{bmatrix}+0\cdot \text{det}\begin{bmatrix}6 &1 \\ 8 &5 \end{bmatrix}  \\  =4(8-0)-10(6-0)+0(30-8)=32-60+0=-28 $$</td>
@@ -151,7 +151,7 @@
               <tr>
                 <td rowspan="3" width=20%>Matrizenmultiplikation</td>
                 <td width=42%>$$ \small \begin{bmatrix}2 &3 \\ 5 &7 \end{bmatrix} \cdot \begin{bmatrix}4 &6 \\ 10 &8 \end{bmatrix} = \begin{bmatrix}2\cdot 4+3\cdot 10 &2\cdot 6+3\cdot 8 \\ 5\cdot 4+7\cdot 10 &5\cdot 6+7\cdot 8 \end{bmatrix} = \begin{bmatrix}38 &36 \\ 90 &86 \end{bmatrix} $$</td>
-                <td><img src="bilder/matrizen/multiplikation.jpeg"style="max-height:35%; max-width:100%"></td>
+                <td>Geometrisch gesehen, vereinigt man bei der Matrizenmultiplikation zwei lineare transformationen.<img src="bilder/matrizen/multiplikation.jpeg"style="max-height:35%; max-width:100%"></td>
               </tr>
               <tr>
                 <td>$$ \scriptsize \begin{bmatrix}1 &2  &3 \\ 5 &1  &2 \\ 1 &0  &2 \end{bmatrix} \cdot\begin{bmatrix}3 &1  &1 \\ 0 &5  &1 \\ 2 &4 &1\end{bmatrix}=\begin{bmatrix}3+0+6 &1+10+12  &1+2+3 \\ 15+0+4 &5+5+8  &5+1+2 \\ 3+0+4 &1+0+2  &1+0+2 \end{bmatrix} $$</td>

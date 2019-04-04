@@ -114,9 +114,9 @@
             </tr>
             <tr>
               <td>Basiswechselmatirzen</td>
-              <td>$$ \small A = \left \{ (1,0),(0,1) \right \}; \; C = \left \{ (1,0),(1,1) \right \} \\ \text{ } \\
+              <td>$$ \small A = \begin{bmatrix}\textcolor{#228B22}1 &\textcolor{#FC4349}0 \\  \textcolor{#228B22}0&\textcolor{#FC4349}1 \end{bmatrix}; \; C = \begin{bmatrix}1 &1 \\  0&1 \end{bmatrix} \\ \text{ } \\
                     u = (6,2); \; \: v=(-4,8) \\ \text{ } \\
-                    (1,0) = x\cdot (1,0)+y \cdot (1,1) \\ (0,1) = x\cdot (1,0)+y \cdot (1,1)\\ \text{ } \\
+                    \textcolor{#228B22}{(1,0)} = x\cdot (1,0)+y \cdot (1,1) \\ \textcolor{#FC4349}{(0,1)} = x\cdot (1,0)+y \cdot (1,1)\\ \text{ } \\
                   \underline{M^{CA}} = \begin{bmatrix}1 &-1 \\ 0&1 \end{bmatrix} \\ \text{ } \\ 
                   u^C = \begin{bmatrix}1 &-1 \\ 0&1 \end{bmatrix} \cdot \begin{bmatrix}6\\2 \end{bmatrix} = \begin{bmatrix}4\\2 \end{bmatrix}; \\ \text{ } \\ 
                   v^C = \begin{bmatrix}1 &-1 \\ 0&1 \end{bmatrix} \cdot \begin{bmatrix}-4\\8 \end{bmatrix} = \begin{bmatrix}-12\\8 \end{bmatrix}; $$</td>
@@ -209,20 +209,21 @@
                 <td>Beispiel:</td>
               </tr>
               <tr>
-                <td></td>
-                <td>$$  $$</td>
-                <td></td>
+                <td>Diagonalisierbar</td>
+                <td>$$ B^{-1}AB = \small \text{Diagonalmatrix} $$</td>
+                <td>Eine quadratische Matrix heisst diagonalisierbar, falls es eine invertierbare Matrix B gibt, so dass B<sup>-1</sup>AB eine Diagonalmatrix ist.</td>
               </tr>
               <tr>
-                <td></td>
-                <td>$$  $$</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>$$  $$</td>
-                <td></td>
-              </tr>
+                    <td rowspan="3">Gleichungssystem</td>
+                    <td>$$2x+5y+3z=-3 \\ 4x+0y+8z = 0 \\ 1x +3y+0z = 2 $$</td>
+                    <td rowspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td>$$ \begin{bmatrix}2 &5  &3 \\  4&0  &8 \\ 1 &3  &0 \end{bmatrix} \begin{bmatrix}x\\y \\ z\end{bmatrix} = \begin{bmatrix}-3\\0 \\2 \end{bmatrix} $$</td>
+                  </tr>
+                  <tr>
+                    <td>$$ A\vec{x} = \vec{v} $$</td>
+                  </tr>
           </table>
 
 
