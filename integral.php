@@ -171,7 +171,7 @@
               <tr>
                 <td width=20%>Hyperbel</td>
                 <td width=42%>$$ \frac{1}{x} $$</td>
-                <td>$$ \ln|x| \color{#AAA}{+ c} $$</td>
+                <td>$$ \ln(|x|) \color{#AAA}{+ c} $$</td>
               </tr>
               <tr>
                 <td width=20%> Logarithmus naturalis </td>

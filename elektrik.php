@@ -522,7 +522,7 @@
                 <img src="bilder/vektoranalysis/hauptsaetze/e.png" height="17"> = Richtungsvekotr<br>
                 <img src="bilder/elektrik/magnetostatik/r_hat.png" height="17"> = Einheitsvekotr zum Punkt P<br>
                 <img src="bilder/elektrik/magnetostatik/r_vec.png" height="17"> = Vekotr zum Punkt P<br>
-                <img src="bilder/elektrik/magnetostatik/v_vec.png" height="17"> = Vekotr<br>
+                <img src="bilder/elektrik/magnetostatik/v_vec.png" height="17"> = Geschwindigkeitsvekotr<br>
               </td>
               <tr>
                 <td>Die Richtung des B-Feldes kann mit der Rechten-Hand-Regel bestimmt werden.</td>
