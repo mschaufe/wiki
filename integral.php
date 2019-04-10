@@ -27,11 +27,12 @@
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
             <li class="toc-entry toc-h2"><a href="#darstellung">Definition & Eigenschaften</a></li>
-              <ul><li class="toc-entry toc-h3"><a href="#folge">Definition</a></li></ul>
-              <ul><li class="toc-entry toc-h3"><a href="#darstellung">Schreibweise</a></li></ul>
+            <li class="toc-entry toc-h2"><a href="#regeln">Regeln</a></li>
             <li class="toc-entry toc-h2"><a href="#formeln">Formeln zur Integration</a></li>
             <li class="toc-entry toc-h2"><a href="#modifikation">Lineare Modifikation</a></li>
             <li class="toc-entry toc-h2"><a href="#acr">ACR-Prozess</a></li>
+            <li class="toc-entry toc-h2"><a href="#integrationsmethoden">Integrationsmethoden</a></li>
+            <li class="toc-entry toc-h2"><a href="#uneigentliche_integrale">Uneigentliche Integrale</a></li>
             <li class="toc-entry toc-h2"><a href="#tools">Tools</a></li>
             </ul>
           </div>
@@ -42,8 +43,6 @@
 
           <p class="bd-lead">Die Integralrechnung ist die Umkehrung der Differentialrechnung und dient zur Berechnung von Flächen.</p>
 
-          
-
           <br><br><h5 id="begriffe">Definition & Eigenschaften</h5>
               <table class="table">
                 <thead>
@@ -53,63 +52,26 @@
                     <th scope="col">Grafik</th>
                   </tr>
                 </thead>
-                <tbody>
                   <tr>
-                    <td >Definition</td>
-                    <td>Die Fläche A heisst Integral der Funktion f(x) in den Grenzen x<sub>0</sub>  bis x<sub>E</sub>  über x.</td>
-                    <td ><img src="bilder/integral/definition.png"style="max-height:15%; max-width:100%"></td>
+                    <td width=20%>Bestimmtes Integral</td>
+                    <td width=42%>$$ \int_{a}^{b}f(x) \text{ d}x = \left [ F(x) \right ]_{a}^{b} = F(b) - F(a) $$</td>
+                    <td><img src="bilder/integral/bestimmtes_integral.jpg"style="max-height:40%; max-width:100%"></td>
                   </tr>
                   <tr>
-                    <td >Schreibweise</td>
-                    <td>$$  A = \int_{x_{0}}^{x_{E}}f(x) \:dx $$</td>
-                    <td>
-                      <b>x<sub>0</sub></b> = untere Grenze<br>
-                      <b>x<sub>0</sub></b> = untere Grenze<br>
-                      <b>f(x)</b> = Integrand<br>
-                      <b>dx</b> = Mass / Differentialsymbol
+                    <td>Unbestimmtes Integral</td>
+                    <td>$$ A = \int_{a}^{b} \! f(x) \, \mathrm{d}x = F(x) + c $$</td>
+                    <td><img src="bilder/integral/unbestimmtes_integral.jpg"style="max-height:44%; max-width:100%"><br><br>
+                      <b>a</b> = untere Grenze<br>
+                      <b>x</b> = untere Grenze<br>
+                      <b>f(x)</b> = Funktion<br>
+                      <b>F(x)</b> = Stammfunktion<br>
+                      <b>dx</b> = Mass / Differentialsymbol<br>
+                      <b>c</b> = Integrationskonstante
                     </td>
                   </tr>
-                  <tr>
-                    <td >Vorzeichenkonventionen</td>
-                    <td>Flächen unterhalb der x-Achse werden negativ verrechnet!</td>
-                    <td ><img src="bilder/integral/vorzeichen.png"style="max-height:50%; max-width:100%"></td>
-                  </tr>
-                  <tr>
-                    <td >Umformung (Grenzen)</td>
-                    <td>$$ \int_{x_{E}}^{x_{0}}f(x) \:dx = -\int_{x_{0}}^{x_{E}}f(x) \:dx$$</td>
-                    <td></td>
-                  </tr>
-                </tbody>
               </table>
-
-              <table class="table">
-              <tr>
-                <td width=20%>Newton-Leibniz-Formel</td>
-                <td width=42%>$$ \int_{x_{E}}^{x_{0}}f(x) \:dx = F(x_{E})-F{(x_{0})} $$</td>
-                <td>Falls die Funktion keine Sprünge hat, gilt die Formel mit:<br> <b>f(x) = F'(x)</b>.</td>
-              </tr>
-              <tr>
-                <td width=20%>Beispiel 1</td>
-                <td width=42%>$$ \int_{-1}^{1}x^{3} \:dx = \frac{1}{4}x^{4} \mid _{-1}^{1} = \frac{1}{4}1^{4} -\frac{1}{4}(-1)^{4} = \frac{1}{4}-\frac{1}{4}= 0 $$</td>
-                <td><img src="bilder/integral/beispiel_1.png"style="max-height:35%; max-width:100%"></td>
-              </tr>
-              <tr>
-                <td width=20%>Beispiel 2</td>
-                <td width=42%>$$ \int_{0}^{\pi}\sin(x)\:dx = -\cos(x)\mid _{0}^{\pi} \;= -\cos(\pi)+\cos(0) \\= -(-1)+1 = 1+1 = 2 $$</td>
-                <td><img src="bilder/integral/beispiel_2.png"style="max-height:35%; max-width:100%"></td>
-              </tr>
-              <tr>
-                <td width=20%>Bestimmtes Integral</td>
-                <td width=42%>$$  $$</td>
-                <td>Beim bestimmten Integral sind die Integrationsgrenzen angegeben</td>
-              </tr>
-              <tr>
-                <td width=20%>Unbestimmtes Integral</td>
-                <td width=42%>$$ \int \! f(x) \, \mathrm{d}x = F(x) + c $$</td>
-                <td>Hingegen beim unbestimmten Integral sind keine Grenzen angegeben.<br> <b>c</b> = Integrationskonstante</td>
-              </tr>
-            </table>
-
+            
+            <br><br><h5 id="regeln">Regeln</h5>
             <table class="table">
               <tr>
                 <td width=20%>Summen-Regel</td>
@@ -124,7 +86,13 @@
               <tr>
                 <td width=20%>Zerlegungsregel</td>
                 <td width=42%>$$ \int_{x_{0}}^{x_{E}}f(x) \:dx = \int_{x_{0}}^{x_{1}}f(x) \:dx + \int_{x_{1}}^{x_{E}}f(x) \:dx $$</td>
+                <td>
+              </td>
+              <tr>
+                <td>Vertauschungsregel</td>
+                <td>$$ \int_{x_{E}}^{x_{0}}f(x) \:dx = -\int_{x_{0}}^{x_{E}}f(x) \:dx$$</td>
                 <td></td>
+              </tr>
               </tr>
             </table>
 
@@ -149,9 +117,9 @@
                 <td>$$ \frac{1}{n+1}\cdot x^{n+1} \color{#AAA}{+ c} $$</td>
               </tr>
               <tr>
-                <td width=20%> e-Funktion </td>
-                <td width=42%>$$ e^{x} $$</td>
-                <td>$$ e^x \color{#AAA}{+ c} $$</td>
+                <td width=20%>Wurzelfunktion</td>
+                <td width=42%>$$ \frac{1}{\sqrt{x}} $$</td>
+                <td>$$ 2\sqrt{x} \color{#AAA}{+ c} $$</td>
               </tr>
               <tr>
                 <td width=20%>Sinus</td>
@@ -172,6 +140,11 @@
                 <td width=20%>Hyperbel</td>
                 <td width=42%>$$ \frac{1}{x} $$</td>
                 <td>$$ \ln(|x|) \color{#AAA}{+ c} $$</td>
+              </tr>
+              <tr>
+                <td width=20%> e-Funktion </td>
+                <td width=42%>$$ e^{x} $$</td>
+                <td>$$ e^x \color{#AAA}{+ c} $$</td>
               </tr>
               <tr>
                 <td width=20%> Logarithmus naturalis </td>
@@ -230,6 +203,56 @@
               </tr>
               </table>
 
+          <br><br><h5 id="integrationsmethoden">Integratoinsmethoden</h5>
+            <table>
+              <tr>
+                <td rowspan="2" width=20%>Substitution</td>
+                <td width=42%>$$ \int_{a}^{b} f(u(x))\cdot u'(x) \text{ d}x = \int_{u(a)}^{u(b)} f(u) \text{ d}u = F(u(b))-F(u(a))$$</td>
+                <td rowspan="2">
+                  1. Substituieren u(x) =<br>
+                  2. Das Substituierte ableiten u'(x) =<br>
+                  3. Kehrwert von u'(x) multiplizieren <br>
+                  4. Inegration mit u(x) schreiben<br>
+                  5. Grenzen + Differentialsymbol anpassen<br>
+                  6. Integrationskonstante hinzufügen oder rechnen
+                </td>
+              </tr>
+              <tr>
+                <td>$$ \int f(u(x))\cdot u'(x) \text{ d}x = \int f(u) \text{ d}u = F(u(x)) + c  $$</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Partielle Integration</td>
+                <td>$$  \int_{a}^{b} g(x) \cdot  h'(x) \text{ d}x = \left [ g(x) \cdot h(x)  \right ]_{a}^{b} - \int_{a}^{b} g'(x) \cdot h(x) \text{ d}x$$</td>
+                <td rowspan="2">
+                  <img src="bilder/integral/partielle.png"style="max-height:30%; max-width:100%"><br>Es ist üblich im ersten Integral die Rollen der Faktorn durch Pfeile zu kennzeichnen.
+                </td>
+              </tr>
+              <tr>
+                <td>$$ \int g(x) \cdot  h'(x) \text{ d}x = g(x) \cdot h(x) - \int g'(x) \cdot h(x) \text{ d}x $$</td>
+              </tr>
+            </table>
+
+          <br><br><h5 id="uneigentliche_integrale">Uneigentliche Integrale</h5>
+            <table>
+                <tr>
+                <td width=20%>Unendliches Integrationsintervall</td>
+                <td width=42%>$$ I =\int_{a}^{\infty} f(x) \text{ d}x = \lim_{\lambda \rightarrow \infty }\; \int_{a}^{\lambda } f(x) \text{ d}x $$</td>
+                <td><img src="bilder/integral/unendliches_int.jpeg"style="max-height:40%; max-width:100%"></td>
+              </tr>
+              <tr>
+                <td rowspan="3">Vorgehen</td>
+                <td rowspan="3"></td>
+                <td>S1: f Aufleiten → F</td>
+              </tr>
+                <tr><td>S2: Einsetzen von a und λ → F(λ) - F(a)</td></tr>
+                <tr><td>S2: Grenzwert für λ → ∞ berechnen </td>
+              </tr>
+              <tr>
+                <td>Integration über Polstellen</td>
+                <td>$$ \int_{a}^{b} f(x) \text{ d}x = \lim_{\lambda \rightarrow \; 0 }\;\int_{a}^{b-\lambda } f(x) \text{ d}x $$</td>
+                <td><img src="bilder/integral/polstellen.jpg"style="max-height:40%; max-width:100%"></td>
+              </tr>
+            </table>
 
 
 
