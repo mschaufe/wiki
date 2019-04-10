@@ -34,6 +34,8 @@
             <li class="toc-entry toc-h2"><a href="#elementarteilchen">Elementarteilchen</a></li>
             <li class="toc-entry toc-h2"><a href="#elektorstatik">Elektrostatik</a></li>
             <li class="toc-entry toc-h2"><a href="#magnetostatik">Magnetostatik</a></li>
+            <li class="toc-entry toc-h2"><a href="#induktion">Induktion</a></li>
+            </ul>
             </ul>
           </div>
         
@@ -530,6 +532,71 @@
               </tr>
             </tr>
           </table>
+
+          <br><br><h5 id="induktion">Induktion</h5>
+          <table>
+            <tr>
+              <td width=20%>Trafospannung</td>
+              <td width=42%>$$ U_{\text{ind}} = -\dot{\Phi }_B $$</td>
+              <td>
+                Ruhende Leiterschleife im zeitlich veränderlichen B-Feld.<br>
+                <img src="bilder/elektrik/induktion/trafospannung.png"style="max-height:40%; max-width:80%"><br><br>
+                <b>U<sub>ind</sub></b> = Indizierte Spannung entlang ∂G [V]<br>
+                <b>Φ<sub>B</sub></b> = Fluss des Magnetfeldes [Vs]
+              </td>
+            </tr>
+            <tr>
+              <td>Bewegungsspannung</td>
+              <td>$$ U_{\text{ind}} = \int_{S_0}^{S_E}\left \langle \vec{v}\times \vec{B},\hat{e} \right \rangle \text{ d}s $$</td>
+              <td>Gerader bewegter Leiter im homogenen Magnetfeld.<br><img src="bilder/elektrik/induktion/bewegungsspannung.png"style="max-height:40%; max-width:60%"></td>
+            </tr>
+            <tr>
+              <td>Faraday-Induktionsgesetz</td>
+              <td>$$ U_{\text{ind}} = -N \cdot -\dot{\Phi }_B $$</td>
+              <td>Bewegte Spule im zeitliche veränderlichen B-Feld.<img src="bilder/elektrik/induktion/faraday.png"style="max-height:50%; max-width:80%"><br><br>
+              <b>U<sub>ind</sub></b> = Indizierte Spannung [V]<br>
+              <b>N</b> = Windungen [Vs]<br>
+              <b>Φ<sub>B</sub></b> = Fluss des Magnetfeldes [Vs]
+              </td>
+            </tr>
+            <tr>
+              <td>Induktivität</td>
+              <td>$$ U_{\text{ind}} = -L \cdot \dot{I }(t) $$</td>
+              <td><img src="bilder/elektrik/induktion/spule.png"style="max-height:50%; max-width:60%"><br><br>
+              <b>U<sub>ind</sub></b> = Indizierte Spannung [V]<br>
+              <b>L</b> = Kenngrösse des Bauteil (Hennry) [Vs/A] = [1H]<br>
+              <b>I</b> = Strom [A]
+              </td>
+            </tr>
+            <tr>
+              <td>Lange dünne Spule</td>
+              <td>$$ L \approx  \mu_0 \cdot N^2 \cdot \frac{A}{l} $$</td>
+              <td><img src="bilder/elektrik/induktion/spule2.png"style="max-height:50%; max-width:60%"><br><br>
+                <b>L</b> = Kenngrösse des Bauteil (Hennry) [Vs/A] = [1H]<br>
+                <b>μ<sub>0</sub></b> = Magnetische Feldkonstante = 4·π·10<sup>-7</sup> [N/A<sup>2</sup>]<br>
+                <b>N</b> = Windungen [Vs]<br>
+                <b>A</b> = Querschnittsfläche [m<sup>2</sup>]<br>
+                <b>l</b> = Länge [m]<br>
+              </td>
+            </tr>
+            <tr>
+              <td>Magnetische Fluss</td>
+              <td>$$ \Phi_B (t) = B(t) \cdot A \approx \mu_0 \cdot N \cdot \frac{1}{l} \cdot I(t) \cdot A $$</td>
+              <td>
+                <b>Φ<sub>B</sub></b> = Fluss des Magnetfeldes [Vs]<br>
+                <b>B</b> = Magnetisches Feld (Tesla) [N/(A·m)] = [T]<br>
+                <b>A</b> = Querschnittsfläche [m<sup>2</sup>]<br>
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="3">Spannungen der Basiselemente im<br> Schaltkreis </td>
+              <td>Widerstand $$ U_R = R \cdot I $$</td>
+              <td><img src="bilder/elektrik/induktion/UR.png"style="max-height:50%; max-width:44%"></td>
+            </tr>
+            <tr><td>Kapazität $$ U_C = \frac{1}{C} \cdot Q $$</td> <td><img src="bilder/elektrik/induktion/UC.png"style="max-height:50%; max-width:44%"></td></tr>
+            <tr><td>Induktivität $$ U_L = L\cdot \dot{I} $$</td> <td><img src="bilder/elektrik/induktion/UL.png"style="max-height:50%; max-width:44%"></td></tr>
+          </table>
+
         </main>
       </div>
     </div>
