@@ -147,6 +147,11 @@
                 <td>$$ e^x \color{#AAA}{+ c} $$</td>
               </tr>
               <tr>
+                <td width=20%> e-Funktion </td>
+                <td width=42%>$$ e^{x} \cdot x $$</td>
+                <td>$$ e^x (x-1) \color{#AAA}{+ c} $$</td>
+              </tr>
+              <tr>
                 <td width=20%> Logarithmus naturalis </td>
                 <td width=42%>$$ \ln x $$</td>
                 <td>$$ x · \ln x - x \color{#AAA}{+ c}\color{#000} \\= x · (\ln x - 1) \color{#AAA}{+ c} $$</td>

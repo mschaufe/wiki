@@ -142,11 +142,14 @@
           <table class="table">
                 <tbody>
                   <tr id="mult_mit_skalar">
-                    <td width=20% >Trigonometrischer Pythagoras</td>
+                    <td rowspan="2" width=20% >Trigonometrischer Pythagoras</td>
                     <td  width=42%>$$ \sin^{2}(\alpha)+\cos^{2}(\alpha) = 1 $$</td>
                     <td></td>
                   </tr>
-                  
+                  <tr>
+                    <td>$$ \cosh^2(x) - \sinh^2(x)  = 1$$</td>
+                    <td></td>
+                  </tr>
                 </tbody>
             </table>
 
