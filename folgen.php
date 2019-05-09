@@ -28,7 +28,8 @@
             <ul class="section-nav">
             <li class="toc-entry toc-h2"><a href="#folgen">Folgen</a></li>
             <li class="toc-entry toc-h2"><a href="#reihen">Reihen</a></li>
-              
+            <li class="toc-entry toc-h2"><a href="#taylor-entwicklung">Taylor-Entwicklung</a></li>
+            <li class="toc-entry toc-h2"><a href="#tools">Tools</a></li>
             </ul>
           </div>
         
@@ -192,7 +193,46 @@
                   </tr>
                     </tbody>
                 </table>
-          
+                
+                <br><br><h5 id="taylor-entwicklung">Taylor-Entwicklung</h5>
+                <table class="table">
+                  <tr>
+                    <td width=20%>Maclaurin-Entwicklung</td>
+                    <td width=42%>$$ f(x) = T_n(x) + R_n(x) $$
+                                  $$ T_n(x) = \sum_{k=0}^{n}\frac{f^{(k)}(0)}{k!}\cdot x^k $$
+                                  $$ R_n(x) = \frac{(-1)^n}{n!}\int^{x}_{0} f^{(n+1)}(s)\cdot (s-x)^n \text{ d}s$$
+                    </td>
+                    <td>Taylor-Polynom + Restglied <br><br> Falls f analytisch ist, wird R<sub>n</sub>(x) zu 0.</td>
+                  </tr>
+                  <tr>
+                    <td>Analytisch</td>
+                    <td>$$ \lim_{n\rightarrow \infty } R_n(x) = 0 $$</td>
+                    <td>Eine unendlich oft differentierbare Funktion f:R -> R heisst analytisch falls: <br><br> Beispiele: x<sup>x</sup>,sin,cos,sinh,cosh</td>
+                  </tr>
+                  <tr>
+                    <td>Taylor-Entwicklung</td>
+                    <td>$$ f(x) = T_n(x) + R_n(x) $$
+                        $$ T_n(x) = \sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}\cdot (x-x_0)^k $$
+                        $$ R_n(x) = \frac{(-1)^n}{n!}\int^{x}_{x_0} f^{(n+1)}(s)\cdot (s-x)^n \text{ d}s$$
+                    </td>
+                    <td>Taylor-Polynom + Restglied<br><br> Falls f analytisch ist, wird R<sub>n</sub>(x) zu 0.</td>
+                  </tr>
+                </table>
+
+              <br><br><h5 id="tools">Tools</h5>
+
+              <table class="table">
+                  <tr>
+                    <td width=20%>Wolframalpha / Mathematica</td>
+                    <td width=42%><p>Entwicklung</p><figure class="highlight"><pre><code class="language-html" data-lang="html">Series[Exp[x], {x, 0, 10}]</code></pre></figure></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Matlab</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+              </table>
 
         </main>
       </div>

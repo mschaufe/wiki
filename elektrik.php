@@ -35,6 +35,7 @@
             <li class="toc-entry toc-h2"><a href="#elektorstatik">Elektrostatik</a></li>
             <li class="toc-entry toc-h2"><a href="#magnetostatik">Magnetostatik</a></li>
             <li class="toc-entry toc-h2"><a href="#induktion">Induktion</a></li>
+            <li class="toc-entry toc-h2"><a href="#maxwell-gleichungen">Maxwell-Gleichungen</a></li>
             </ul>
             </ul>
           </div>
@@ -595,6 +596,94 @@
             </tr>
             <tr><td>Kapazität $$ U_C = \frac{1}{C} \cdot Q $$</td> <td><img src="bilder/elektrik/induktion/UC.png"style="max-height:50%; max-width:44%"></td></tr>
             <tr><td>Induktivität $$ U_L = L\cdot \dot{I} $$</td> <td><img src="bilder/elektrik/induktion/UL.png"style="max-height:50%; max-width:44%"></td></tr>
+          </table>
+
+
+
+          <br><br><h5 id="maxwell-gleichungen">Maxwell-Gleichungen</h5>
+          <table>
+            <tr>
+              <td width=20%>Ladungsdichte</td>
+              <td width=42%>$$ \varrho :\equiv \frac{\small \text{elektrische Ladung}}{\small \text{Volumen}}  $$</td>
+              <td><b>ϱ</b> = Ladungsdichte [ϱ] = [C/m<sup>3</sup>]</td>
+            </tr>
+            <tr>
+              <td>Volumen mit eingeschlossener Ladung</td>
+              <td>$$ Q = \int_V \varrho \text{ d}V $$</td>
+              <td><b>Q</b> = Ladung [C] = [A⋅s]</td>
+            </tr>
+              <tr>
+                <td>Stromdichte</td>
+                <td>$$ \vec{J} = \varrho \cdot \vec{v}$$</td>
+                <td>
+                    <b>J</b> = Stromdichte [A/m<sup>2</sup>]<br>
+                    <b>ϱ</b> = Ladungsdichte [C/m<sup>3</sup>]<br>
+                    <b>v</b> = Geschwindigkeit [m/s]<br><br>
+                    <img src="bilder/elektrotechnik/stromdichte/stromdichte.jpeg"style="max-height:40%; max-width:50%">
+                </td>
+              </tr>
+              <tr>
+                <td>Fluss durch Fläche</td>
+                <td>$$ I = \int_A \left \langle \vec{J},\hat{n} \right \rangle \text{d}A = \Psi _J \equiv \small \text{Fluss von } \normalsize \vec{J} $$</td>
+                <td><img src="bilder/elektrik/maxwell/fluss_von.png"style="max-height:40%; max-width:50%"></td>
+              </tr>
+          </table>
+          <table>
+            <tr>
+              <td width=20%>1. Gleichung</td>
+              <td width=42%>$$ \text{div}(\vec{E}) = \frac{1}{\varepsilon_0} \cdot \varrho  $$</td>
+              <td>
+                <b>div</b> = Divergenz [1/m]<br>
+                <b>E</b> = Elektrisches Feld [N/C]<br>
+                <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante (Vakuum) [A·s/(V·m)] = [F/m] <br>
+                <b>ϱ</b> = Ladungsdichte [ϱ] = [C/m<sup>3</sup>]<br>
+                <br><img src="bilder/elektrik/maxwell/max1.png"style="max-height:40%; max-width:70%"><br>
+                Elektrische Felder (in der Elektrostatik) gehen von positiven Ladungen aus (Quellen) oder gehen in negativen Ladungen (Senken).
+              </td>
+            </tr>
+            <tr>
+              <td>2. Gleichung</td>
+              <td>$$ \text{div}(\vec{B})  = 0 $$</td>
+              <td>
+                Das B-Feld hat <b>keine</b> Quelle. Es ist ein reines Wirbelfeld.
+                <img src="bilder/elektrik/maxwell/max2.png"style="max-height:30%; max-width:50%"></td>
+            </tr>
+            <tr>
+              <td>3. Gleichung</td>
+              <td>$$  \text{rot}(\vec{E})= - \dot{\vec{B}} $$</td>
+              <td>
+                <b>rot</b> = Rotation []<br>
+                <b>E</b> = Elektrisches Feld [N/C]<br>
+                <b>B</b> = Magnetisches Feld (Tesla) [T] = [N/(A·m)]
+                <img src="bilder/elektrik/maxwell/max3.png"style="max-height:30%; max-width:50%"><br>
+                Das E-Feld wirbelt linkshändig um das zeitlich veränderliche B-Feld.</td>
+            </tr>
+            <tr>
+              <td>4. Gleichung</td>
+              <td>$$ \text{rot}(\vec{B})  = \mu_0 \cdot \vec{J} + \varepsilon \cdot \mu _0 \cdot \dot{\vec{E}} $$</td>
+              <td>
+                <b>rot</b> = Rotation []<br>
+                <b>μ<sub>0</sub></b> = Magnetische Feldkonstante 4·π·10<sup>-7</sup> [N/A<sup>2</sup>]<br>
+                <b>J</b> = Stromdichte [A/m<sup>2</sup>]<br>
+                <b>E</b> = Elektrisches Feld [N/C]<br>
+                <br><img src="bilder/elektrik/maxwell/max4.png"style="max-height:100%; max-width:100%"><br>
+                Das B-Feld wirbelt rechtshändig um Stromdichtenfeld und das Zeitlich veränderliche B-Feld.</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td width=20% rowspan="3">Potentiale & Eichinvarianz</td>
+              <td width=42%>$$ \vec{B} = \text{rot}(\vec{A}) $$</td>
+              <td>Weil die Divergenz vom B-Feld Null ergibt, gibt es in jedem Fall ein Vektorpotential A, dass</td>
+            </tr>
+            <tr>
+              <td>$$ \vec{E} = - \vec{\nabla} \phi$$ $$ \small \text{falls } \normalsize \text{ rot}(\vec{E}) = - \dot{\vec{B}} = 0 $$</td>
+              <td>Nur falls die Rotation vom E-Feld Null ist, gibt es ein elektrisches Potential Phi, so dass  </td>
+            </tr>
+            <tr>
+              <td>$$ \vec{E} = - \vec{\nabla} \phi \; - \dot{\vec{A}} $$ $$ \vec{B} = \text{rot}(\vec{A}) $$</td>
+              <td>In jedem Fall gibt es ein Vektorpotential A und ein Skalar-Potential Phi, so dass</td>
+            </tr>
           </table>
 
         </main>

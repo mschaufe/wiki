@@ -150,6 +150,11 @@
                     <td>$$ \cosh^2(x) - \sinh^2(x)  = 1$$</td>
                     <td></td>
                   </tr>
+                  <tr>
+                    <td>Weitere Beziehung</td>
+                    <td>$$ 1 + \tan^2(\alpha) = \frac{1}{\cos^2}(\alpha) $$</td>
+                    <td></td>
+                  </tr>
                 </tbody>
             </table>
 

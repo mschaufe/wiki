@@ -30,6 +30,7 @@
               <ul><li class="toc-entry toc-h3"><a href="#trigo">Trigo</a></li></ul>
               <ul><li class="toc-entry toc-h3"><a href="#trigo">Exponentialfunktion</a></li></ul>
               <ul><li class="toc-entry toc-h3"><a href="#trigo">Logarithmus</a></li></ul>
+            <li class="toc-entry toc-h2"><a href="#tools">Tools</a></li>
             </ul>
           </div>
         
@@ -64,9 +65,12 @@
             <table class="table">
                 <tbody>
                   <tr>
-                    <td width=20%>Monom-Ableitung</td>
-                    <td width=42%>$$ f(x) = x^{p} \\f'(x) = p \cdot x^{p-1} $$</td>
-                    <td>Die Ableitung der quadratischen Standard-Funktion. </td>
+                    <td rowspan="2" width=20%>Monom-Ableitung</td>
+                    <td width=42%>$$ f(x) = x^{p} $$ </td>
+                    <td rowspan="2">Die Ableitung der quadratischen Standard-Funktion. </td>
+                  </tr>
+                  <tr>
+                    <td>$$f'(x) = p \cdot x^{p-1} $$</td>
                   </tr>
                   <tr>
                     <td width=20%>Summenregel</td>
@@ -111,7 +115,7 @@
                   <tr id="mult_mit_skalar">
                     <td width=20%>Betrag in Funktion</td>
                     <td width=42%>$$ f(x) = g(\left | x \right |) \Rightarrow f'(x) = g'(\left | x \right |)\cdot \left | x \right |' = g'(\left | x \right |) \cdot \operatorname{sgn}(x) $$</td>
-                    <td rowspan="2"> Die <code class="highlighter-rouge">Signumfunktion</code> ordnet den positiven Zahlen den Wert +1, den negativen Zahlen den Wert −1 und der 0 den Wert 0 zu.</td>
+                    <td rowspan="2"> Die <b>Signumfunktion</b> ordnet den positiven Zahlen den Wert +1, den negativen Zahlen den Wert −1 und der 0 den Wert 0 zu.</td>
                   </tr>
                   <tr id="mult_mit_skalar">
                     <td width=20%>Betrag über Funktion</td>
@@ -164,16 +168,10 @@
             </table>
 
             <br><br><h5 id="tools">Tools</h5>
-
               <table class="table">
                   <tr>
-                    <td width=20%>Mathematica</td>
-                    <td width=42%><figure class="highlight"><pre><code class="language-html" data-lang="html">D[2 x^2, x]</code></pre></figure></td>
-                    <td>Oder X derivative nach einer berechnung im Menü auswählen</td>
-                  </tr>
-                  <tr>
-                    <td>Wolframalpha</td>
-                    <td><figure class="highlight"><pre><code class="language-html" data-lang="html"></code></pre></figure></td>
+                    <td width=20%>Wolframalpha / Mathematica</td>
+                    <td width=42%><p>Ableitung</p><figure class="highlight"><pre><code class="language-html" data-lang="html">D[2 x^2, x]</code></pre></figure></td>
                     <td></td>
                   </tr>
                   <tr>

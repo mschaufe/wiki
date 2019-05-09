@@ -163,67 +163,54 @@
               </tr>
             </table>
 
-            <br><br><h5 id="tools">Tools</h5>
-            <table class="table">
-                <thead>
+              <br><br><h5 id="tools">Tools</h5>
+              <table class="table">
                   <tr>
-                    <th scope="col" width=20%>Befehl</th>
-                    <th scope="col" width=42%>Wolframalpha & Mathematica  </th>
-                    <th scope="col">Matlab</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Einträge</td>
-                    <td><samp>{{1, 0}, {0, 2}}<code>[[2, 2]]</code></samp></td>
+                    <td rowspan="10" width=20%>Wolframalpha / Mathematica</td>
+                    <td width=42%><p>Einträge</p><figure class="highlight"><pre><code class="language-html" data-lang="html">{{1, 0}, {0, 2}}[[2, 2]]</code></pre></figure></td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Transponieren</td>
-                    <td><samp><code>Transpose</code>[{{a, b, c}, {x, y, z}}]</samp></td>
+                    <td><p>Transponieren</p><figure class="highlight"><pre><code class="language-html" data-lang="html">Transpose[{{a, b, c}, {x, y, z}}]</code></pre></figure></td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Nullmatrix</td>
-                    <td><samp><code>ConstantArray</code>[0, {2, 2}]</td>
+                    <td><p>Nullmatrix</p><figure class="highlight"><pre><code class="language-html" data-lang="html">ConstantArray[0, {2, 2}]</code></pre></figure></td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Dimension</td>
-                    <td><samp><code>Dimensions</code>[{{a, b, c}, {d, e, f}}]</td>
+                    <td><p>Dimension</p><figure class="highlight"><pre><code class="language-html" data-lang="html">Dimensions[{{a, b, c}, {d, e, f}}]</code></pre></figure></td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Diagonalmatrizen</td>
-                    <td><samp><code>DiagonalMatrix</code>[{1, 2, 3}]</td>
+                    <td><p>Diagonalmatrizen</p><figure class="highlight"><pre><code class="language-html" data-lang="html">DiagonalMatrix[{1, 2, 3}]</code></pre></figure></td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Obere Dreiecksmatrix</td>
-                    <td><samp><code>LowerTriangularize</code>[{{8, 4}, {5, 5}}]</td>
+                    <td><p>Obere Dreiecksmatrix </p><figure class="highlight"><pre><code class="language-html" data-lang="html">LowerTriangularize[{{8, 4}, {5, 5}}]</code></pre></figure></td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Untere Dreiecksmatrix</td>
-                    <td><samp><code>UpperTriangularize</code>[{{8, 4}, {5, 5}}]</td>
+                    <td><p>Untere Dreiecksmatrix  </p><figure class="highlight"><pre><code class="language-html" data-lang="html">UpperTriangularize[{{8, 4}, {5, 5}}]</code></pre></figure></td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Einheitsmatrizen</td>
-                    <td><samp><code>DiagonalMatrix</code>[{1, 1, 1}]</td>
+                    <td><p>Einheitsmatrizen</p><figure class="highlight"><pre><code class="language-html" data-lang="html">DiagonalMatrix[{1, 1, 1}]</code></pre></figure></td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Spur</td>
-                    <td><samp><code>Tr</code>[{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}]</td>
+                    <td><p>Spur</p><figure class="highlight"><pre><code class="language-html" data-lang="html">Tr[{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}]</code></pre></figure></td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Determinante</td>
-                    <td><samp><code>Det</code>[{{8, 4}, {5, 5}}]</td>
+                    <td><p>Determinante</p><figure class="highlight"><pre><code class="language-html" data-lang="html">Det[{{8, 4}, {5, 5}}]</code></pre></figure></td>
                     <td></td>
                   </tr>
-                </tbody>
+                  <tr>
+                    <td>Matlab</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
               </table>
           
 

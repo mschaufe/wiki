@@ -30,6 +30,7 @@
             <li class="toc-entry toc-h2"><a href="#skalarprodukt">Skalarprodukt</a></li>
             <li class="toc-entry toc-h2"><a href="#vektorprodukt">Vektorprodukt</a></li>
             <li class="toc-entry toc-h2"><a href="#vektorraeume">Vektorräume</a></li>
+            <li class="toc-entry toc-h2"><a href="#skalarprodukte">Skalarprodukte</a></li>
             </ul>
           </div>
         
@@ -264,8 +265,111 @@
                 </tr>
               </table>
 
-          
-
+          <br><br><h5 id="skalarprodukte">Skalarprodukte</h5>
+              <table class="table">
+                <tr>
+                  <td width=20% rowspan="2">Bilinearformen</td>
+                  <td width=42%>$$ \Phi : V \times V \rightarrow \mathbb{R} $$</td>
+                  <td>Die Bilinearform ist eine Abbildung, die zwei Vekotren eine Zahl zu ordnet.</td>
+                </tr>
+                <td>$$ \text{Bil}(V) $$</td>
+                <td>Die Menge aller Bilinearformen auf V</td>
+                <tr>
+                  <td rowspan="2">Auf Bilinearität testen</td>
+                  <td>$$ (\text{i}) \;\Phi (x+x',y) = \Phi (x,y) +\Phi (x',y) $$
+                      $$ (\text{ii}) \;\Phi (rx,y) = r\Phi (x,y) $$</td>
+                  <td>Es sind 4 regeln, weil jedes beispiel auch mit y geht.</td>
+                </tr>
+                <tr>
+                  <td>$$ \Phi (rx+x',sy+y') = $$ $$ =rs\Phi (x,y) + r\Phi (x,y') + s\Phi (x',y)+\Phi (x'+y') $$</td>
+                  <td>Die vier Bedingungen sind hier zu einer zusammengefasst:</td>
+                </tr>
+                <tr>
+                  <td>Übersicht</td>
+                  <td align="center"><img  src="bilder/vektor/skalarprodukt/uebersicht.png"style="max-height:100%; max-width:65%"></td>
+                  <td>Jedes Skalarprodukt ist eine spezielle Bilinearform, die noch mehr eigenschaften voraussetzt.</td>
+                </tr>
+                <tr>
+                  <td>Schreibweise</td>
+                  <td>$$ \left \langle x,y \right \rangle = \left \langle x,y \right \rangle_\Phi = \Phi(x,y) $$</td>
+                  <td>Die spizen Klammern werden in der Linalg noch anders verwendet, aus diesem Grund wählt man eine andere Schreibweise für das Skalarprodukt.</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">Bilinearformen und Matrizen</td>
+                  <td>$$ \Phi(x,y) = (x^E)^t \cdot M_{\Phi}^{E} \cdot y^E $$</td>
+                  <td rowspan="2">Falls die Marix von Phi bezüglich E eine Diagonalbasis ist, dann ist sie eine Orthogonalbasis</td>
+                </tr>
+                <tr>
+                  <td> $$ \small \begin{bmatrix}x_1 &x_2  &...  & x_n\end{bmatrix}  \begin{bmatrix}\Phi(e_1,e_1) &\Phi(e_1,e_2)  & ... & \Phi(e_1,e_n)\\ \Phi(e_2,e_1) &\Phi(e_2,e_2)  & ... & \Phi(e_2,e_n)\\ ... &...  & ... & ...\\ \Phi(e_n,e_1) &\Phi(e_n,e_2)  & ... & \Phi(e_n,e_n)\end{bmatrix} \begin{bmatrix}y_1\\ y_2\\ ...\\ y_n\end{bmatrix}$$</td>
+                </tr>
+                <tr>
+                  <td>Euklidische Bilinearform</td>
+                  <td>$$ \Phi (x,y) = x_1y_1+ \cdots +x_n,y_n $$</td>
+                  <td>Gewohntes Skalarprodukt</td>
+                </tr>
+                <tr>
+                  <td>Minkowskische Bilinearform</td>
+                  <td>$$ \Phi (x,y) = x_1 y_1 - x_2 y_2 - x_3y_3 - \cdots - x_n y_n $$</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Symmetrie</td>
+                  <td>$$ \Phi (x,y) = \Phi (y,x) $$</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Orthogonalsystem</td>
+                  <td>i) Der Nullvektor ist nicht in der Menge enthalten. <br> ii) Je zwei verschiedene Vektoren aus M sind zueinander orthogonal.</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Orthogonalbasen</td>
+                  <td>$$ \Phi (x,y) = 0 \;\small \text{ oder } \normalsize \; x\perp_\Phi  y $$</td>
+                  <td>Ist aus dem zusammenhang klar, über welche Bilinearform wir sprech, so schreiben wir nur x ⊥ y. </td>
+                </tr>
+                <tr>
+                  <td>Orthogonal von</td>
+                  <td>$$ x^{\perp,\Phi} $$</td>
+                  <td>Die Menge aller zu x orthogonaler Elemente von V wird so bezeichnet und heisst das <b>Orthogonal von </b>x bezüglich Φ.</td>
+                </tr>
+                <tr>
+                  <td>Isotrop</td>
+                  <td>$$ x\perp x $$</td>
+                  <td>Falls x zu sich selber othogonal ist.</td>
+                </tr>
+                <tr>
+                  <td>Degeneriert</td>
+                  <td>$$ x \in V \backslash 0 \; \small \text{ mit } \; \normalsize x^\perp  = V $$</td>
+                  <td>Falls es ein solches x gibt, heisst die Bilinearform Phi <b>degeneriert</b>.</td>
+                </tr>
+                <tr>
+                  <td>Positivität</td>
+                  <td>$$ \Phi(x,x) \geq 0 $$</td>
+                  <td>Eine Bilinearform heisst <b>positiv</b> falls das Ergebnis grösser oder gliech 0 ist und <b>positiv definiert</b> falls es grösser als 0 ist.</td>
+                </tr>
+                <tr>
+                  <td>Ungleichung von<br> Cauchy-Schwarz</td>
+                  <td>$$ \Phi(x,y)^2 \leq \Phi(x,x) \Phi(y,y) $$</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Orthonormalsystem</td>
+                  <td>$$ Norm 1 $$</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Orthonormalbasis</td>
+                  <td>Eine Orthonormalbasis eines Vektorraums V ist eine Basis<br> B = b<sub>1</sub>, ... ,b<sub>n</sub> von V, für die gilt:
+                  $$ \small \text{Für alle } \normalsize b_i \in B  \small \text{ gilt } \normalsize\left \| b_i \right \| = 1 $$
+                  $$ \small \text{Für alle } \normalsize b_i , b_j \in B, \; i \neq j  \small \text{ gilt }\normalsize \Phi(b_i,b_j)=0 $$
+                  Beispiel in R<sup>3</sup>: $$ b_1 = \begin{pmatrix}1\\0 \\0 \end{pmatrix}, b_2 = \begin{pmatrix}0\\1 \\0 \end{pmatrix}, b_3 = \begin{pmatrix}0\\0 \\1 \end{pmatrix} $$</td>
+                  <td>Eine Orthonormalbasis ist in der linearen Algebra eine Basis des Vektorraums, deren Vektoren alle die Länge (die Norm) 1 haben (also Einheitsvektoren sind), und die alle orthogonal zueinander stehen.</td>
+                </tr>
+                <tr>
+                  <td>Gram-Schmidt</td>
+                  <td>$$  $$</td>
+                  <td></td>
+                </tr>
         </main>
       </div>
     </div>

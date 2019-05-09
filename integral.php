@@ -267,14 +267,14 @@
              <br><br><h5 id="tools">Tools</h5>
               <table class="table">
                 <tr>
-                    <td>Wolframalpha & Mathematica</td>
-                    <td><figure class="highlight"><pre><code class="language-html" data-lang="html">Integrate[x^2, {x, -1, 1}]</code></pre></figure></td>
+                    <td>Wolframalpha / Mathematica</td>
+                    <td><p>Integrieren</p><figure class="highlight"><pre><code class="language-html" data-lang="html">Integrate[x^2, {x, -1, 1}]</code></pre></figure></td>
                     <td></td>
                   </tr>
                 <tr>
                   <td rowspan="2" width=20%>Matlab</td>
                    <!-- Achtung! Positionierung unten nicht verändern !!!! -->
-                  <td rowspan="2" width=42%>
+                  <td rowspan="2" width=42%><p>Integrieren</p>
                   <figure class="highlight">
                   <pre><code class="language-html" data-lang="html">
 <font color="green">% MATLAB initialisieren:</font>

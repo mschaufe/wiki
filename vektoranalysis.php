@@ -27,6 +27,7 @@
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
             <li class="toc-entry toc-h2"><a href="#vektorfelder">Vektorfelder</a></li>
+            <li class="toc-entry toc-h2"><a href="#skalarfeld">Skalarfeld</a></li>
             <li class="toc-entry toc-h2"><a href="#parametrisierte_kurven">Parametrisierte Kurven</a></li>
             <li class="toc-entry toc-h2"><a href="#mehrfach-integration">Mehrfach-Integration</a></li>
             <li class="toc-entry toc-h2"><a href="#parametrisierte_flaechen">Parametrisierte Flächen</a></li>
@@ -89,7 +90,21 @@
                   <td>$$ \vec{v} (x;y) = \begin{bmatrix}-y\\x \end{bmatrix} $$</td>
                   <td><img src="bilder/vektoranalysis/vektorfelder/wirbelfeld.jpeg"style="max-height:80%; max-width:80%"></td>
                 </tr>
+                <tr>
+                  <td>Vektorfeld</td>
+                  <td>Hat an jedem Ort eine Richtung und Betrag</td>
+                  <td><img src="bilder/vektoranalysis/vektorfelder/vektorfelder_2.gif"style="max-height:40%; max-width:80%"></td>
+                </tr>
               </tbody>
+            </table>
+
+            <br><br><h5 id="skalarfeld">Skalarfeld</h5>
+            <table>
+              <tr>
+                <td width=20%>Vektorfeld</td>
+                <td width=42%>Hat an jedem Ort einen Betrag.</td>
+                <td>Ein Skalarfeld, bei dem die Intensität durch verschiedene Farben repräsentiert wird.<br><img src="bilder/vektoranalysis/vektorfelder/skalarfeld.png"style="max-height:40%; max-width:80%"></td>
+              </tr>
             </table>
 
           <br><br><h5 id="parametrisierte_kurven">Parametrisierte Kurven</h5>
@@ -318,7 +333,7 @@
               <tr>
                 <td rowspan="6">Gradient</td>
                 <td>$$ \vec{\nabla}f :=\vec{\text{grad}}(f) :=\begin{bmatrix}f,_1\\ f,_2\\ f,_3\end{bmatrix} $$</td>
-                <td>Sei f ein Skalarfeld, so ist der Gradient von f ein Vektor, der in die Richtung der größten Änderung von f im Punkt P(x;y;z) zeigt und dessen Betrag gleich dieser größten Änderung ist.</td>
+                <td><img src="bilder/vektoranalysis/pa/grad.png"style="max-height:80%; max-width:80%"><br><br> Sei f ein Skalarfeld, so ist der Gradient von f ein Vektor, der in die Richtung der größten Änderung von f im Punkt P(x;y;z) zeigt und dessen Betrag gleich dieser größten Änderung ist.</td>
               </tr>
               <tr>
                 <td>$$ \vec{\nabla}(g+h) = \vec{\nabla}g + \vec{\nabla} h $$</td>
@@ -357,7 +372,7 @@
               <tr>
                 <td rowspan="4">Divergenz</td>
                 <td>$$ \text{div}(\vec{v}) := {V^1}_{,1}+{V^2}_{,2}+ ... +{V^n}_{,n} \\ \text{ } \\ \text{div}(\vec{v}) = \left \langle \vec{\nabla},\vec{v} \right \rangle$$</td>
-                <td>Die Divergenz wird für ein <b>Vektorfeld v</b> berechnet und ist selbst ein Skalar. Sie gibt z.B. für ein Strömungsfeld an, ob aus einem infinitesimalen Volumen, P(x;y;z) mehr Flüssigkeit heraus- als hineinströmt.<br><br>Ist die Divergenz positiv, so befindet sich in P eine Quelle, ist sie negativ, so befindet sicht in P eine Senke. Ist die <b>Divergenz 0</b>, dann strömt genauso viel Flüssigkeit in das Volumen hinein wie heraus. Das wird dann <b>quellenfrei</b> genannt.</td>
+                <td><img src="bilder/vektoranalysis/pa/div.png"style="max-height:80%; max-width:80%"><br><br>Die Divergenz liefert ein Skalarfeld, das an jedem Punkt angibt, ob das Feld dort eine Quelle/Senke besitzt und wie ergiebig diese ist.<br><br>Ist die Divergenz positiv, so befindet sich in P eine Quelle, ist sie negativ, so befindet sicht in P eine Senke. Ist die <b>Divergenz 0</b>, dann strömt genauso viel Flüssigkeit in das Volumen hinein wie heraus. Das wird dann <b>quellenfrei</b> genannt.<br><br>Beim ursprünglichen Vektorfeld, sieht man, ob die Vektoren auseinander laufen oder zusammen. Das sind dann Quellen und Senken. Wenn sie Parallel sind, ist es quellenfrei.</td>
               </tr>
                 <tr><td>$$ \text{div}(\vec{v}+\vec{w}) = \text{div}(\vec{v}) + \text{div}(\vec{w}) $$</td><td>Summen-Regel</td></tr>
                 <tr><td>$$ \text{div}(a \cdot\vec{v}) = a \cdot \text{div}(\vec{v}) $$</td><td>Faktor-Regel</td></tr>
@@ -366,7 +381,7 @@
               <tr>
                 <td rowspan="5">Rotation</td>
                 <td>$$ \text{rot}(\vec{v}) := {V^2}_{,1} - {V^1}_{,2} \\ \text{ } \\ \vec{v}(x^1;x^2) = \begin{bmatrix}V^1 (x^1;x^2)\\ V^2 (x^1;x^2)\end{bmatrix} $$</td>
-                <td>Die Rotation wird für ein <b>Vektorfeld v</b> berechnet, und ist in 2D ein Skalar.<br><br>Betrachtet man ein infinitesimales Volumen im Vektorfeld, so gibt der Rotationsvektor an wie stark und um welche Drehachse sich das Volumen dreht. Ist die <b>Rotation 0</b>, dann ist das Vektorfeld <b>wirbelfrei</b>.</td>
+                <td><img src="bilder/vektoranalysis/pa/rot.png"style="max-height:80%; max-width:80%"><br><br> Die Rotation wird für ein <b>Vektorfeld v</b> berechnet, und ist in 2D ein Skalar.<br><br>Betrachtet man ein infinitesimales Volumen im Vektorfeld, so gibt der Rotationsvektor an wie stark und um welche Drehachse sich das Volumen dreht. Ist die <b>Rotation 0</b>, dann ist das Vektorfeld <b>wirbelfrei</b>.</td>
               </tr>
               <tr>
                 <td>$$\text{rot}(\vec{v}) := \begin{bmatrix}{V^3}_{,2}-{V^2}_{,3}\\ {V^1}_{,3}-{V^3}_{,1}\\ {V^2}_{,1}-{V^1}_{,2}\end{bmatrix} = \hat{n} \cdot z \text{-anteil} \\ \text{ } \\ \vec{v}(x^1;x^2;x^3) = \begin{bmatrix}V^1 (x^1;x^2;x^3)\\ V^2 (x^1;x^2;x^3)\\ V^3 (x^1;x^2;x^3)\end{bmatrix} $$</td>
