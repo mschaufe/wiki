@@ -192,7 +192,7 @@
                   <td><img src="bilder/elektrik/elektromagnetische_felder/schema_bFeld.png"style="max-height:40%; max-width:100%"></td>
                 </tr>
                 <tr>
-                  <td rowspan="3">Lorenz-Gleichungen</td>
+                  <td rowspan="3">Lorentz-Gleichungen</td>
                   <td>$$ \vec{F}_{EB} = Q \cdot (\vec{E}+\vec{v}\times \vec{B})  $$</td>
                   <td>
                      <b>F<sub>EB</sub></b> = Kraft des E-B-Feldes [N]<br>

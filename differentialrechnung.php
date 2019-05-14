@@ -26,10 +26,8 @@
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
             <li class="toc-entry toc-h2"><a href="#ableitung">Ableitung</a></li>
-              <ul><li class="toc-entry toc-h3"><a href="#ableitungsregeln">Ableitungsregeln</a></li></ul>
-              <ul><li class="toc-entry toc-h3"><a href="#trigo">Trigo</a></li></ul>
-              <ul><li class="toc-entry toc-h3"><a href="#trigo">Exponentialfunktion</a></li></ul>
-              <ul><li class="toc-entry toc-h3"><a href="#trigo">Logarithmus</a></li></ul>
+            <li class="toc-entry toc-h2"><a href="#ableitungsregeln">Ableitungsregeln</a></li>
+            <li class="toc-entry toc-h2"><a href="#spezielle_funktionene">Spezielle Funktionen</a></li>
             <li class="toc-entry toc-h2"><a href="#tools">Tools</a></li>
             </ul>
           </div>
@@ -62,108 +60,105 @@
             </tbody>
             </table>
 
+            <br><br><h5 id="ableitungsregel">Ableitungsregeln</h5>
             <table class="table">
                 <tbody>
                   <tr>
-                    <td rowspan="2" width=20%>Monom-Ableitung</td>
-                    <td width=42%>$$ f(x) = x^{p} $$ </td>
-                    <td rowspan="2">Die Ableitung der quadratischen Standard-Funktion. </td>
+                    <th width=20%>Regel</th>
+                    <th width=42%>Funktion</th>
+                    <th>Ableitung</th>
                   </tr>
                   <tr>
-                    <td>$$f'(x) = p \cdot x^{p-1} $$</td>
+                    <td>Monom-Ableitung</td>
+                    <td>$$ f(x) = x^{s} $$ </td>
+                    <td>$$f'(x) = s \cdot x^{s-1} $$</td>
                   </tr>
                   <tr>
                     <td width=20%>Summenregel</td>
-                    <td width=42%>$$ (f(x)+g(x))' = f'(x)+g'(x) $$</td>
-                    <td>Die Ableitung einer konstanten Funktion ist null. </td>
+                    <td width=42%>$$ f(x) = u(x) \pm v(x) $$</td>
+                    <td>$$ f'(x) = u'(x) \pm u'(x) $$ </td>
                   </tr>
                   <tr>
                     <td width=20%>Faktorregel</td>
-                    <td width=42%>$$ (c\cdot f(x))' = c\cdot f'(x) $$</td>
-                    <td>Ein konstanter Faktor bleibt beim Differenzieren erhalten.</td>
+                    <td width=42%>$$ f(x) = c \cdot u(x) $$</td>
+                    <td>$$ f'(x) = c \cdot u'(x) $$</td>
                   </tr>
                   <tr>
                     <td width=20%>Produktregel</td>
-                    <td width=42%>$$ (f(x)\cdot g(x))' = f'(x)\cdot g(x)+f(x)\cdot g'(x) $$</td>
-                    <td></td>
+                    <td width=42%>$$ f(x) = u(x) \cdot v(x) $$</td>
+                    <td>$$ f'(x) = u'(x) \cdot u(x) + u(x) \cdot v'(x) $$</td>
                   </tr>
                   <tr>
                     <td width=20%>Quotientenregel</td>
-                    <td width=42%>$$ \left (  \frac{f(x)}{g(x)}\right )'=\frac{f'(x)\cdot g(x)-f(x)\cdot g'(x)}{g^{2}(x)} $$</td>
-                    <td>g(x) ≠ 0</td>
+                    <td width=42%>$$ f(x) = \frac{u(x)}{v(x)} $$</td>
+                    <td>$$ f'(x) = \frac{u'(x)\cdot v(x)-u(x)\cdot v'(x)}{v^2(x)} $$</td>
                   </tr>
                   <tr>
                     <td width=20%>Kettenregel</td>
-                    <td width=42%>$$ (f(g(x)))'=f'(g(x))\cdot g'(x) $$</td>
-                    <td>Äussere Ableitung mal innere Ableitung.</td>
+                    <td width=42%>$$ f(x) = u(v(x)) $$</td>
+                    <td>$$ f'(x) = u'(v(x)) \cdot v'(x) $$</td>
                   </tr>
-                  <tr>
-                    <td width=20%>Ableitung der Logarithmusfunktion</td>
-                    <td width=42%>$$ f'(x)= \frac{1}{ln(a) \cdot x} $$</td>
-                    <td>$$ f(x) = \log_{a}(x) $$</td>
-                  </tr>
-                  <tr>
-                    <td width=20%>Ableitung der Exponentialfunktion</td>
-                    <td width=42%>$$ f'(x)= a^{x} \cdot ln(a) $$</td>
-                    <td>$$ f(x) = a^{x} $$</td>
-                  </tr>
+                  
             </tbody>
             </table>
 
-            <table class="table">
-                <tbody>
-                  <tr id="mult_mit_skalar">
-                    <td width=20%>Betrag in Funktion</td>
-                    <td width=42%>$$ f(x) = g(\left | x \right |) \Rightarrow f'(x) = g'(\left | x \right |)\cdot \left | x \right |' = g'(\left | x \right |) \cdot \operatorname{sgn}(x) $$</td>
-                    <td rowspan="2"> Die <b>Signumfunktion</b> ordnet den positiven Zahlen den Wert +1, den negativen Zahlen den Wert −1 und der 0 den Wert 0 zu.</td>
-                  </tr>
-                  <tr id="mult_mit_skalar">
-                    <td width=20%>Betrag über Funktion</td>
-                    <td width=42%>$$ f(x) = \left | h(x) \right | \Rightarrow f'(x) =  \operatorname{sgn}(h(x))\cdot h'(x) $$</td>
-                  </tr>
-            </tbody>
-          </table>
+            <br><br><h5 id="spezielle_funktionene">Spezielle Funktionen</h5>
 
             <table class="table">
               <tr>
-                <td width=20%>Sinus</td>
+                <td rowspan="2" width=20%>Sinus</td>
                 <td width=42%>$$ \sin'(x) = \cos(x) $$</td>
-                <td rowspan="2"><img src="bilder/differentialrechnung/ableitung/kreis.gif"style="max-height:100%; max-width:100%"></td>
+                <td>$$ \arcsin'(x) = \frac{1}{\sqrt{1-x^2}} $$</td>
               </tr>
               <tr>
-                <td width=20%>Cosinus</td>
-                <td width=42%>$$ \cos'(x) = -sin(x) $$</td>
+                <td>$$ \sinh'(x) = \cosh(x) $$</td>
+                <td>$$ \text{arsinh}'(x) = \frac{1}{\sqrt{x^2+1}} $$</td>
               </tr>
               <tr>
-                <td width=20%>Tangens</td>
-                <td width=42%>$$ \tan'(x) = \frac{1}{\cos^{2}(x)} $$</td>
-                <td rowspan="2"><img src="bilder/differentialrechnung/ableitung/tangens.png"style="max-height:100%; max-width:100%"></td>
+                <td rowspan="2">Cosinus</td>
+                <td>$$ \cos'(x) = -\sin(x) $$</td>
+                <td>$$ \arccos'(x) = \frac{1}{\sqrt{1-x^2}} $$</td>
               </tr>
               <tr>
-                <td width=20%>Cotangens</td>
-                <td width=42%>$$ \cos'(x) = -\frac{1}{\sin^{2}(x)} $$</td>
+                <td>$$ \cosh'(x) = -\sinh(x) $$</td>
+                <td>$$ \text{arcosh}'(x) = \frac{1}{\sqrt{x^2-1}} $$</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Tangens</td>
+                <td>$$ \tan'(x) = \frac{1}{\cos^{2}(x)} = 1+\tan^2(x) $$</td>
+                <td>$$ \arctan'(x) = \frac{1}{1+x^2} $$</td>
+              </tr>
+              <tr>
+                <td>$$ \tanh'(x) = \frac{1}{\cosh^2(x)} = 1-\tanh^2(x) $$</td>
+                <td>$$ \text{artanh}'(x) = \frac{1}{1-x'2} $$</td>
               </tr>
             </table>
 
             <table class="table">
               <tr>
-                <td rowspan="2" width=20%>Exponentialfunktion</td>
-                <td width=42%>$$ \operatorname{exp}(x) := e^{x} $$</td>
-                <td rowspan="4">Definition der Natürlichen Funktionen und ihre Ableitungen</td>
+                <td width=20%>Konstante c</td>
+                <td width=42%>$$c' = 0$$</td>
+                <td>$$ (c \cdot x)' = c $$</td>
               </tr>
               <tr>
-                <td>
-                  $$ \operatorname{exp}'(x) = \operatorname{exp}(x) $$
-                </td>
+                <td>Exponentialfunktion</td>
+                <td>$$ (e^x)' = e^x $$</td>
+                <td>$$ (a^x)' = \ln(a) \cdot a^x $$</td>
               </tr>
               <tr>
-                <td rowspan="2" width=20%>Logarithmus</td>
-                <td width=42%>$$ \operatorname{ln}(x) := \log_{e} (x)$$</td>
+                <td>Logarithmus</td>
+                <td>$$ \ln(\left | x \right |)'= \frac{1}{x} $$</td>
+                <td>$$ \log_a(\left | x \right |)' = \log_a(e)\cdot \frac{1}{x} = \frac{1}{ \ln(a)\cdot x} $$</td>
               </tr>
               <tr>
-                <td>
-                  $$ \operatorname{ln}'(x) = \frac{1}{x} $$
-                </td>
+                <td>Wurzel</td>
+                <td>$$ (\sqrt{x})'  = \frac{1}{2\sqrt{x}} $$</td>
+                <td>$$ \left(\frac{1}{\sqrt{x}}\right)'  = -\frac{1}{2 x^{3/2}} $$</td>
+              </tr>
+              <tr>
+                <td>Monom-Regel</td>
+                <td>$$ (x^s)' = x\cdot x^{s-1} $$</td>
+                <td>$$ \left(\frac{1}{x}\right)' = -\frac{1}{x^2} $$</td>
               </tr>
             </table>
 
