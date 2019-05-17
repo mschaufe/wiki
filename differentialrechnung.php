@@ -51,8 +51,8 @@
                 <tbody>
                   <tr id="mult_mit_skalar">
                     <td rowspan="2" >Differenzenquotient / mittlere Änderungsrate</td>
-                    <td>$${\color{#0BACE8}\frac{\Delta y}{\Delta x} } = \frac{\Delta f}{\Delta x} \coloneqq \frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}$$</td>
-                    <td rowspan="2"><img src="bilder/differentialrechnung/ableitung/differenzenquotient.png"style="max-height:50%; max-width:100%"></td>
+                    <td>$${\frac{\Delta y}{\Delta x} } = \frac{\Delta f}{\Delta x} \coloneqq \frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}$$</td>
+                    <td rowspan="2"><img src="bilder/differentialrechnung/ableitung/differenzenquotient.png"style="max-height:50%; max-width:80%"></td>
                   </tr>
                   <tr>
                     <td><p>Der Differenzenquotient gibt die Steigung der <t style="color:#18A45A";>Sekante</t> PQ an.</p></td>
