@@ -28,6 +28,8 @@
             <li class="toc-entry toc-h2"><a href="#ableitung">Ableitung</a></li>
             <li class="toc-entry toc-h2"><a href="#ableitungsregeln">Ableitungsregeln</a></li>
             <li class="toc-entry toc-h2"><a href="#spezielle_funktionene">Spezielle Funktionen</a></li>
+            <li class="toc-entry toc-h2"><a href="#differentialgleichung">Differentialgleichung</a></li>
+            <li class="toc-entry toc-h2"><a href="#differentialgleichung">Visualisierung</a></li>
             <li class="toc-entry toc-h2"><a href="#tools">Tools</a></li>
             </ul>
           </div>
@@ -55,7 +57,7 @@
                     <td rowspan="2"><img src="bilder/differentialrechnung/ableitung/differenzenquotient.png"style="max-height:50%; max-width:80%"></td>
                   </tr>
                   <tr>
-                    <td><p>Der Differenzenquotient gibt die Steigung der <t style="color:#18A45A";>Sekante</t> PQ an.</p></td>
+                    <td><p>Der Differenzenquotient gibt die Steigung der Sekante an.</p></td>
                   </tr>
             </tbody>
             </table>
@@ -162,17 +164,164 @@
               </tr>
             </table>
 
+            <br><br><h5 id="differentialgleichung">Differentialgleichung</h5>
+            <table class="table">
+              <tr>
+                <td rowspan="4" width=20%>Begriffe und Abkürzungen</td>
+                <td width=42%>$$ \text{IVP}  $$</td>
+                <td>Initial value problem<br>Anfangswertproblem</td>
+              </tr>
+              <tr>
+                <td>$$ \text{ODE} $$</td>
+                <td>Ordinary differential equation<br>gewöhnliche differentialgleichung<br>- Differentialgleichung für eine Funktion in einer Variable.</td>
+              </tr>
+              <tr>
+                <td>$$ \text{IC} $$</td>
+                <td>Initial Conditions<br>Anfangsbedingungen</td>
+              </tr>
+              <tr>
+                <td>$$ \text{Grad} $$</td>
+                <td>Der Grad einer ODE ist die Nummer der höchsten Ableitung in der ODE.</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                    <th width=20%>Klassifikatoin</th>
+                    <th width=42%>Form (1. Grades)</th>
+                    <th>Beispiel </th>
+                  </tr>
+              <tr>
+                <td width=20%>1. Analytisch isolierbar</td>
+                <td width=42%>$$ y' = f(x;y) $$</td>
+                <td>$$ y' = x^2 \cdot y^5$$ $$ y' \cdot (1+x^2) = \cosh(y)$$</td>
+              </tr>
+              <tr>
+                <td>2. Elementar integrierbar </td>
+                <td>$$ y' = g(x) $$</td>
+                <td>$$ y' = 2x $$ $$ y' = 19 \cdot \tan(x^2) $$</td>
+              </tr>
+              <tr>
+                <td>3. autonom </td>
+                <td>$$ y' = y $$</td>
+                <td>$$ y' = 1+y^5 $$ $$ \sin(y') + \cos(y) = 1$$</td>
+              </tr>
+              <tr>
+                <td>4. Separierbar </td>
+                <td>$$ y' = g(x) \cdot h(y) $$</td>
+                <td>$$ y' = 1 \cdot y $$ $$ y' = (5+x^2)\cdot y $$</td>
+              </tr>
+              <tr>
+                <td rowspan="3">5. Linear </td>
+                <td>$$ y' = m(x) \cdot y + q(x) $$</td>
+                <td>$$ y' = 5y + 7 $$ $$ y' = \sin(x) \cdot y + e^x $$</td>
+              </tr>
+              <tr>
+                <td>homogen $$ y' = m(x) \cdot y $$</td>
+                <td>$$ y' = 7x^2 \cdot y $$ $$ y' = \cosh(x) \cdot y $$</td>
+              </tr>
+              <tr>
+                <td>mit konst. Koeffizienten $$ y' = m \cdot y + q(x) $$</td>
+                <td>$$ y' = 2y $$ $$ y' = -3y + \cos(2x) $$</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td rowspan="2" width=20%>Statische Lösungen</td>
+                <td width=42%>$$ y_s(x) = c \equiv \small\text{konst.} $$</td>
+                <td>Eine Lösung einer ODE heisst <b>statisch</b>, falls sie konstant ist. Das heisst y<sub>s</sub>' = y<sub>s</sub>'' = y<sub>s</sub>''' = ... = 0<br><br>
+                  Die statische Lösung charakterisiert eine ODE und sollte immer als <b>Erstes</b> bestimmt werden.</td>
+              </tr>
+              <tr>
+                <td>
+                  Beispiel 1:
+                  $$ y' = 2y + 8 $$
+                  $$ y_s' = 2y_s + 8 $$
+                  $$ 0 = 2y_s + 8 $$
+                  $$ y_s = -4 $$
+                </td>
+                <td>
+                  Beispiel 2:
+                  $$ y' = y^2 -1 = (y+1) \cdot (y-1) $$
+                  $$ y_s' = (y_s+1) \cdot (y_s-1) $$
+                  $$ 0 = (y_s+1) \cdot (y_s-1) $$
+                  $$ y_{s1} = -1 ; \: \; y_{s2} = 1 $$
+                </td>
+              </tr>
+            </table>
+
+            <br><br><h5 id="vsiualisierung">Visualisierung</h5>
+            <table>
+              <tr>
+                <td width="20%" >Richtungsvektorfeld (RVF)</td>
+                <td width="42%" >$$ \hat{v}(x;y) = \frac{1}{\sqrt{1+f^2(x;y)}} \begin{bmatrix}1\\f(x;y) \end{bmatrix} $$</td>
+                <td><img src="bilder/differentialrechnung/gleichung/vis.png"style="max-height:50%; max-width:100%"></td>
+              </tr>
+              <tr>
+                <td rowspan="2">Stabilitätseigenschaften</td>
+                <td>stabil $$ \text{globaler Attraktor} $$</td>
+                <td rowspan="2">Die <b>Stabilität</b> der statischen Lösung kann anhand des RVF beurteilt werden.<br><br><img src="bilder/differentialrechnung/gleichung/stab.png"style="max-height:50%; max-width:100%"></td>
+              </tr>
+              <tr>
+                <td>labil $$ \text{globaler Repellor} $$ $$ \text{3. Beispiel} $$</td>
+              </tr>
+            </table>
+
             <br><br><h5 id="tools">Tools</h5>
               <table class="table">
                   <tr>
-                    <td width=20%>Wolframalpha / Mathematica</td>
+                    <td rowspan="2" width=20%>Wolframalpha / Mathematica</td>
                     <td width=42%><p>Ableitung</p><figure class="highlight"><pre><code class="language-html" data-lang="html">D[2 x^2, x]</code></pre></figure></td>
                     <td></td>
                   </tr>
                   <tr>
+                    <td>
+                    <p>Vektorfeld Plot</p>
+                    <figure class="highlight"><pre><code class="language-html" data-lang="html">VectorPlot[{1, 1 - y^2}, {x, 0, 6}, {y, -2, 2},
+ VectorPoints -> 25,
+ VectorScale -> {0.02, 0.8, None},
+ GridLinesStyle -> LightGray,
+ GridLines -> Automatic,
+ AspectRatio -> Automatic,
+ FrameLabel -> {{"y", None}, {"x", "Figure 1"}}]</code></pre></figure>
+                  </td>
+                  <td></td>
+                  </tr>
+                  <tr>
                     <td>Matlab</td>
-                    <td></td>
-                    <td></td>
+                    <td><p>Vektorfeld Plot</p><figure class="highlight">
+                  <pre><code class="language-html" data-lang="html">
+<font color="green">% MATLAB initialisieren:</font>
+clear <font color="#8A0A8A">all</font>; clc; format <font color="#8A0A8A">compact</font>; format <font color="#8A0A8A">short g</font>;
+
+<font color="green">% Paramter:</font>
+    x_0=0; <font color="green">% erster X Wert</font>
+    x_E=6; <font color="green">% letzter X Wert</font>
+    y_0=-2; <font color="green">% erster Y Wert</font>
+    y_E=2; <font color="green">% letzter Y Wert</font>
+    N_x=25; <font color="green">% anzahl Werte, die generiert werden in X</font>
+    N_y=25; <font color="green">% anzahl Werte, die generiert werden in Y</font>
+    fig=1; <font color="green">% Figur 1</font>
+    scale=0.5; <font color="green">% Skalierung</font>
+    
+<font color="green">% Funktionen:</font>
+f=@(x,y)1.-y.^2; <font color="green">% hier die Funktion aendern</font>
+v=@(x,y){1./sqrt(1+f(x,y).^2);f(x,y)./sqrt(1+f(x,y).^2)};
+
+<font color="green">% Daten:</font>
+x_data=linspace(x_0,x_E,N_x);
+y_data=linspace(y_0,y_E,N_y);
+[x_grid,y_grid]=meshgrid(x_data,y_data);
+v_grid=v(x_grid,y_grid);
+
+<font color="green">% Plot:</font>
+figure(fig);
+quiver(x_grid,y_grid,v_grid{1},v_grid{2},scale);
+xlabel(<font color="#8A0A8A">'x'</font>); ylabel(<font color="#8A0A8A">'y'</font>);
+grid <font color="#8A0A8A">on</font>;
+axis(<font color="#8A0A8A">'image'</font>);</code>
+                  </pre>
+                </figure></td>
+                    <td><img src="bilder/differentialrechnung/matlab/matlab.png"style="max-height:50%; max-width:100%"></td>
                   </tr>
               </table>
 

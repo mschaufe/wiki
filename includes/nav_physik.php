@@ -29,6 +29,11 @@
         Optik
       </a>
     </div>
+    <div class="bd-toc-item <?php if($_SERVER['PHP_SELF'] == "/relativitaetstheorie.php")echo " active";?>">
+      <a class="bd-toc-link" href="relativitaetstheorie.php">
+        Relativitätstheorie
+      </a>
+    </div>
     <div class="bd-toc-item <?php if($_SERVER['PHP_SELF'] == "/schwingungen_und_wellen.php")echo " active";?>">
       <a class="bd-toc-link" href="schwingungen_und_wellen.php">
         Schwingungen
