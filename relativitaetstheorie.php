@@ -31,6 +31,8 @@
             <li class="toc-entry toc-h2"><a href="#minkowski">Minkowski-Raum-Zeit</a></li>
             <li class="toc-entry toc-h2"><a href="#relativistische_kinematik">Relativistische Kinematik</a></li>
             <li class="toc-entry toc-h2"><a href="#relativistische_dynamik">Relativistische Dynamik</a></li>
+            <li class="toc-entry toc-h2"><a href="#relativistische_elektrodynamik">Relativistische Elektrodynamik</a></li>
+            <li class="toc-entry toc-h2"><a href="#tools">Tools</a></li>
             </ul>
           </div>
         
@@ -219,13 +221,21 @@
             <br><br><h5 id="relativistische_dynamik">Relativistische Dynamik</h5>
             <table>
               <tr>
-                <td width="20%">Impuls</td>
-                <td width="42%">$$ \underline{p} := m \cdot \underline{v} = m\cdot \gamma \cdot \begin{bmatrix}c\\\vec{v} \end{bmatrix} = \begin{bmatrix}m\cdot \gamma \cdot c \\ m \cdot \gamma \cdot \vec{v} \end{bmatrix}$$</td>
-                <td>
+                <td rowspan="2" width="20%">Impuls</td>
+                <td width="42%">$$ \underline{p} := m \cdot \underline{v} = m\cdot \gamma \cdot \begin{bmatrix}c\\\vec{v} \end{bmatrix} = \begin{bmatrix}m\cdot \gamma \cdot c \\ m \cdot \gamma \cdot \vec{v} \end{bmatrix} = \begin{bmatrix}\frac{1}{c}\cdot E\\ \vec{p}\end{bmatrix}$$</td>
+                <td rowspan="2">
                   <b>p</b> = Impuls des Körpers [Ns] = [kg·m/s]<br>
                   <b>m</b> = Masse des Körpers [kg]<br>
                   <b>v</b> = Geschwindigkeit des Körpers [m/s]<br>
+                  <b>E</b> = Energie [N·m] = [J]<br>
+                  <b>P</b> = Leistung (Watt) [J/s] = [W]<br>
+                  <b>F</b> = Kraft [Kg⋅m/s<sup>2</sup>] =  [N]<br> 
+                  <b>τ</b> = Eigenzeit [s]
+ 
                 </td>
+              </tr>
+              <tr>
+                <td>$$ \frac{\text{d}}{\text{ d}\tau} \cdot  \underline{p} = \gamma \cdot \begin{bmatrix}\frac{1}{c}\cdot P\\ \vec{F}\end{bmatrix}$$</td>
               </tr>
               <tr>
                 <td>Kraft</td>
@@ -255,7 +265,7 @@
               <tr>
                 <td>Impuls</td>
                 <td>Ruheimpuls $$ \vec{p} = m \cdot \vec{v} $$</td>
-                <td>$$ \vec{p} = \gamma \cdot m \cdot \vec{v} $$</td>
+                <td>Bewegterimpuls$$ \vec{p} = \gamma \cdot m \cdot \vec{v} $$</td>
               </tr>
               <tr>
                 <td>Energie</td>
@@ -264,15 +274,86 @@
               </tr>
             </table>
 
+
+          <br><br><h5 id="relativistische_elektrodynamik">Relativistische Elektrodynamik</h5>
+          <table>
+              <tr>
+                <td rowspan="2" width="20%">Feldmatrix</td>
+                <td width="42%">$$ F:= \begin{bmatrix}0 & C^1 & C^2 & C^3\\  C^1&0  &B^3  & -B^2\\  C^2&-B^3  & 0 &B^1 \\  C^3&B^2  &-B^1  & 0\end{bmatrix} $$ </td>
+                <td>
+                  $$\vec{B }= \begin{bmatrix}B^1\\B^2 \\B^3 \end{bmatrix} ; \; \: \vec{C }= \begin{bmatrix}C^1\\C^2 \\C^3 \end{bmatrix} = \frac{1}{c}\begin{bmatrix}E^1\\E^2 \\E^3 \end{bmatrix} $$
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  $$ F \cdot \underline{v} = \gamma  \cdot \begin{bmatrix}\frac{1}{c} \cdot \left \langle \vec{E},\vec{v} \right \rangle\\ \vec{E}+\vec{v}\times\vec{B}\end{bmatrix} $$
+                </td>
+                <td>Das elektromagnetische Feld kann durch zwei 3er-Vektoren (E,B) oder durch eine 4x4-Matrix (F) beschrieben werden.</td>
+              </tr>
+              <tr>
+                <td>4er Lorentz-Gleichung</td>
+                <td>$$ \frac{\text{d}}{\text{d}\tau} = \underline{p} = q \cdot F \cdot \underline{v} $$</td>
+                <td>Die 4er-Lorentz-Gleichung beschreibt sowhol die Leistung als auch die kraft des elektromagnetischen Feldes auf das Teilchen.</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Feldtransformation</td>
+                <td>
+                  $$ (a) \; \; F = \Lambda  \cdot \tilde{F} \cdot \Lambda ^{-1} $$
+                  $$ (b) \; \; \tilde{F} = \Lambda ^{-1} \cdot F \cdot \Lambda  $$
+                </td>
+                <td rowspan="2"><img src="bilder/relativitaetsprinzip/feldtransformation.png"style="max-height:50%; max-width:100%"></td>
+              </tr>
+              <tr>
+                <td>
+                  $$ \text{tr}(\tilde{F}) = \text{tr}(F) $$
+                  $$ \text{det}(\tilde{F}) = \text{det}(F) $$
+                  $$ P_{\tilde{F}}(\lambda) = P_F(\lambda) $$
+                </td>
+              </tr>
+              <tr>
+                <td>Elektrodynamische Invarianten</td>
+                <td>
+                  $$ I_1 = (\left \langle \vec{E},\vec{V} \right \rangle)^2 $$
+                  $$ I_2 = B^2 - \frac{1}{C^2} \cdot E^2 $$ 
+                </td>
+                <td>Die Grössen haben in jedem Inertialsystem die gleichen Werte.</td>
+              </tr>
+              <tr>
+                <td>Näherungen</td>
+                <td>
+                  $$ (a)\; \; \vec{B} \approx \tilde{\vec{B}} $$ 
+                  $$ (b)\; \; \vec{E} \approx \tilde{\vec{E}} - \vec{v}\times  \tilde{\vec{B}} \approx \tilde{\vec{E}} - \vec{v}\times \vec{B} $$
+                </td>
+                <td>Gilt für technische Geschwindigkeiten v << c gelten die Näherungen.</td>
+              </tr>
+              <tr>
+                <td>Anwendung</td>
+                <td>
+                  Beobachter am Magnet
+                  $$ S: \; \vec{B}; \; \; \vec{E} = 0 $$
+                  $$ \vec{F}_{EB} = q \cdot \vec{v}\times \vec{B} $$
+                  Beobachter auf dem Teilchen
+                  $$ \tilde{S}: \;  \tilde{\vec{B}} \approx \underline{\vec{B}} ; \; \;\tilde{\vec{E}}\approx \vec{E}+ \vec{v}\times \vec{B} = \vec{v}\times \vec{B} $$
+                  $$ \tilde{\vec{F}}_{EB} = q \cdot \tilde{\vec{E}} \approx q \cdot \vec{v} \times \vec{B} $$
+
+                </td>
+                <td><img src="bilder/relativitaetsprinzip/Anwendung.png"style="max-height:50%; max-width:100%"></td>
+              </tr>
+            </table>
+
+
+
+
+
+
+
             <br><br><h5 id="tools">Tools</h5>
               <table class="table">
                   <tr>
                     <td width=20%>Wolframalpha / Mathematica</td>
                     <td width="42%"><p>Lichtgeschwindigkeit</p>
                       <figure class="highlight"  >
-                        <pre>
-<code class="language-html" data-lang="html">c = 299792458;</code>
-                        </pre>
+                        <pre><code class="language-html" data-lang="html">c = 299792458;</code></pre>
                       </figure>
                     </td>
                     <td></td>

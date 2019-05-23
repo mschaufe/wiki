@@ -30,6 +30,8 @@
             <li class="toc-entry toc-h2"><a href="#spezielle_funktionene">Spezielle Funktionen</a></li>
             <li class="toc-entry toc-h2"><a href="#differentialgleichung">Differentialgleichung</a></li>
             <li class="toc-entry toc-h2"><a href="#differentialgleichung">Visualisierung</a></li>
+            <li class="toc-entry toc-h2"><a href="#separation_der_variablen">Separation der Variablen</a></li>
+            <li class="toc-entry toc-h2"><a href="#Anwendungen">Anwendungen</a></li>
             <li class="toc-entry toc-h2"><a href="#tools">Tools</a></li>
             </ul>
           </div>
@@ -263,6 +265,165 @@
               </tr>
               <tr>
                 <td>labil $$ \text{globaler Repellor} $$ $$ \text{3. Beispiel} $$</td>
+              </tr>
+            </table>
+
+            <br><br><h5 id="separation_der_variablen">Separation der Variablen</h5>
+            <table>
+              <tr>
+                <td width="20%" rowspan="4">Allgemeine Lösung</td>
+                <td width="42%">ODE $$ y' = x^2 \cdot y $$</td>
+                <td>separierbar</td>
+              </tr>
+              <tr>
+                <td>S1: Statische Lösungen $$ y_s(x) = 0 $$</td>
+                <td>y' ist 0 was muss y sein, damit die Gleichung stimmt?</td>
+              </tr>
+              <tr>
+                <td>
+                  S2: Nichtstatische Lösungen 
+                  $$ y' = x^2 \cdot y \qquad \mid \; \: :y$$
+                  $$ \frac{1}{y}\cdot y' = x^2 \qquad \mid \; \: \smallint ...\text{ d}x $$
+                  $$ \smallint \frac{1}{y}\cdot y' \text{ d}x = \smallint x^2 \text{ d}x \qquad \mid \; \: y' = \frac{\text{ d}y}{\text{ d}x}$$
+                  $$ \smallint \frac{1}{y} \text{ d}y = \smallint x^2 \text{ d}x \qquad \mid \; \: \small \text{aufleiten} $$
+                  $$ \ln(\left | y \right |) = \frac{1}{3} x^3 + c \qquad \mid \; \: e^{...}$$
+                  $$ \left | y \right | = e^{\normalsize\frac{1}{3}x^3+c}   $$
+                  $$ y = \pm \; e^{ \normalsize c}\cdot e^{\normalsize\frac{1}{3}x^3} $$
+                </td>
+                <td>Beispiel mit allen Schritten:</td>
+              </tr>
+              <tr>
+                <td>
+                  S3: Allgemeine Lösung
+                  $$ y(x) = C \cdot e^{\normalsize\frac{1}{3}x^3} \; \; \mid \; \: C \in \mathbb{R} $$
+                </td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td rowspan="3">Spezielle Lösung</td>
+                <td>IVP$$ \left\{\begin{matrix}\; \; \;\text{ODE}: y' = g(x) \cdot h(y)\\ \text{IC}: y(x_0) = y_0\end{matrix}\right. $$</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  S1: Statische Lösungen
+                  $$ 0 = h(y_s) $$
+                  $$ y_s \in \left \{ ... \right \} $$
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  S2: Nichtstatische Lösungen
+                  $$ y' = g(x) \cdot h(y) $$
+                  $$ \frac{1}{h(x)}\cdot y' = g(x) $$
+                  $$ \int_{x_0}^x \frac{1}{h(x)} \cdot  y' \text{ d}x = \int_{x_0}^{x}g(x) \text{ d}x $$
+                  $$ \int_{y_0}^y \frac{1}{h(x)}  \text{ d}y = \int_{x_0}^{x}g(x) \text{ d}x $$
+                  $$ \text{F}(y)-\text{F}(y_0) = \text{G}(x)-\text{G}(x_0) $$
+                  $$ y(x) = ... $$
+                </td>
+                <td></td>
+              </tr>
+            </table>
+
+            <br><br><h5 id="anwendungen">Anwendungen</h5>
+            <table>
+              <tr>
+                <td rowspan="4" width="20%">Schaltkreise</td>
+                <td width="42%">$$ U_R = R \cdot I $$</td>
+                <td>
+                  <img src="bilder/differentialrechnung/anwendungen/r.png"style="max-height:50%; max-width:100%"><br>
+                  <b>U</b> = Spannung [N·m/C] = [V]<br>
+                  <b>R</b> = Widerstand [Ω]<br>
+                  <b>I</b> = Strom [A] <br>
+                </td>
+              </tr>
+              <tr>
+                <td>$$ U_L = L \cdot \dot{I} $$</td>
+                <td>
+                  <img src="bilder/differentialrechnung/anwendungen/l.png"style="max-height:50%; max-width:100%"><br>
+                  <b>U</b> = Spannung [N·m/C] = [V]<br>
+                  <b>L</b> = Induktivität (Henry) [H] = [V·s/A]<br>
+                  <b>I</b> = Strom [A] <br>
+                </td>
+              </tr>
+              <tr>
+                <td>$$ U_C = \frac{Q}{C} \; \qquad  \: I = \dot{Q} $$</td>
+                <td>
+                  <img src="bilder/differentialrechnung/anwendungen/c.png"style="max-height:50%; max-width:100%"><br>
+                  <b>U</b> = Spannung [N·m/C] = [V]<br>
+                  <b>Q</b> = Ladung [A⋅s] = [C]</br>
+                  <b>C</b> = Kapazität (Farad) [C/V] = [F]<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Maschenregel
+                  $$ U_c + U_R = U(t) $$
+                  $$ U_c + R \cdot I = U(t) $$
+                  $$ U_c + R \cdot \dot{Q} = U(t) $$
+                  $$ U_c + R \cdot C \cdot \dot{U_c} = U(t) $$
+                  $$ \rightarrow \small\text{ODE  für } \; \normalsize\dot{U_c} $$
+                </td>
+                <td>Beispiel: RC-Kreis<img src="bilder/differentialrechnung/anwendungen/beispiel.png"style="max-height:50%; max-width:100%"></td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td rowspan="4" width="20%">Toricelli-Probleme</td>
+                <td width="42%">
+                  Ausflussgeschwindigkeit
+                  $$ v = \sqrt{2 \cdot g \cdot h} $$
+                </td>
+                <td rowspan="2" >Situation:<img src="bilder/differentialrechnung/anwendungen/torricelli.png"style="max-height:50%; max-width:100%"></td>
+              </tr>
+              <tr>
+                <td>
+                  Volumenfluss
+                  $$ Q := \frac{\delta V}{\delta t} = \frac{A \cdot \delta l}{\delta t} = A \cdot v = \Phi_{\vec{v}} $$
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Bilanz-Gleichung
+                  $$ \dot{V}(t) = Q_i(t)-Q_a(t) $$
+                  $$ A \cdot \dot{h}(t) = Q_i(t)-A_a \cdot \sqrt{2 \cdot g\cdot h(t)} $$
+                  $$ \dot{h}(t) = \frac{1}{A}Q_i(t) - \frac{Aa}{A}\cdot \sqrt{2 \cdot g \cdot h(t)} $$
+                  $$  $$
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  IVP
+                  $$ \left\{\begin{matrix}\text{ODE}: \dot{h}(t) = \frac{1}{A}Q_i(t) - \frac{Aa}{A}\cdot \sqrt{2 \cdot g \cdot h(t)} \\ \text{IC}: h(t_0) = h_0\end{matrix}\right. $$
+                </td>
+                <td></td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <td rowspan="3" width="20%">Mechanik</td>
+                <td width="42%">
+                  Newton-Aktionsprinzip
+                  $$ m \cdot a = F = F_1 + ... + F_n $$
+                </td>
+                <td rowspan="1" >Situation:<img src="bilder/differentialrechnung/anwendungen/mechanik.png"style="max-height:50%; max-width:90%">Beispiel: Fallender Stein mit Luftwiderstand.</td>
+              </tr>
+                <td>
+                  Fall F<sub>1</sub> - F<sub>n</sub> sind wegabhängig
+                  $$ m \cdot \ddot{s} = f_1(s) + ... + F_n(s)  $$
+                </td>
+                <td>ODE 2. Grades für s(t)</td>
+              </tr>
+              </tr>
+                <td>
+                  Fall F<sub>1</sub> - F<sub>n</sub> sind geschwindigkeitsabhängig
+                  $$ m \cdot \dot{v} = f_1(v) + ... + F_n(v)  $$
+                </td>
+                <td>ODE 1. Grades für v(t)</td>
               </tr>
             </table>
 
