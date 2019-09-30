@@ -89,9 +89,6 @@
                   <tr>
                     <td rowspan="2">Wichtige Formen</td>
                     <td>$$ e^{i \frac{ \pi}{2}}=i $$</td>
-                    <td rowspan="2"></td>
-                  </tr>
-                  <tr>
                     <td>$$ e^{i\pi}=-1 $$</td>
                   </tr>
                     </tbody>

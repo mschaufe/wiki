@@ -36,6 +36,7 @@
             <li class="toc-entry toc-h2"><a href="#magnetostatik">Magnetostatik</a></li>
             <li class="toc-entry toc-h2"><a href="#induktion">Induktion</a></li>
             <li class="toc-entry toc-h2"><a href="#maxwell-gleichungen">Maxwell-Gleichungen</a></li>
+            <li class="toc-entry toc-h2"><a href="#poynting_vektorfeld">Poynting-Vektorfeld</a></li>
             </ul>
             </ul>
           </div>
@@ -685,6 +686,52 @@
               <td>In jedem Fall gibt es ein Vektorpotential A und ein Skalar-Potential Phi, so dass</td>
             </tr>
           </table>
+
+
+            <br><br><h5 id="poynting_vektorfeld">Poynting-Vektorfeld</h5>
+            <table>
+              <tr>
+                <td width=20%>Definition</td>
+                <td width=42%>$$ \vec{S} = \frac{1}{\mu_0} \cdot \vec{E} \times \vec{B} $$</td>
+                <td>
+                  <b>S</b> = Pointing-Vektorfeld [W/m<sup>2</sup>]<br>
+                  <b>μ<sub>0</sub></b> = Magnetische Feldkonstante 4·π·10<sup>-7</sup> [N/A<sup>2</sup>]<br>
+                  <b>E</b> = Elektrisches Feld [N/C]<br>
+                  <b>B</b> = Magnetisches Feld (Tesla) [T] = [N/(A·m)]
+                  <b></b>
+                </td>
+              </tr>
+              <tr>
+                <td>Fluss</td>
+                <td>$$ [\Phi _s ]= W $$</td>
+                <td>Der Fluss ist gerade die <b>Leistung</b> (Energiefluss) des EM-Feldes.</td>
+              </tr>
+              <tr>
+                <td rowspan="3">TEM-Wellen</td>
+                <td>$$ \hat{s} = \hat{k} $$</td>
+                <td>Energie fliesst in Ausbreitungsrichtung</td>
+              </tr>
+              
+              <tr>
+                <td>$$ Z_0 = c \cdot \mu_0 = \sqrt{\frac{\mu_0}{\epsilon_0}} $$</td>
+                <td>
+                  <b>Z<sub>0</sub></b> = Wellenwiderstand des Vakuums [Ω]<br>
+                  <b>c</b> = Lichtgeschwindigkeit [m/s]<br>
+                  <b>μ<sub>0</sub></b> = Magnetische Feldkonstante 4·π·10<sup>-7</sup> [N/A<sup>2</sup>]<br>
+                  <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante (Vakuum) [A·s/(V·m)] = [F/m]
+                </td>
+              </tr>
+
+              <tr>
+                <td>$$ \lvert \vec{S} \rvert = \frac{1}{Z_0} \cdot \lvert \vec{E} \rvert ^2 $$</td>
+                <td>
+                  <b>S</b> = Pointing-Vektorfeld [W/m<sup>2</sup>]<br>
+                  <b>Z<sub>0</sub></b> = Wellenwiderstand des Vakuums [Ω]<br>
+                  <b>E</b> = Elektrisches Feld [N/C]
+                </td>
+              </tr>
+
+            </table>
 
         </main>
       </div>

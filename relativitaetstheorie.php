@@ -32,6 +32,7 @@
             <li class="toc-entry toc-h2"><a href="#relativistische_kinematik">Relativistische Kinematik</a></li>
             <li class="toc-entry toc-h2"><a href="#relativistische_dynamik">Relativistische Dynamik</a></li>
             <li class="toc-entry toc-h2"><a href="#relativistische_elektrodynamik">Relativistische Elektrodynamik</a></li>
+            <li class="toc-entry toc-h2"><a href="#doppler_effekt">Doppler-Effekt</a></li>
             <li class="toc-entry toc-h2"><a href="#tools">Tools</a></li>
             </ul>
           </div>
@@ -342,8 +343,50 @@
             </table>
 
 
-
-
+            <br><br><h5 id="doppler_effekt">Doppler-Effekt</h5>
+            <table>
+              <tr>
+                <td width="20%">Funktion der Geschwindigkeit</td>
+                <td width="42%">$$ f(v) = \sqrt{\frac{c+v}{v-v}} $$</td>
+                <td> 
+                  <img src="bilder/relativitaetsprinzip/doppler.png"style="max-height:40%; max-width:100%"><br><br>
+                  <b>c</b> = Lichtgeschwindigkeit im Vakuum [m/s]<br>
+                  <b>v</b> = Geschwindigkeit [m/s]
+              </td>
+              </tr>
+              <tr>
+                <td>Kreisfrequenz</td>
+                <td>$$ \omega_B = f(v) \cdot \omega_Q $$</td>
+                <td>
+                  <b>ω<sub>B</sub></b> = Kreisfrequenz Beobachter (2π⋅ν) [2π/s]<br>
+                  <b>ω<sub>Q</sub></b> = Kreisfrequenz Quelle (2π⋅ν) [2π/s]
+                </td>
+              </tr>
+              <tr>
+                <td>Frequenz</td>
+                <td>$$ \nu_B = f(v) \cdot \nu_Q $$</td>
+                <td>
+                  <b>ν<sub>B</sub></b> = Frequenz Beobachter [1/s]<br>
+                  <b>ν<sub>Q</sub></b> = Frequenz Quelle [1/s]
+                </td>
+              </tr>
+              <tr>
+                <td>Wellenzahl</td>
+                <td>$$ k_B = f(v) \cdot k_Q $$</td>
+                <td>
+                  <b>k<sub>B</sub></b> = Wellenzahl Beobachter (2π/λ) [2π/m]<br>
+                  <b>k<sub>Q</sub></b> = Wellenzahl Quelle (2π/λ) [2π/m]
+                </td>
+              </tr>
+              <tr>
+                <td>Kreisfrequenz</td>
+                <td>$$ \lambda_B = \frac{1}{f(v)} \cdot \lambda_Q $$</td>
+                <td>
+                  <b>λ<sub>B</sub></b> = Wellenlänge Beobachter [m]<br>
+                  <b>λ<sub>Q</sub></b> = Wellenlänge Quelle [m]
+                </td>
+              </tr>
+            </table>
 
 
 
@@ -361,9 +404,9 @@
                   <tr>
                     <td width=20%>Matlab</td>
                     <td width="42%"></td>
+                    <td></td>
                   </pre>
                 </figure></td>
-                    <td></td>
                   </tr>
               </table>
 

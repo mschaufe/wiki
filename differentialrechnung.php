@@ -222,10 +222,12 @@
                 <td>$$ y' = 7x^2 \cdot y $$ $$ y' = \cosh(x) \cdot y $$</td>
               </tr>
               <tr>
-                <td>mit konst. Koeffizienten $$ y' = m \cdot y + q(x) $$</td>
+                <td>inhomogen (konst. Koeffizient) $$ y' = m \cdot y + q(x) $$</td>
                 <td>$$ y' = 2y $$ $$ y' = -3y + \cos(2x) $$</td>
               </tr>
             </table>
+            
+
             <table>
               <tr>
                 <td rowspan="2" width=20%>Statische Lösungen</td>
@@ -251,6 +253,162 @@
               </tr>
             </table>
 
+            <br><br><h5 id="linearhomogeneODEerstengrades">Linear homogene ODE 1. Grades</h5>
+            <table>
+              <tr id="add_und_sub">
+                    <th scope="col" width=20%>Schritt</th>
+                    <th scope="col" width=42%>Allgemein Lösung</th>
+                    <th scope="col">Speziell Lösung</th>
+              </tr>
+              <tr>
+                <td>Stammfunktion</td>
+                <td>$$ M(x) = \int{m(x) \text{ d}x} $$</td>
+                <td>$$ M(x) = \int{m(x) \text{ d}x} $$</td>
+              </tr>
+              <tr>
+                <td width=20%>Lösungsformel</td>
+                <td width=42%>$$ y(x) = C \cdot e^{M(x)} $$</td>
+                <td>$$ y(x) = C \cdot e^{M(x)-M(x_0)} $$</td>
+              </tr>
+            </table>
+
+            <br><br><h5 id="linearhomogeneODEerstengrades">Linear inhomogene ODE 1. Grades</h5>
+            <table>
+              <tr id="add_und_sub">
+                    <th scope="col" width=20%>Schritt</th>
+                    <th scope="col" width=42%>Allgemein Lösung</th>
+                    <th scope="col">Speziell Lösung</th>
+              </tr>
+              <tr>
+                <td width=20%>Gegeben</td>
+                <td width=42%>ODE$$ y'=m(x)\cdot y + q(x) $$</td>
+                <td>IVP$$ \left\{\begin{matrix}\text{ODE: } \;  y'=m(x)\cdot y + q(x)\\ \text{IC: }\; y(x_0) = y_0 \kern{10mm} \end{matrix} \right. $$</td>
+              </tr>
+              <tr>
+                <td>Stammfunktion</td>
+                <td>$$ M(x) = \int{m(x) \text{ d}x} $$</td>
+                <td>$$ M(x) = \int{m(x) \text{ d}x} $$</td>
+              </tr>
+              <tr>
+                <td>Variation der Konstanten</td>
+                <td>$$ C(x) = \int{q(x) \cdot e^{-M(x)} \text{ d}x} $$</td>
+                <td>$$ C(x) = \int_{x_0}^{x}{q(s) \cdot e^{-M(s)} \text{ d}s} $$</td>
+              </tr>
+              <tr>
+                <td width=20%>Lösungsformel</td>
+                <td width=42%>$$ y(x) = (C + C(x)) \cdot e^{M(x)} $$</td>
+                <td>$$ y(x) = (y_0 + C(x) \cdot e^{M(x_0)}) \cdot e^{M(x)-M(x_0)}  $$</td>
+              </tr>
+            </table>
+
+          <br><br><h5 id="linearhomogeneODEerstengrades">Linear homogene ODE 2. Grades</h5>
+            <table>
+              <tr id="add_und_sub">
+                <th scope="col" width=20%>Schritt</th>
+                <th scope="col" width=42%>Allgemein Lösung</th>
+                <th scope="col">Speziell Lösung</th>
+              </tr>
+              <tr>
+                <td width=20%>Gegeben</td>
+                <td width=42%>ODE$$ a  y'' + b  y' + c  y = 0 $$</td>
+                <td>IVP$$ \left\{\begin{matrix}\text{ODE: } \; a  y'' + b  y' + c  y = 0  \\ \text{IC: }\; y(x_0) = y_0 \kern{8mm}  \\ \text{ }\; y'(x_0) = v_0 \kern{2mm} \end{matrix} \right. $$</td>
+              </tr>
+              <tr>
+                <td>Charakteristisches Polynom</td>
+                <td>$$ p(\lambda) = a\lambda^2 + b\lambda -c $$</td>
+                <td>$$ p(\lambda) = a\lambda^2 + b\lambda -c $$</td>
+              </tr>
+              <tr>
+                <td>Diskriminante</td>
+                <td>$$ D = b^2 -4ac $$</td>
+                <td>$$ D = b^2 -4ac $$</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td width=20% rowspan="4">D > 0</td>
+                <td width=42% colspan="2">$$ \lambda_{1,2} = \frac{-b \pm \sqrt{D}}{2a} $$</td>
+                <td colspan="2">$$ \lambda_{1,2} = \frac{-b \pm \sqrt{D}}{2a} $$</td>
+              </tr>
+              <tr>
+                <td width=21%>$$ y_1(x) = e^{\lambda_1 \cdot x} $$</td>
+                <td width=21%>$$ y_2(x) = e^{\lambda_2 \cdot x} $$</td>
+                <td>$$ y_1(x) = e^{\lambda_1 \cdot x} $$</td>
+                <td>$$ y_1(x) = e^{\lambda_1 \cdot x} $$</td>
+              </tr>
+              <tr>
+                <td width=21% colspan="2">$$  $$</td>
+                <td>$$ C_1 = \frac{\lambda_2 \cdot y_0-v_0}{\lambda_2 -\lambda_1} $$</td>
+                <td>$$ C_2 = \frac{v_0 - \lambda_1 \cdot y_0}{\lambda_2 - \lambda_1}$$</td>
+              </tr>
+              <tr>
+                <td width=21% colspan="2">$$ y(x) = c_1 \cdot y_1(x) + c_2 \cdot y_2(x) = C_1 \cdot e^{\lambda_1 \cdot x} + C_2 \cdot e^{\lambda_2 \cdot x} $$</td>
+                <td colspan="2">$$ y(x) = C_1 \cdot e^{\lambda_1 \cdot x} + C_2 \cdot e^{\lambda_2 \cdot x} $$</td>
+              </tr>
+
+
+              <tr>
+                <td width=20% rowspan="4">D = 0</td>
+                <td width=42% colspan="2">$$ \lambda = -\frac{b}{2a} $$</td>
+                <td colspan="2">$$ \lambda = -\frac{b}{2a} $$</td>
+              </tr>
+              <tr>
+                <td width=21%>$$ y_1(x) = e^{\lambda \cdot x} $$</td>
+                <td width=21%>$$ y_2(x) = x \cdot e^{\lambda \cdot x} $$</td>
+                <td>$$ y_1(x) = e^{\lambda \cdot x} $$</td>
+                <td>$$ y_2(x) = x \cdot e^{\lambda \cdot x} $$</td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td>$$ C_1 = y_0 $$</td>
+                <td>$$ C_2 = v_0 - \lambda \cdot y_0 $$</td>
+              </tr>
+              <tr>
+                <td width=21% colspan="2">$$ y(x) = c_1 \cdot y_1(x) + c_2 \cdot y_2(x) = (C_1+C_2 \cdot x) \cdot e^{\lambda x} $$</td>
+                <td colspan="2">$$  y(x) = (C_1+C_2 \cdot x) \cdot e^{\lambda x}$$</td>
+              </tr>
+
+
+              <tr>
+                <td width=20% rowspan="7">D < 0</td>
+                <td width=42% colspan="2">$$ \lambda_{1,2} = \frac{-b \pm \sqrt{D}}{2a} = -\frac{b}{2a} \pm i \frac{\sqrt{\left | D \right |}}{2 \cdot \left | a \right |} $$</td>
+                <td colspan="2">$$ \lambda_{1,2} = \frac{-b \pm \sqrt{D}}{2a} = -\frac{b}{2a} \pm i \frac{\sqrt{\left | D \right |}}{2 \cdot \left | a \right |} $$</td>
+              </tr>
+              <tr>
+                <td width=21%>$$ \delta := \frac{b}{2a} $$</td>
+                <td width=21%>$$ \omega_d := \frac{\sqrt{\left | D \right |}}{2 \cdot \left | a \right |} $$</td>
+                <td>$$  \delta := \frac{b}{2a} $$</td>
+                <td>$$ \omega_d := \frac{\sqrt{\left | D \right |}}{2 \cdot \left | a \right |} $$</td>
+              </tr>
+              <tr>
+                <td width=21%>$$ y_1(x) = e^{\lambda_1 x} = e^{-\delta x - i \omega_d x} $$</td>
+                <td width=21%>$$ y_2(x) = e^{\lambda_2 x} = e^{-\delta x + i \omega_d x} $$</td>
+                <td>$$y_1(x) = e^{\lambda_1 x} = e^{-\delta x - i \omega_d x}  $$</td>
+                <td>$$ y_2(x) = e^{\lambda_2 x} = e^{-\delta x + i \omega_d x} $$</td>
+              </tr>
+              <tr>
+                <td width=42% colspan="2">$$ y(x) = c_1 y_1(x) + c_2  y_2(x) = C_1 e^{-\delta x - i \omega_d x} + C_2  e^{-\delta x + i \omega_d x}  $$</td>
+                <td colspan="2">$$  $$</td>
+              </tr>
+
+              <tr>
+                <td width=42% colspan="2">Exponentialform$$ y(x) =  e^{-\delta x} \cdot (C_1 \cdot e^{-i\omega_d x}+ C_2 \cdot e^{i\omega_d x}) $$</td>
+                <td colspan="2">$$ $$</td>
+              </tr>
+              <tr>
+                <td width=42% colspan="2">Cosinus Sinus Form$$ y(x) =  e^{-\delta x} (C \cdot \cos(\omega_d \cdot x )+ s \cdot \sin{\omega_d \cdot x})$$</td>
+                <td>$$ C = y_0  $$</td>
+                <td>$$ S = \frac{v_0 + \delta \cdot y_0}{\omega_d} $$</td>
+              </tr>
+              <tr>
+                <td width=42% colspan="2">Sinus Phasen Form$$ y(x) = A \cdot e^{-\delta x}\cdot \sin(\omega_d \cdot x + \varphi_0)  $$</td>
+                <td>$$ A = \sqrt{C^2 + S^2} $$</td>
+                <td>$$ \varphi_0 = \text{arg}(s+i \cdot C)$$</td>
+              </tr>
+            </table>
+
+
+
             <br><br><h5 id="vsiualisierung">Visualisierung</h5>
             <table>
               <tr>
@@ -267,7 +425,7 @@
                 <td>labil $$ \text{globaler Repellor} $$ $$ \text{3. Beispiel} $$</td>
               </tr>
             </table>
-
+            <!--
             <br><br><h5 id="separation_der_variablen">Separation der Variablen</h5>
             <table>
               <tr>
@@ -326,7 +484,7 @@
                 <td></td>
               </tr>
             </table>
-
+              -->
             <br><br><h5 id="anwendungen">Anwendungen</h5>
             <table>
               <tr>
@@ -397,7 +555,7 @@
               <tr>
                 <td>
                   IVP
-                  $$ \left\{\begin{matrix}\text{ODE}: \dot{h}(t) = \frac{1}{A}Q_i(t) - \frac{Aa}{A}\cdot \sqrt{2 \cdot g \cdot h(t)} \\ \text{IC}: h(t_0) = h_0\end{matrix}\right. $$
+                  $$ \left\{\begin{matrix}\text{ODE}: \dot{h}(t) = \frac{1}{A}Q_i(t) - \frac{Aa}{A}\cdot \sqrt{2 \cdot g \cdot h(t)} \\ \text{IC}: h(t_0) = h_0 \kern{31mm}  \end{matrix}\right. $$
                 </td>
                 <td></td>
               </tr>
@@ -430,8 +588,13 @@
             <br><br><h5 id="tools">Tools</h5>
               <table class="table">
                   <tr>
-                    <td rowspan="2" width=20%>Wolframalpha / Mathematica</td>
+                    <td rowspan="3" width=20%>Wolframalpha / Mathematica</td>
                     <td width=42%><p>Ableitung</p><figure class="highlight"><pre><code class="language-html" data-lang="html">D[2 x^2, x]</code></pre></figure></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td width=42%><p>Differentialgleichung Auflösen</p><figure class="highlight"><pre><code class="language-html" data-lang="html">DSolve[{y''[x] + 4*y'[x]+ 5*y[x] == 0, 
+y[0] == Pi, y'[0] == 0}, y[x], x]</code></pre></figure></td>
                     <td></td>
                   </tr>
                   <tr>
